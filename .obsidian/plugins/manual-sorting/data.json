@@ -8,9 +8,6 @@
         "02_Diary",
         "03_Projects",
         "04_Knowledge_Base",
-        "05_Literature",
-        "06_Skills",
-        "07_Code_and_Debug",
         "08_Data_Documentation",
         "09_Writing",
         "10_Templates",
@@ -122,7 +119,9 @@
       "sortOrder": "custom"
     },
     "04_Knowledge_Base/Modeling": {
-      "children": [],
+      "children": [
+        "04_Knowledge_Base/Modeling/01.20260507.Bayesian_Data_Fusion_HIOBF.md"
+      ],
       "sortOrder": "custom"
     },
     "04_Knowledge_Base/Remote_Sensing": {
@@ -141,23 +140,6 @@
       "children": [],
       "sortOrder": "custom"
     },
-    "05_Literature": {
-      "children": [
-        "05_Literature/By_Method",
-        "05_Literature/By_Topic",
-        "05_Literature/Reading_Notes"
-      ],
-      "sortOrder": "custom"
-    },
-    "05_Literature/By_Method": {
-      "children": [
-        "05_Literature/By_Method/GLM_AED",
-        "05_Literature/By_Method/Machine_Learning",
-        "05_Literature/By_Method/Trend_Analysis",
-        "05_Literature/By_Method/Uncertainty"
-      ],
-      "sortOrder": "custom"
-    },
     "05_Literature/By_Method/GLM_AED": {
       "children": [],
       "sortOrder": "custom"
@@ -174,44 +156,11 @@
       "children": [],
       "sortOrder": "custom"
     },
-    "05_Literature/By_Topic": {
-      "children": [
-        "05_Literature/By_Topic/Climate_Human_Impacts",
-        "05_Literature/By_Topic/Lake_Carbon",
-        "05_Literature/By_Topic/Lake_Water_Quality",
-        "05_Literature/By_Topic/Modeling",
-        "05_Literature/By_Topic/Remote_Sensing"
-      ],
-      "sortOrder": "custom"
-    },
     "05_Literature/By_Topic/Climate_Human_Impacts": {
       "children": [],
       "sortOrder": "custom"
     },
     "05_Literature/By_Topic/Lake_Carbon": {
-      "children": [
-        "05_Literature/By_Topic/Lake_Carbon/CO2_CH4",
-        "05_Literature/By_Topic/Lake_Carbon/DIC",
-        "05_Literature/By_Topic/Lake_Carbon/DOC",
-        "05_Literature/By_Topic/Lake_Carbon/POC"
-      ],
-      "sortOrder": "custom"
-    },
-    "05_Literature/By_Topic/Lake_Carbon/CO2_CH4": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "05_Literature/By_Topic/Lake_Carbon/DIC": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "05_Literature/By_Topic/Lake_Carbon/DOC": {
-      "children": [
-        "05_Literature/By_Topic/Lake_Carbon/DOC/01.20260429.全球湖泊DOC系统文献梳理.md"
-      ],
-      "sortOrder": "custom"
-    },
-    "05_Literature/By_Topic/Lake_Carbon/POC": {
       "children": [],
       "sortOrder": "custom"
     },
@@ -227,73 +176,7 @@
       "children": [],
       "sortOrder": "custom"
     },
-    "05_Literature/Reading_Notes": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "06_Skills": {
-      "children": [
-        "06_Skills/AI_Tools",
-        "06_Skills/GIS_RS",
-        "06_Skills/Python",
-        "06_Skills/Web_Learning",
-        "06_Skills/Writing_Tools"
-      ],
-      "sortOrder": "custom"
-    },
-    "06_Skills/AI_Tools": {
-      "children": [
-        "06_Skills/AI_Tools/Obsidian"
-      ],
-      "sortOrder": "custom"
-    },
     "06_Skills/AI_Tools/Obsidian": {
-      "children": [
-        "06_Skills/AI_Tools/Obsidian/Markdown基础语言.md"
-      ],
-      "sortOrder": "custom"
-    },
-    "06_Skills/GIS_RS": {
-      "children": [
-        "06_Skills/GIS_RS/04_20260503_ENVI-SNAP-SEADAS大气校正.md",
-        "06_Skills/GIS_RS/05_20260503_OLCI大气校正实践.md"
-      ],
-      "sortOrder": "custom"
-    },
-    "06_Skills/Python": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "06_Skills/Web_Learning": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "06_Skills/Writing_Tools": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "07_Code_and_Debug": {
-      "children": [
-        "07_Code_and_Debug/Automation",
-        "07_Code_and_Debug/Data_Processing_Workflows",
-        "07_Code_and_Debug/Error_Solutions",
-        "07_Code_and_Debug/Python_Scripts"
-      ],
-      "sortOrder": "custom"
-    },
-    "07_Code_and_Debug/Automation": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "07_Code_and_Debug/Data_Processing_Workflows": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "07_Code_and_Debug/Error_Solutions": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "07_Code_and_Debug/Python_Scripts": {
       "children": [],
       "sortOrder": "custom"
     },
@@ -365,6 +248,7 @@
     },
     "99_Raw_Data": {
       "children": [
+        "99_Raw_Data/A_Hybrid_Bayesian_Data_Fusion_Framework_to_Enhance.txt",
         "99_Raw_Data/A_Hybrid_Bayesian_Data_Fusion_Framework_to_Enhance.pdf"
       ],
       "sortOrder": "custom"
