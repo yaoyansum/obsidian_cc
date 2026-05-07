@@ -2,6 +2,9 @@
   "customOrder": {
     "/": {
       "children": [
+        "03_Projects",
+        "09_Writing",
+        "CLAUDE.RAW.md",
         "CLAUDE.md",
         "00_Index",
         "01_Log",
@@ -37,6 +40,31 @@
         "02_Diary/Daily/2026-03-25.md",
         "02_Diary/Daily/2026-05-03.md"
       ],
+      "sortOrder": "custom"
+    },
+    "03_Projects": {
+      "children": [
+        "03_Projects/Active",
+        "03_Projects/Finished",
+        "03_Projects/Ideas",
+        "03_Projects/Paused"
+      ],
+      "sortOrder": "custom"
+    },
+    "03_Projects/Active": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "03_Projects/Finished": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "03_Projects/Ideas": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "03_Projects/Paused": {
+      "children": [],
       "sortOrder": "custom"
     },
     "04_Knowledge_Base": {
@@ -79,6 +107,31 @@
         "08_Data_Documentation/HydroLAKES.md",
         "08_Data_Documentation/Remote_Sensing_Dataset.md"
       ],
+      "sortOrder": "custom"
+    },
+    "09_Writing": {
+      "children": [
+        "09_Writing/Papers",
+        "09_Writing/Paragraph_Bank",
+        "09_Writing/Proposals",
+        "09_Writing/Reports"
+      ],
+      "sortOrder": "custom"
+    },
+    "09_Writing/Papers": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "09_Writing/Paragraph_Bank": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "09_Writing/Proposals": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "09_Writing/Reports": {
+      "children": [],
       "sortOrder": "custom"
     },
     "10_Templates": {
