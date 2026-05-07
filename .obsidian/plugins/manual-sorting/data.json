@@ -1,7 +1,9 @@
 {
   "customOrder": {
     "/": {
-      "children": [],
+      "children": [
+        "CLAUDE.zh-CN.md"
+      ],
       "sortOrder": "custom"
     }
   },
