@@ -1,0 +1,22 @@
+{
+  "id": "conv-1778126042816-cur0v40kb",
+  "providerId": "claude",
+  "title": "Summarize DOC trend articles and write to Lake_...",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778126042816,
+  "updatedAt": 1778126427043,
+  "lastResponseAt": 1778126427043,
+  "sessionId": "43cc5198-5f8a-4499-8946-01998e08f24c",
+  "providerState": {
+    "providerSessionId": "43cc5198-5f8a-4499-8946-01998e08f24c"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0
+  }
+}
