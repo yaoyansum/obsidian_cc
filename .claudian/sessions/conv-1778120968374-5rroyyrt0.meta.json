@@ -4,6 +4,20 @@
   "title": "Summarize raw_data articles into Lake_Carbon note",
   "titleGenerationStatus": "success",
   "createdAt": 1778120968375,
-  "updatedAt": 1778120974247,
-  "sessionId": null
+  "updatedAt": 1778121307740,
+  "lastResponseAt": 1778121307740,
+  "sessionId": "4208f30c-2558-467c-8c60-9e476fc5e0ad",
+  "providerState": {
+    "providerSessionId": "4208f30c-2558-467c-8c60-9e476fc5e0ad"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 148,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 97280,
+    "contextWindow": 200000,
+    "contextTokens": 97428,
+    "percentage": 49,
+    "contextWindowIsAuthoritative": true
+  }
 }

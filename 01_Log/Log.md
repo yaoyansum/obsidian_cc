@@ -22,6 +22,7 @@
 
 ---
 
+## [2026-05-07]  knowledge | cole2007 vs Tran2009
 ## [2026-05-07] index | 创建 Index.md | 初始化总索引入口
 
 ## [2026-05-07] knowledge | 湖泊DIC研究总结 | 从旧库迁移到 04_Knowledge_Base/Lake_Carbon/

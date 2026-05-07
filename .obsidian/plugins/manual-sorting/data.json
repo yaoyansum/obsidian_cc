@@ -66,19 +66,9 @@
     },
     "03_Projects/Active": {
       "children": [
-        "03_Projects/Active/Algal_Bloom_Model",
-        "03_Projects/Active/GLM_AED_Project",
         "03_Projects/Active/Lake_DIC_Global_Change",
         "03_Projects/Active/Lake_DOC_Global_Change"
       ],
-      "sortOrder": "custom"
-    },
-    "03_Projects/Active/Algal_Bloom_Model": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "03_Projects/Active/GLM_AED_Project": {
-      "children": [],
       "sortOrder": "custom"
     },
     "03_Projects/Active/Lake_DIC_Global_Change": {
@@ -98,6 +88,12 @@
       "sortOrder": "custom"
     },
     "03_Projects/Paused": {
+      "children": [
+        "03_Projects/Paused/GLM_AED_Project"
+      ],
+      "sortOrder": "custom"
+    },
+    "03_Projects/Paused/GLM_AED_Project": {
       "children": [],
       "sortOrder": "custom"
     },
@@ -114,6 +110,7 @@
     },
     "04_Knowledge_Base/Lake_Carbon": {
       "children": [
+        "04_Knowledge_Base/Lake_Carbon/03.20260507.内陆水体活性管道模型——Cole2007与Tranvik2009综述.md",
         "04_Knowledge_Base/Lake_Carbon/01.20260504.湖泊DIC研究总结.md",
         "04_Knowledge_Base/Lake_Carbon/02.20260429.湖泊溶解有机碳（DOC）研究综述.md"
       ],
@@ -367,8 +364,9 @@
     },
     "99_Raw_Data": {
       "children": [
-        "99_Raw_Data/Cole 等 - 2007 - Plumbing the Global Carbon Cycle Integrating Inland Waters into the Terrestrial Carbon Budget.pdf",
-        "99_Raw_Data/Tranvik 等 - 2009 - Lakes and reservoirs as regulators of carbon cycling and climate.pdf"
+        "99_Raw_Data/Evans 等 - 2005 - Long-term increases in surface water dissolved organic carbon Observations, possible causes and env.pdf",
+        "99_Raw_Data/Porcal 等 - 2009 - Humic substances-part 7 the biogeochemistry of dissolved organic carbon and its interactions with c.pdf",
+        "99_Raw_Data/Reitsema 等 - 2018 - The Future of Freshwater Macrophytes in a Changing World Dissolved Organic Carbon Quantity and Qual.pdf"
       ],
       "sortOrder": "custom"
     }
