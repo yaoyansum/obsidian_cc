@@ -2,6 +2,7 @@
   "customOrder": {
     "/": {
       "children": [
+        "CLAUDE.md",
         "00_Index",
         "01_Log",
         "02_Diary",
@@ -14,8 +15,7 @@
         "09_Writing",
         "10_Templates",
         "11_Archive",
-        "99_Raw_Data",
-        "CLAUDE.zh-CN.md"
+        "99_Raw_Data"
       ],
       "sortOrder": "custom"
     },
@@ -110,6 +110,7 @@
     },
     "04_Knowledge_Base/Lake_Carbon": {
       "children": [
+        "04_Knowledge_Base/Lake_Carbon/04.20260507.DOC变化趋势及其机理.md",
         "04_Knowledge_Base/Lake_Carbon/03.20260507.内陆水体活性管道模型——Cole2007与Tranvik2009综述.md",
         "04_Knowledge_Base/Lake_Carbon/01.20260504.湖泊DIC研究总结.md",
         "04_Knowledge_Base/Lake_Carbon/02.20260429.湖泊溶解有机碳（DOC）研究综述.md"
@@ -364,6 +365,12 @@
     },
     "99_Raw_Data": {
       "children": [
+        "99_Raw_Data/reitsema_2018.txt",
+        "99_Raw_Data/porcal_2009.txt",
+        "99_Raw_Data/evans_2005.txt",
+        "99_Raw_Data/reitsema_2018.pdf",
+        "99_Raw_Data/porcal_2009.pdf",
+        "99_Raw_Data/evans_2005.pdf",
         "99_Raw_Data/Evans 等 - 2005 - Long-term increases in surface water dissolved organic carbon Observations, possible causes and env.pdf",
         "99_Raw_Data/Porcal 等 - 2009 - Humic substances-part 7 the biogeochemistry of dissolved organic carbon and its interactions with c.pdf",
         "99_Raw_Data/Reitsema 等 - 2018 - The Future of Freshwater Macrophytes in a Changing World Dissolved Organic Carbon Quantity and Qual.pdf"
