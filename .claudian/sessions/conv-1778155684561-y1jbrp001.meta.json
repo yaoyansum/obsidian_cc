@@ -4,6 +4,19 @@
   "title": "读取\"D:\\obsidian_cc\\99_Raw_Data\\Liu 等 - 2024 - Subst...",
   "titleGenerationStatus": "failed",
   "createdAt": 1778155684561,
-  "updatedAt": 1778155687218,
-  "sessionId": null
+  "updatedAt": 1778156179720,
+  "lastResponseAt": 1778156179720,
+  "sessionId": "2e18d3bc-fba5-40fa-8a7b-3586d9b499fc",
+  "providerState": {
+    "providerSessionId": "2e18d3bc-fba5-40fa-8a7b-3586d9b499fc"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 1321,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 32001,
+    "contextWindow": 200000,
+    "contextTokens": 33322,
+    "percentage": 17
+  }
 }

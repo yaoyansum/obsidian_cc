@@ -23,8 +23,12 @@ Index.md = 我有什么
 Log.md = 我做了什么
 Projects = 我正在推进什么
 Knowledge_Base = 我长期掌握什么
+Literature = 我读过什么
+Skills = 我学会了什么
+Code_and_Debug = 我解决过什么代码问题
 Data_Documentation = 我有哪些数据及其说明
 Writing = 我正在写什么
+Archive = 我完成了什么
 ```
 
 ---
@@ -34,7 +38,7 @@ Writing = 我正在写什么
 1. **Index 只有一个。** 所有重要页面只通过 `00_Index/Index.md` 进行总导航，不再创建多个分散索引。
 2. **Log 只有一个。** 所有操作记录统一追加到 `01_Log/Log.md`，不再每天新建日志文件。
 3. **Log 只追加，不重写。** 不要删除、覆盖或大幅修改过去的日志记录。
-4. **知识要迁移。** `Log.md` 只记录过程；稳定、有复用价值的内容应迁移到 `Knowledge_Base/` 或 `Writing/`。
+4. **知识要迁移。** `Log.md` 只记录过程；稳定、有复用价值的内容应迁移到 `Knowledge_Base/`、`Skills/`、`Literature/`、`Code_and_Debug/` 或 `Writing/`。
 5. **项目和知识分离。** 项目页面记录具体任务推进，知识页面记录长期可复用的概念、方法和机制。
 6. **来源必须明确。** 文献、网页、代码来源、数据来源和用户原始材料都应在页面中注明。
 7. **避免文件堆积。** 新建页面前先检查是否已有相关页面；能补充已有页面时不要重复新建。
@@ -75,6 +79,37 @@ Obsidian Vault/
 │   ├── Statistics/                 # 统计、趋势、归一化、不确定性等方法
 │   └── Scientific_Writing/         # 科学写作、论文结构、英文表达
 │
+├── 05_Literature/                  # 文献笔记和文献主题整理；主题与方法分开，避免被当前研究方向锁死
+│   ├── By_Topic/
+│   │   ├── Lake_Carbon/
+│   │   │   ├── DOC/
+│   │   │   ├── DIC/
+│   │   │   ├── POC/
+│   │   │   └── CO2_CH4/
+│   │   ├── Lake_Water_Quality/
+│   │   ├── Remote_Sensing/
+│   │   ├── Modeling/
+│   │   └── Climate_Human_Impacts/
+│   ├── By_Method/
+│   │   ├── Machine_Learning/
+│   │   ├── GLM_AED/
+│   │   ├── Trend_Analysis/
+│   │   └── Uncertainty/
+│   └── Reading_Notes/
+│
+├── 06_Skills/                      # 从网页、教程、视频、AI 对话中学到的技能
+│   ├── Python/
+│   ├── GIS_RS/
+│   ├── AI_Tools/
+│   ├── Writing_Tools/
+│   └── Web_Learning/
+│
+├── 07_Code_and_Debug/              # 代码片段、报错、调试记录和处理流程
+│   ├── Python_Scripts/
+│   ├── Error_Solutions/
+│   ├── Data_Processing_Workflows/
+│   └── Automation/
+│
 ├── 08_Data_Documentation/          # 数据说明，而不是原始大数据本体
 │   ├── HydroLAKES.md
 │   ├── CMIP6.md
@@ -95,6 +130,10 @@ Obsidian Vault/
 │   ├── Project_Template.md
 │   └── Paper_Section_Template.md
 │
+├── 11_Archive/                     # 已完成、暂停、废弃或过时内容
+│   ├── Old_Notes/
+│   └── Deprecated/
+│
 └── 99_Raw_Data/                    # 原始材料、附件、截图、PDF、图片、表格等统一暂存；只保留整个文件夹，不设子目录
 ```
 
@@ -106,9 +145,11 @@ Obsidian Vault/
 
 该目录只作为原始材料暂存区，**不再设置子目录**。所有有长期价值的内容都应被整理到对应页面中：
 
-- 文献 PDF 的阅读结果或网页学习内容整理到 `04_Knowledge_Base/`
+- 文献 PDF 的阅读结果整理到 `05_Literature/`
 - 图片或图件说明整理到 `09_Writing/` 或相关项目页
 - 数据结构说明整理到 `08_Data_Documentation/`
+- 网页学习内容整理到 `06_Skills/`
+- 代码报错截图整理到 `07_Code_and_Debug/`
 
 `99_Raw_Data/` 不作为知识库主体，只保存原始材料本体。整理完成后，应该在对应知识页、项目页、文献页或写作页中注明原始材料来源。
 
@@ -119,7 +160,7 @@ Obsidian Vault/
 ### 通用规则
 
 - 页面文件名优先使用英文，便于跨工具检索和长期维护。
-- 推荐格式：`Date.Topic-Name.md` 或 `Date.Topic_Name.md`，同一知识库内保持一致（date格式为YYYYMMDD）。
+- 推荐格式：`Topic-Name.md` 或 `Topic_Name.md`，同一知识库内保持一致。
 - 不要使用过长文件名。
 - 不要在文件名中使用特殊符号，如 `:`, `?`, `*`, `|`, `"`, `<`, `>`。
 - 日期使用 `YYYY-MM-DD` 格式。
@@ -127,16 +168,16 @@ Obsidian Vault/
 ### 推荐命名示例
 
 ```text
-20260504.DIC.md
-20260504.DOC.md
-20260504.Lake_Carbon_Cycle.md
-20260504.Runoff_Dilution.md
-20260504.Evaporation_Concentration.md
-20260504.GLM_AED.md
-20260504.Feature_Distillation.md
-20260504.xarray_FillValue_Error.md
-20260504.CMIP6_Point_Extraction.md
-20260504.Lake_DOC_Paper.md
+DIC.md
+DOC.md
+Lake_Carbon_Cycle.md
+Runoff_Dilution.md
+Evaporation_Concentration.md
+GLM_AED.md
+Feature_Distillation.md
+xarray_FillValue_Error.md
+CMIP6_Point_Extraction.md
+Lake_DOC_Paper.md
 ```
 
 ### 中文标题处理
@@ -144,9 +185,9 @@ Obsidian Vault/
 如果用户更习惯中文标题，可以采用：
 
 ```text
-20260504.DIC_湖泊溶解无机碳.md
-20260504.DOC_湖泊溶解有机碳.md
-20260504.GLM_AED_湖泊水生态模型.md
+DIC_湖泊溶解无机碳.md
+DOC_湖泊溶解有机碳.md
+GLM_AED_湖泊水生态模型.md
 ```
 
 但不建议文件名完全中文加长句，例如：
@@ -184,7 +225,7 @@ Obsidian Vault/
 
 ---
 
-## 00. 快速入口
+## 1. 快速入口
 
 - [[Log]]
 - [[Lake_DOC_Global_Change]]
@@ -195,7 +236,7 @@ Obsidian Vault/
 
 ---
 
-## 01. 当前重点项目
+## 2. 当前重点项目
 
 ### 湖泊 DOC 全球变化研究
 
@@ -230,7 +271,7 @@ Obsidian Vault/
 
 ---
 
-## 04. 专业知识库
+## 3. 专业知识库
 
 ### 湖泊碳循环
 
@@ -272,9 +313,57 @@ Obsidian Vault/
 
 ---
 
+## 4. 文献笔记
 
+- [[Lake_Carbon_Literature]]
+- [[DOC_Literature]]
+- [[DIC_Literature]]
+- [[Algal_Bloom_Literature]]
+- [[Remote_Sensing_Literature]]
+- [[GLM_AED_Literature]]
 
-## 08. 数据说明
+---
+
+## 5. 技能学习
+
+### Python
+
+- [[xarray]]
+- [[pandas]]
+- [[rasterio]]
+- [[rioxarray]]
+- [[netCDF]]
+
+### GIS / 遥感
+
+- [[GEE_Skills]]
+- [[ArcGIS]]
+- [[QGIS]]
+- [[GeoTIFF_Processing]]
+
+### 工具
+
+- [[Zotero]]
+- [[Obsidian]]
+- [[LaTeX]]
+- [[ChatGPT]]
+- [[Claude]]
+- [[Prompt_Templates]]
+
+---
+
+## 6. 代码与报错
+
+- [[xarray_FillValue_Error]]
+- [[rioxarray_Reprojection]]
+- [[GEE_Export_Error]]
+- [[NetCDF_Processing]]
+- [[CMIP6_Point_Extraction]]
+- [[Python_Automation]]
+
+---
+
+## 7. 数据说明
 
 - [[HydroLAKES]]
 - [[CMIP6]]
@@ -284,7 +373,7 @@ Obsidian Vault/
 
 ---
 
-## 09. 写作
+## 8. 写作
 
 - [[Lake_DOC_Paper]]
 - [[Lake_DIC_Paper]]
@@ -297,7 +386,7 @@ Obsidian Vault/
 
 ---
 
-## 10. 常用模板
+## 9. 常用模板
 
 - [[Literature_Note_Template]]
 - [[Web_Learning_Template]]
@@ -382,6 +471,9 @@ index          # 更新索引
 log            # 更新日志格式或整理日志
 project        # 项目推进
 knowledge      # 专业知识整理
+literature     # 文献笔记整理
+skill          # 技能学习整理
+code-debug     # 代码或报错记录
 data-doc       # 数据说明更新
 writing        # 论文/基金/报告写作
 archive        # 归档
