@@ -6,12 +6,9 @@
         "00_Index",
         "01_Log",
         "02_Diary",
-        "03_Projects",
         "04_Knowledge_Base",
         "08_Data_Documentation",
-        "09_Writing",
         "10_Templates",
-        "11_Archive",
         "99_Raw_Data"
       ],
       "sortOrder": "custom"
@@ -30,9 +27,7 @@
     },
     "02_Diary": {
       "children": [
-        "02_Diary/Daily",
-        "02_Diary/Monthly",
-        "02_Diary/Weekly"
+        "02_Diary/Daily"
       ],
       "sortOrder": "custom"
     },
@@ -44,64 +39,11 @@
       ],
       "sortOrder": "custom"
     },
-    "02_Diary/Monthly": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "02_Diary/Weekly": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "03_Projects": {
-      "children": [
-        "03_Projects/Active",
-        "03_Projects/Finished",
-        "03_Projects/Ideas",
-        "03_Projects/Paused"
-      ],
-      "sortOrder": "custom"
-    },
-    "03_Projects/Active": {
-      "children": [
-        "03_Projects/Active/Lake_DIC_Global_Change",
-        "03_Projects/Active/Lake_DOC_Global_Change"
-      ],
-      "sortOrder": "custom"
-    },
-    "03_Projects/Active/Lake_DIC_Global_Change": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "03_Projects/Active/Lake_DOC_Global_Change": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "03_Projects/Finished": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "03_Projects/Ideas": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "03_Projects/Paused": {
-      "children": [
-        "03_Projects/Paused/GLM_AED_Project"
-      ],
-      "sortOrder": "custom"
-    },
-    "03_Projects/Paused/GLM_AED_Project": {
-      "children": [],
-      "sortOrder": "custom"
-    },
     "04_Knowledge_Base": {
       "children": [
         "04_Knowledge_Base/Lake_Carbon",
-        "04_Knowledge_Base/Lake_Water_Quality",
         "04_Knowledge_Base/Modeling",
-        "04_Knowledge_Base/Remote_Sensing",
-        "04_Knowledge_Base/Scientific_Writing",
-        "04_Knowledge_Base/Statistics"
+        "04_Knowledge_Base/Remote_Sensing"
       ],
       "sortOrder": "custom"
     },
@@ -112,10 +54,6 @@
         "04_Knowledge_Base/Lake_Carbon/01.20260504.湖泊DIC研究总结.md",
         "04_Knowledge_Base/Lake_Carbon/02.20260429.湖泊溶解有机碳（DOC）研究综述.md"
       ],
-      "sortOrder": "custom"
-    },
-    "04_Knowledge_Base/Lake_Water_Quality": {
-      "children": [],
       "sortOrder": "custom"
     },
     "04_Knowledge_Base/Modeling": {
@@ -133,14 +71,6 @@
       ],
       "sortOrder": "custom"
     },
-    "04_Knowledge_Base/Scientific_Writing": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "04_Knowledge_Base/Statistics": {
-      "children": [],
-      "sortOrder": "custom"
-    },
     "08_Data_Documentation": {
       "children": [
         "08_Data_Documentation/CMIP6.md",
@@ -149,31 +79,6 @@
         "08_Data_Documentation/HydroLAKES.md",
         "08_Data_Documentation/Remote_Sensing_Dataset.md"
       ],
-      "sortOrder": "custom"
-    },
-    "09_Writing": {
-      "children": [
-        "09_Writing/Papers",
-        "09_Writing/Paragraph_Bank",
-        "09_Writing/Proposals",
-        "09_Writing/Reports"
-      ],
-      "sortOrder": "custom"
-    },
-    "09_Writing/Papers": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "09_Writing/Paragraph_Bank": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "09_Writing/Proposals": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "09_Writing/Reports": {
-      "children": [],
       "sortOrder": "custom"
     },
     "10_Templates": {
@@ -190,20 +95,9 @@
       ],
       "sortOrder": "custom"
     },
-    "11_Archive": {
-      "children": [],
-      "sortOrder": "custom"
-    },
     "99_Raw_Data": {
       "children": [
-        "99_Raw_Data/pdf1_text.txt",
-        "99_Raw_Data/pdf2_text.txt",
-        "99_Raw_Data/pdf3_text.txt",
-        "99_Raw_Data/pdf4_text.txt",
-        "99_Raw_Data/pgad432.pdf",
-        "99_Raw_Data/s41467-025-66275-w.pdf",
-        "99_Raw_Data/s43247-025-03034-1.pdf",
-        "99_Raw_Data/sciadv.aea0024.pdf"
+        "99_Raw_Data/Liu 等 - 2024 - Substantial increase of organic carbon storage in Chinese lakes.pdf"
       ],
       "sortOrder": "custom"
     }
