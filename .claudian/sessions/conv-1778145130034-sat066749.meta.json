@@ -4,20 +4,19 @@
   "title": "Summarize LiDAR methods from PDFs",
   "titleGenerationStatus": "success",
   "createdAt": 1778145130034,
-  "updatedAt": 1778145287890,
-  "lastResponseAt": 1778145287890,
+  "updatedAt": 1778145471373,
+  "lastResponseAt": 1778145471373,
   "sessionId": "d05d93d9-7690-4622-8f6d-483ae55708d2",
   "providerState": {
     "providerSessionId": "d05d93d9-7690-4622-8f6d-483ae55708d2"
   },
   "usage": {
     "model": "haiku",
-    "inputTokens": 63,
+    "inputTokens": 174,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 109056,
+    "cacheReadInputTokens": 114816,
     "contextWindow": 200000,
-    "contextTokens": 109119,
-    "percentage": 55,
-    "contextWindowIsAuthoritative": true
+    "contextTokens": 114990,
+    "percentage": 57
   }
 }

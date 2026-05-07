@@ -126,6 +126,7 @@
     },
     "04_Knowledge_Base/Remote_Sensing": {
       "children": [
+        "04_Knowledge_Base/Remote_Sensing/04.20260507.Spaceborne_Airborne_LiDAR_Ocean_Methods.md",
         "04_Knowledge_Base/Remote_Sensing/01_20260503_大气校正原理.md",
         "04_Knowledge_Base/Remote_Sensing/02_20260503_大气校正方法总述与工具.md",
         "04_Knowledge_Base/Remote_Sensing/03_20260503_6SV模型参数详解.md"
@@ -195,6 +196,10 @@
     },
     "99_Raw_Data": {
       "children": [
+        "99_Raw_Data/pdf1_text.txt",
+        "99_Raw_Data/pdf2_text.txt",
+        "99_Raw_Data/pdf3_text.txt",
+        "99_Raw_Data/pdf4_text.txt",
         "99_Raw_Data/pgad432.pdf",
         "99_Raw_Data/s41467-025-66275-w.pdf",
         "99_Raw_Data/s43247-025-03034-1.pdf",
