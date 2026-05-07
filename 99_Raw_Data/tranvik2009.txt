@@ -1,0 +1,1092 @@
+Limnol. Oceanogr., 54(6, part 2), 2009, 2298­2314
+
+E 2009, by the American Society of Limnology and Oceanography, Inc.
+
+Lakes and reservoirs as regulators of carbon cycling and climate
+
+Lars J. Tranvik,a,* John A. Downing,b James B. Cotner,c Steven A. Loiselle,d Robert G. Striegl,e
+Thomas J. Ballatore,f Peter Dillon,g Kerri Finlay,h Kenneth Fortino,i Lesley B. Knoll,j
+Pirkko L. Kortelainen,k Tiit Kutser,l Soren Larsen,m Isabelle Laurion,n Dina M. Leech,o
+S. Leigh McCallister,p Diane M. McKnight,q John M. Melack,r Erin Overholt,j Jason A. Porter,s
+Yves Prairie,t William H. Renwick,u Fabio Roland,v Bradford S. Sherman,w David W. Schindler,x
+Sebastian Sobek,y Alain Tremblay,z Michael J. Vanni,j Antonie M. Verschoor,aa
+Eddie von Wachenfeldt,a and Gesa A. Weyhenmeyera
+
+a Department of Ecology and Evolution, Uppsala University, Uppsala, Sweden
+b Department of Ecology, Evolution, and Organismal Biology, Iowa State University, Ames, Iowa
+c Department of Ecology, Evolution and Behavior, University of Minnesota, St. Paul, Minnesota
+d University of Siena, Siena, Italy
+e U.S. Geological Survey, Denver, Colorado
+f Daiichi University, Fukuoka, Japan
+g Department of Chemistry, Trent University, Peterborough, Ontario, Canada
+h Department of Biology, University of Regina, Regina, Saskatchewan, Canada
+i University of North Carolina at Chapel Hill, Chapel Hill, North Carolina
+j Department of Zoology, Miami University, Oxford, Ohio
+k Finnish Environment Institute, Helsinki, Finland
+l Estonian Marine Institute, Tallinn, Estonia
+m University of Oslo, Oslo, Norway
+n INRS-ETE, Universite´ du Que´bec, Que´bec, Que´bec, Canada
+o Institute of Marine Science, University of North Carolina, Morehead City, North Carolina
+p Virginia Commonwealth University, Richmond, Virginia
+q INSTAAR, University of Colorado, Boulder, Colorado
+r University of California at Santa Barbara, Santa Barbara, California
+s Department of Biological Sciences, University of the Sciences in Philadelphia, Philadelphia, Pennsylvania
+t De´partement des Sciences Biologiques, Universite´ du Que´bec a` Montre´al, Montre´al, Que´bec, Canada
+u Geography Department, Miami University, Oxford, Ohio
+v University of Juiz de Fora, Juiz de Fora, MG, Brazil
+w CSIRO Land and Water, Canberra, Australia
+x Department of Biological Sciences, University of Alberta, Edmonton, Alberta, Canada
+y Eawag/ETH Zurich, Zurich, Switzerland
+z Hydro-Que´bec, Montre´al, Que´bec, Canada
+aaNIOO­Centre for Limnology, Nieuwersluis, the Netherlands
+
+             Abstract
+
+                  We explore the role of lakes in carbon cycling and global climate, examine the mechanisms influencing carbon
+               pools and transformations in lakes, and discuss how the metabolism of carbon in the inland waters is likely to
+               change in response to climate. Furthermore, we project changes as global climate change in the abundance and
+               spatial distribution of lakes in the biosphere, and we revise the estimate for the global extent of carbon
+               transformation in inland waters. This synthesis demonstrates that the global annual emissions of carbon dioxide
+               from inland waters to the atmosphere are similar in magnitude to the carbon dioxide uptake by the oceans and
+               that the global burial of organic carbon in inland water sediments exceeds organic carbon sequestration on the
+               ocean floor. The role of inland waters in global carbon cycling and climate forcing may be changed by human
+               activities, including construction of impoundments, which accumulate large amounts of carbon in sediments and
+               emit large amounts of methane to the atmosphere. Methane emissions are also expected from lakes on melting
+               permafrost. The synthesis presented here indicates that (1) inland waters constitute a significant component of the
+               global carbon cycle, (2) their contribution to this cycle has significantly changed as a result of human activities,
+               and (3) they will continue to change in response to future climate change causing decreased as well as increased
+               abundance of lakes as well as increases in the number of aquatic impoundments.
+
+* Corresponding author: lars.tranvik@ebc.uu.se
+
+                                                2298
+Lakes, carbon, and climate                                      2299
+
+   Inland waters affect climate at the regional scale through   distribution, that the coefficients of this equation are
+exchange of heat and water with the atmosphere (Krinner         constant among regions, and that dry and moist regions of
+2003). In addition, they play a substantial role in the global  the Earth differ only in that drier regions have fewer lakes
+carbon (C) cycle and thus potentially affect climate as well    than moist regions. Furthermore, lakes and impoundments
+(Cole et al. 2007). The consumption and production of           cover substantially more area (.3% of the continents) than
+carbon dioxide, methane, and nitrous oxide by microor-          hitherto believed (Downing et al. 2006).
+ganisms influences the concentrations of these greenhouse
+gases (GHG) in the atmosphere and thereby affects the              Lakes as recipients of terrestrial carbon--Dissolved
+atmospheric heat budget. Despite the small fraction of the      inorganic carbon and dissolved organic carbon (DIC and
+surface of the earth occupied by inland waters, they play a     DOC, respectively) are the predominant carbon inputs to
+major role in the global C cycle (Dean and Gorham 1998;         most lakes, followed by particulate organic carbon (POC)
+Cole et al. 2007; Battin et al. 2008). Important new analyses   and particulate inorganic carbon. The relative importance
+have shown that lakes are extremely active sites for            of these inputs varies with lake location and hydrology
+transport, transformation, and storage of considerable          (Fig. 1). There are latitudinal differences in the proportions
+amounts of carbon received from the terrestrial environ-        of POC, DOC, and total inorganic carbon in global rivers
+ment and therefore may have an effect that is dispropor-        (Meybeck 1993), which reflect climate, soil texture and
+tional to their spatial extent. Further, human alterations of   geochemistry, and land use. In temperate regions and
+the aquatic landscape, which occur directly through the         boreal forests in carbonate terrain, DIC is the dominate
+construction of large hydroelectric reservoirs and innumer-     form of aquatic C (Finlay et al. 2009; Stets et al. 2009) due
+able farm ponds, will also contribute to and alter carbon       to high soil respiration, carbonate weathering, and
+balances. In addition, indirect effects will be experienced     groundwater flow (Fig. 1C­E). At higher northern lati-
+through loss of lakes in regions in which the climate is        tudes, DIC may also dominate (Fig. 1A). In contrast, DOC
+becoming drier.                                                 dominates in the humid tropics and in noncarbonate boreal
+                                                                forest (Fig. 1B,F). The patterns depicted in Fig. 1, with
+   The objectives of this manuscript are to describe the        losses and transformations of carbon during residence in
+current role and to speculate about the future role of lakes    inland waters, have been referred to as comprising an
+in carbon cycling and climate; to suggest mechanisms that       `active freshwater pipe' (Cole et al. 2007).
+will alter their role as climate changes; to discuss how
+carbon metabolism in inland waters is likely to change in          Indigenous primary production of organic carbon
+response to climate; and, finally, to suggest how these         in lakes--Primary production is strongly influenced by
+changes could be monitored and managed. We present a            lake size, latitude, insolation, and nutrient availability. Of
+new analysis of how the extent and distribution of lakes will   the 304 million lakes that Downing et al. (2006) estimated
+change geographically under projected changes in climate        to occur globally, 277 million were in the smallest category
+and hydrology. Finally, we revise the estimate for the extent   (0.001­0.01 km2), and the average lake size was only
+of carbon transformations in inland waters, combining our       0.012 km2. Most lakes, therefore, are typically shallow
+new analysis for lakes and impoundments with results of a       with plenty of light and nutrients and therefore should be
+recent analysis for streams and rivers (Battin et al. 2008).    among the most productive systems on Earth (Wetzel
+We show that the carbon emissions from inland waters to         2001). Pace and Prairie (2005) estimated that the global
+the atmosphere are similar in magnitude to global               gross primary production (GPP) of lakes is 0.65 Pg C yr21.
+terrestrial net ecosystem production and that the rate of       This is likely an underestimate since it is based on an
+burial of organic carbon in inland water sediments exceeds      approximation of total lake area and does not emphasize
+organic carbon sequestration on the ocean floor. Construc-      the high production of small lakes, which are estimated to
+tion of impoundments, changing hydrology, and changing          dominate globally (Downing et al. 2006). Considering the
+temperature will magnify the intensity of carbon cycling,       global GPP of 100­150 Pg C yr21 (Randerson et al. 2002),
+increasing both burial and outgassing of carbon. Our            it is clear that the global internal primary production of
+analysis is focused on inland waters, including lakes and       lakes represents only a minor fraction of global primary
+reservoirs, and for the global up-scaling of their role in the  production, although very poorly constrained.
+carbon cycle, we also include rivers and streams. The
+wetland part of the terrestrial­aquatic continuum plays an         Mineralization and greenhouse gas emissions--Lakes can
+important role in the global C cycle but is not included in     be sites of intense organic carbon (OC) mineralization.
+this analysis.                                                  Sustained by allochthonous OC inputs, respiration domi-
+                                                                nates over primary production in most lakes (Del Giorgio
+Current role of lakes in the global C cycle                     and Peters 1993; Jansson et al. 2000; Duarte and Prairie
+                                                                2005), resulting in CO2 supersaturation (Sobek et al. 2005).
+   Current abundance and size of lakes--Global integration      The relative importance of sediment respiration is strongly
+of pools and transformations of carbon in lakes depend          affected by water column depth, and therefore the
+critically on estimates of their abundance and size             contribution of sediment respiration to total lake OC
+distribution (Downing in press). Recent geographic infor-       mineralization is moderate in some cases (Den Heyer and
+mation system and theoretical work (Lehner and Do¨ ll 2004;     Kalff 1998; Algesten et al. 2005) but considerable in other
+Downing et al. 2006) have shown that lake size and              cases (Pace and Prairie 2005; Kortelainen et al. 2006). It
+abundance distributions follow a power law probability
+2300  Tranvik et al.
+
+   Fig. 1. Carbon budgets for diverse individual lakes, applying the `active pipe' concept presented by Cole et al. (2007), depicting
+inland waters as a combined conduit and reactor for organic carbon, resulting in unidirectional flow from soils to sea and, at the same
+time, transformations and transport to the atmosphere and to sediment storage. Inputs of carbon can enter via upstream flow,
+groundwater inputs, atmospheric deposition, or fixation of atmospheric CO2 by emergent macrophytes. Losses of carbon include
+inorganic and organic carbon sedimentation, CO2 efflux to the atmosphere, and downstream flow via streams or groundwater. When
+possible, inputs and outputs were divided into dissolved inorganic carbon (DIC), dissolved organic carbon (DOC), and particulate
+organic carbon (POC). CH4 emissions were measured in only (D) and (F) and have not been estimated for the other systems. Percentages
+represent proportions of total inputs and outputs accounted for by each carbon species. Ranges of error around estimates are not
+presented here but are considerable for several estimates (see References). These figures are thus considered to be best estimates based on
+current available data. (A) Summer carbon budget for Toolik Lake, on arctic tundra in Alaska, from Whalen and Cornwell (1985) and
+Kling et al. (1991, 2000). (B) Annual carbon budget for the Lake Frisksjo¨ n, in the boreal forest of Sweden, from Sobek et al. (2006). The
+total organic carbon (TOC) inputs arise primarily from both catchment export and macrophyte production in the littoral zone of the lake.
+(C) Summer carbon budget for Katepwa Lake, a polymictic, eutrophic, hard-water lake in the northern Great Plains, from Finlay et al.
+(2009, unpubl. data). Approximately half of the sediment storage is composed of precipitated CaCO3. (D) Annual carbon budget for
+Williams Lake, Minnesota, a mesotrophic, dimictic, closed-lake basin, from Stets et al. (2009). (E) Summer carbon budget for a reservoir
+in an agricultural region in Ohio, from Knoll et al. (unpubl.). (F) Annual carbon budget for Lake Calado, a floodplain lake in the central
+Amazon Basin, from Lesack (1988) and Melack and Engle (in press). The separate TOC input represents macrophyte production and
+litterfall to the lake.
+
+should be noted that since most lakes are small and shallow  (Grane´li et al. 1996). Also, the partial pressure of CO2 in
+(Downing et al. 2006), much of the sediment is in contact    the surface water of boreal lakes did not vary with
+with the upper mixed water layer rather than in cold         ultraviolet irradiation levels (Sobek et al. 2003). Despite
+hypolimnetic water, as in stratified lakes. This favors      making a small contribution to the overall mineralization
+mineralization over burial, and CH4 that is produced in      of OC in lakes, photochemical processes are critical to the
+shallow sediments largely escapes oxidation by methano-      decay of colored DOC in lakes (Molot and Dillon 1997).
+trophic bacteria and escape to the atmosphere (Bastviken et  Although eutrophic lakes may be undersaturated, most of
+al. 2008).                                                   the lakes of the world are supersaturated in CO2 and
+                                                             consequently emit CO2 to the atmosphere (Sobek et al.
+   OC in lakes is also mineralized via photochemical         2005). Many studies indicate that the CO2 emitted from
+reactions (Salonen and Va¨ ha¨ talo 1994). However, direct   lakes is mainly derived from in-lake respiration (Del
+photo-oxidation of OC to CO2 accounted for less than 10%     Giorgio et al. 1999; Jansson et al. 2000), but the inflow of
+of dark respiration in the epilimnion of six boreal lakes
+Lakes, carbon, and climate                                       2301
+
+CO2-rich groundwater or surface water also contributes to        in lakes illustrates, however, that CH4 emission is not as
+lake CO2 emission (Striegl and Michmerhuizen 1998). In           well constrained as CO2 emission. This is mainly due to the
+lakes receiving very high DIC inputs (Fig. 1), the outgas-       relative paucity of data compiled for methane (,100 lakes)
+sing of CO2 will largely depend on DIC inputs from the           compared to that compiled for CO2 (.5000 lakes), but this
+catchment, and in-lake metabolism will consequently play a       variation is also connected to methodological limitations in
+minor role. Further, in saline, hard-water lakes, CO2            the measurement of CH4 ebullition as well as plant-
+emission is not driven by metabolism but rather by pH-           mediated emissions from littoral vegetation. More field
+related speciation of the DIC pool (Duarte et al. 2008).         data and the emerging use of hydroacoustics to measure
+Cole et al. (1994) estimated that lakes emit about 0.14 Pg C     ebullition (Ostrovsky et al. 2008) will help to better
+yr21 (as CO2) to the atmosphere. This estimate included          constrain global estimates of CH4 emission from lakes.
+principally temperate lakes and a very few warm tropical
+lakes. Accounting for the greater emission of CO2 from              Lakes and reservoirs may act as sources or sinks of
+tropical lakes, compared to their temperate counterparts,        nitrous oxide (N2O), a potent greenhouse gas that is
+may raise the above estimate by about 30% (H. Marotta            produced via nitrification and denitrification. Lake mor-
+unpubl.). Further, saline lakes, which, in spite of their large  phometry may be an important predictor of emissions,
+area (e.g., Caspian Sea, Aral Sea, Lake Chad), were not          since N2O may be consumed in the hypolimnion, while
+included in the work of Cole et al. (1994), contribute           shallow sediments contribute to N2O emissions (Huttunen
+another 0.11­0.15 Pg C yr21 to the atmosphere (Duarte et         et al. 2003a; Wang et al. 2006). While relatively little
+al. 2008). In total, global CO2 emission from lakes could be     research has addressed N2O fluxes from lakes, current data
+as high as 0.53 Pg C yr21, taking into account the various       indicate that lake and reservoir fluxes have similar areal
+lake types as well as recent estimates of the global area of     rates to forests and wetlands but may be higher than those
+lakes (Downing et al. 2006). Although this has previously        found in agricultural soils. Given the small areal extent of
+been shown in regional studies of boreal and tropical forest     lakes, compared to those of forests, wetlands, and
+landscapes (Richey et al. 2002; Algesten et al. 2004;            agriculture, it may be unlikely that lakes contribute a large
+Kortelainen et al. 2006), compared to the total export of        fraction of global N2O emissions (Mengis et al. 1997;
+carbon from the continents to the sea (roughly 0.9 Pg C          Huttunen et al. 2004).
+yr21; Cole et al. 2007), CO2 emission from lakes is likely to
+be an important term in the continental carbon balance              Burial and sedimentation of carbon in lakes--The
+(Fig. 1).                                                        significance of lake sediments in the global C cycle can be
+                                                                 considered in terms of the carbon pool contained in lake
+   Anoxia in freshwater sediments contributes to high CH4        sediments and the rate at which that pool is increasing.
+emission on global (Bastviken et al. 2004a) and landscape        Cole et al. (2007) suggested that, because of their spatial
+(Christensen et al. 2007) scales. While CH4 produced in          extent and ability to preserve OC, lakes sequester large
+hypolimnetic sediments is mostly oxidized to CO2 by              amounts of carbon in their sediments. Lake sediments have
+methanotrophic microbes (Striegl and Michmerhuizen               been estimated to contain 820 Pg of OC (Mulholland and
+1998), production of CH4 in epilimnetic sediments is the         Elwood 1982; Einsele et al. 2001; Cole et al. 2007). In
+main driver of CH4 emission from lakes (Bastviken et al.         addition to the considerable amount of OC stored in lake
+2008). Apart from diffusion, CH4 is also released from           sediments, inorganic carbon can comprise a large share of
+sediments via gas bubbles (ebullition). This process is the      the sediment mass in hard-water lakes with low sediment
+most important pathway of CH4 emission from some lakes           organic matter content. Therefore, even lakes with low
+(Bastviken et al. 2004a), particularly shallow lakes with low    organic matter content can store a large amount of C, and
+hydrostatic pressure on the sediments. Vegetated lake            the global annual amount of OC buried in the sediments of
+littoral areas are `hot spots' of CH4 production, where          natural lakes plus reservoirs exceeds that in ocean
+CH4 can escape via plant stems directly from the sediment        sediments by a factor of three (Dean and Gorham 1998).
+into the atmosphere. Depending on the predominant plant
+species and sediment properties, increased water tempera-           Annual burial rates of OC and inorganic carbon tend to
+ture and lake water level fluctuations may increase CH4          be highest in small, eutrophic lakes and impoundments
+production, and efflux can affect landscape C balances           (Downing et al. 2008). Sediment OC burial is high in lakes
+(Bergstro¨ m et al. 2007).                                       for several reasons: these lakes collect sediment from the
+                                                                 watershed (von Wachenfeldt and Tranvik 2008), they retain
+   In terms of overall C budgets, the emission of CH4 from       sediments efficiently (they are often highly productive on
+lakes is comparatively small (8­48 Tg C yr21; Bastviken et       an areal basis, generating autochthonous organic matter
+al. 2004a). CH4 emission from lakes may represent 6­16%          [Wetzel 2001]), and lake sediment oxygen concentrations
+of total nonanthropogenic emissions, however, and is             are often low (Wetzel 2001). Furthermore, the recalcitrance
+higher than methane emission from the ocean (Bastviken           of allochthonous organic matter permits efficient burial
+et al. 2004a). Further, if accounting for the 20-fold higher     (von Wachenfeldt et al. 2008). As a result of the prevalence
+radiative forcing of CH4, as compared to CO2, and                of small and shallow lakes on the global scale (Downing et
+considering that several percent or more of the carbon is        al. 2006), most of the sediments in which OC resides are
+emitted from lakes as CH4 rather than as CO2 (Huttunen et        shallow sediments. How this affects burial is poorly
+al. 2003b), it is suggested that methane and carbon dioxide      understood. Mineralization is higher in shallow sediments
+may be equally important links between lakes and the             (see above), but on the other hand, shallow sediment OC
+climate. The wide variation among CH4 emission estimates         may be redistributed to deeper strata by sediment focusing,
+2302  Tranvik et al.
+
+through which it is subsequently buried (Benoy et al. 2007).    reservoirs has been at the center of a debate (Rosa et al.
+The long-term average carbon burial rates in lakes are          2004; Giles 2006) in which it has been argued that the
+estimated to be between 4.5 and 14 g C m22 yr21 (Dean           greenhouse gas emission effects of some hydroelectric
+and Gorham 1998; Stallard 1998; Cole et al. 2007). If           reservoirs can be greater than that of fossil fuel alternatives
+extrapolated, the range of global annual C storage rates is     (Fearnside 1995, 2006).
+from 0.03 to 0.07 Pg C yr21 (Dean and Gorham 1998;
+Einsele et al. 2001; Cole et al. 2007). An independent          The role of hard-water and saline lakes in the global
+regional estimate for the Canadian boreal forest region
+indicates that this region alone could account for more than    carbon budget--Hard-water and saline lakes comprise
+10% (0.005­0.0085 Pg C yr21; Benoy et al. 2007) of our
+global estimate. These annual rates are similar to those seen   nearly half of the volume of all inland waters worldwide
+for C burial in marine sediments (about 0.12 Pg yr21;
+Sarmiento and Sundquist 1992), although recent analyses         (Hammer 1986; Wetzel 2001) and have elevated DIC
+indicate that burial rates in human-built impoundments
+and human-affected small lakes may be one to two orders         concentrations relative to soft-water systems. Together,
+of magnitude higher than those seen in natural lakes
+(average of 1000 g C m22 yr21; Downing et al. 2008), with       these characteristics cause hard-water and saline lakes to
+the highest values seen in small, eutrophic impoundments.
+                                                                contribute significantly to the global carbon budget
+   In view of increasing lake-water DOC concentrations in
+large regions (Tranvik and Jansson 2002; Monteith et al.        (Duarte et al. 2008). The predominant mechanisms driving
+2007), it is important to note that DOC can be transformed
+to POC in the water column and can potentially be               carbon processing in these lakes, however, is unclear. The
+sequestered in lake sediments. Flocculation of DOC to
+POC is important in boreal lakes (von Wachenfeldt et al.        high pH of these systems (Wetzel 2001) may lower CO2
+2008), where sedimentation of DOC may be of similar                                                {           32{,
+magnitude to the evasion of CO2 to the atmosphere (von          concentrations  relative  to  HCO  3  and  CO        and  the  high
+Wachenfeldt and Tranvik 2008). DOC flocculation and
+settling may affect sediment respiration and the potential      productivity of some of these lakes may further deplete
+for methanogenesis in the sediments of boreal, and possibly
+other, lakes.                                                   dissolved CO2, yet saline lakes are frequently observed to
+                                                                emit large quantities of CO2 to the atmosphere (Duarte et
+   Reservoir carbon dioxide and methane emission--Organic       al. 2008).
+soils and plant biomass are flooded during river impound-
+ment, which potentially contributes to large emissions of       A highly resolved temporal analysis of six lakes in the
+CO2 and CH4 to the atmosphere during the first years after
+flooding (Rudd et al. 1993; Kelly et al. 1997). As is the case  northern Great Plains of Canada over the course of 14 yr
+with natural systems, greenhouse gases can be emitted via
+diffusion at the surface of the reservoir (CO2 and CH4),        showed high interannual variability of CO2 flux driven by
+ebullition (bubble flux) in the reservoir (mainly for CH4),     changes in pH (Finlay et al. 2009): when the pH exceeded
+diffusion through plant stems, and degassing downstream
+of the reservoir (mainly CH4). In a study of boreal             8.6, the lakes acted as carbon sponges, and when pH
+reservoirs flooded between 1991 and 2004, Tremblay et
+al. (2005) showed that emissions of GHG decline about           dropped below 8.6, the lakes outgassed CO2. Similarly,
+10 yr post-impoundment. Fluxes of GHG in boreal                 Duarte et al. (2008) observed a pH dependence of CO2 flux
+reservoirs were usually three to 10 times higher than those     and concluded that the saline lakes in their study were
+in natural lakes at their maximum, which occurs 2­5 yr
+after impoundment. In tropical impoundments, anoxic             acting as carbon sponges when pH exceeded 9.0. Many
+conditions can facilitate CH4 production even 10 yr after
+impoundment (Abril et al. 2005).                                saline and hard waters have much higher concentrations of
+
+   One potentially important process for GHG emission           DIC relative to DOC (Wetzel 2001), indicating that factors
+from impoundments is the outgassing of GHG downstream
+of reservoirs, a process that bypasses the oxidation of         regulating inorganic carbon, such as climate, watershed
+methane that occurs in the water column as methane mixes
+up from the sediments and hypolimnion. Emissions                characteristics, or groundwater fluxes (Striegl and Mich-
+downstream from tropical hydroelectric dams can be
+significant (Abril et al. 2005; Kemenes et al. 2007). As        merhuizen 1998), are more important than lake metabolic
+methane-rich water passes through turbines, hydrostatic
+pressure drops, and a large portion of the gas rapidly          control of CO2 flux.
+escapes to the atmosphere. For several years, the down-
+stream degassing of methane from tropical hydroelectric            Effects of food web structure and nutrient input on
+                                                                atmosphere­lake C flux--Nutrients and food web structure
+                                                                can interact to determine whether lakes and reservoirs are
+                                                                net sources or sinks for CO2 by stimulating net production
+                                                                (Schindler et al. 1997) and increasing sedimentation rates
+                                                                (Flanagan et al. 2006). Suppression of small, zooplankti-
+                                                                vorous fish by top predators allows zooplankton to thrive,
+                                                                suppressing phytoplankton. In contrast, a lack of top
+                                                                predators can increase phytoplankton abundance (D. E.
+                                                                Schindler et al. 1997). Food web interactions can also affect
+                                                                C flux through other mechanisms. For example, high-
+                                                                nutrient inputs and benthivorous fish can help maintain
+                                                                shallow lakes in a turbid state with high phytoplankton
+                                                                biomass, whereas a clear water state with abundant
+                                                                macrophytes and low phytoplankton may persist when
+                                                                nutrient loading and benthivorous fish biomass are low
+                                                                (Scheffer 1998). Understanding the effects of these food
+                                                                web interactions on C flux between lakes and the
+                                                                atmosphere and burial is especially important because
+                                                                climate warming, management, overfishing, and other
+                                                                stressors may shift lakes from one stable state to another
+                                                                (Allan et al. 2005; Ficke et al. 2007). In addition, land use
+                                                                change, nitrogen deposition, and the ongoing use of
+Lakes, carbon, and climate                                      2303
+
+fertilizers may continue to shift lakes and reservoirs toward   ization of OC to CH4, CO, and CO2); and (3) carbon
+the `turbid state,' exacerbating the role of food web effects   compounds flow passively downstream to river, ground-
+on C flux. The global role of these factors on the aquatic      water, and marine systems.
+carbon cycle remains to be elucidated.
+                                                                   In order to gain a clearer understanding of how lakes
+   Improved quantification of the role of inland waters in the  regulate carbon flow within the context of climate change,
+carbon cycle through remote sensing--Much of the above          we here explore how changes in climate and other
+discussion is based on extrapolation of in situ measure-        anthropogenic forces alter the quantity and quality of
+ments to regional and global scales. Remote sensing can         carbon inputs from the watershed to lakes and how
+provide more direct evidence of the global role of lakes in     changes in climate affect the relative importance of each
+carbon cycling by allowing the accurate enumeration of          of the three carbon pathways (see above). It is important to
+total lake area, the documentation of changes in lake           assess how these three pathways can be managed and to
+numbers and sizes over time, the estimation of DOC via          understand both the strength and direction (positive or
+remote sensing of colored DOM (CDOM), and the analysis          negative) of feedback in each. For example, DOC export
+of effects of changes in land cover on lake carbon content.     from terrestrial environments is increasing across large
+The current estimate of global abundance and size               regions (Monteith et al. 2007), although the underlying
+distribution of lakes, ponds, and impoundments is based         mechanisms need clarification. Understanding links and
+on the inter-regional similarity of the Pareto distribution     feedbacks among pathways of carbon processing and
+(Downing et al. 2006). Cloud-free Landsat mosaics of most       climate change or other anthropogenic influences is critical
+continental surfaces are available with about 15 m of           to understanding the role of freshwater systems to the
+spatial resolution, and synthetic aperture radar (SAR) data     global C cycle (Table 1).
+are available for many regions. SAR acquisitions are not
+influenced by cloud cover, and the signal is especially            Hydrology--Alterations in precipitation patterns with
+sensitive to water (Melack 2004). These data allow us to        shifts in climate will likely affect the inputs of carbon to
+count nearly all lakes in the world, measure their surface      aquatic systems from the watershed. Most of these carbon
+area, and determine their size distribution. Landsat images     inputs, including DIC, are ultimately derived from terres-
+with varying resolution are available for more than three       trial primary production that has undergone various
+decades, and SAR data are available for over a decade.          degrees of transformation. Thus, hydrological patterns
+Time series of these images make it possible to monitor         affecting terrestrial primary production will also influence
+changes in lake numbers and sizes. Lake DOC throughout          carbon loading to lakes. In some cases, increased drought
+the arctic, boreal, temperate, and tropical zones is            has been associated with increased DOC inputs to lakes
+dominated by CDOM, so monitoring DOC concentrations             through the exposure of previously waterlogged peat to
+in lakes by remote sensing is possible if appropriate sensors   oxygen, thereby triggering microbial degradation and
+are flown, using regional correlations between CDOM and         mobilization of DOC (Freeman et al. 2001). In contrast,
+DOC (Kutser et al. 2005a,b). Accordingly, remote sensing        other investigators indicate that drier climates yield lower
+has the potential to provide large-scale estimates of the       concentrations of DOC in lakes as a result of increased
+DOC pools of lakes.                                             water retention times in lakes and, hence, require more time
+                                                                for degradation processes to occur (D. W. Schindler et al.
+Future role of lakes and impoundments in the global             1997). Wetter climates result in more export of DOC to
+C cycle in response to climate change                           lakes, and shorter water retention times allow less time for
+                                                                degradation and, hence, higher standing stocks of DOC in
+   Two fundamental ways in which the future role of lakes       lakes (Hinton et al. 1997; Tranvik and Jansson 2002).
+with regard to carbon cycling and climate will be changed
+are through (1) continuing alterations in the biogeochem-          In addition, changes in land use and water management
+ical processes occurring in watersheds and within lakes and     strategies modify lake and reservoir hydrology and DOC
+alterations in the occurrence and geographic distribution of    concentrations. Such changes will intensify as increases in
+lakes (e.g., by loss in regions where the climate will become   the human population and food production require
+dryer) and (2) the construction of new waterbodies. In          additional water diversion. Runoff is already significantly
+Table 1 we present a synthesis of changes that will drive       reduced in most populated regions (Gornitz et al. 1997;
+biogeochemical processes in lakes in the future.                Vo¨ ro¨ smarty and Sahagian 2000), resulting in longer
+                                                                residence time in many lakes and changes in the inputs to
+   Carbon, whether allochthonous or autochthonous,              aquatic systems of DOC, POC, and DIC; nutrients; and
+follows three major pathways in lakes and impound-              acid and base ions. Likewise, reductions in atmospheric
+ments, with the relative importance of each determining         sulfur deposition have been linked to increases in DOC in
+whether the aquatic ecosystem is a source or sink of            lakes following their recovery from acidification (Evans et
+greenhouse gases (GHG; Fig. 2): (1) DOC and POC are             al. 2006; Monteith et al. 2007).
+transported from the water column to the sediment via
+flocculation of OC, incorporation into biological materi-          Vegetation and soil--Watershed changes in and redistri-
+al, and sedimentation of particulate organic matter; (2)        bution of plant communities are clear consequences of
+DOC and POC are degraded by photochemical and                   global climate change (Williams et al. 2007). Modifications
+microbial processes (which leads to the eventual mineral-       in temperature, nitrogen deposition, rainfall, and increased
+                                                                atmospheric CO2 concentrations will affect the quantity
+                                                                                                                                                                                2304
+
+   Table 1. Examples of carbon (C) processing and greenhouse gas (GHG) emissions by lakes and continental waters, including mechanisms, changes (D), monitoring, and
+management approaches. Letters in the first column refer to pathways indicated in Fig. 2.*
+
+                                                 Example of change
+
+Process controlling                 C species    driving lake C inputs Potential change        Potential change          Effect on GHG
+C cycling in lakes                  affected                                                   in DOC quality
+                                                 and processing           in DOC quantity                                emission         Monitoring      Adaptation
+
+A DHydrology (e.g., timing          DOC, POC,    More summer storms       Increase during      More CDOM and             More CO2 and     In situ sensors Local manage-
+          and flux of water            and DIC      driving flow paths       summer               some labile DOC           CH4
+          transporting DOC)                         through litter layer                          in storm pulses                         for CDOM        ment of de-
+                                                    and wetlands
+                                                                                                                                          and CO2 at      forestation
+
+                                                                                                                                          stream gauges and livestock
+
+                                                                                                                                                          practices
+
+A DWater residence time             DOC, POC,    Prolonged (e.g., North With increasing        With increasing re- Higher CO2             In situ sensors Local manage-
+                                       and DIC
+                                                 American prairie         residence time,      sidence time, in-         emissions at for CDOM            ment of defor-
+
+                                                 lakes) or reduced        increased loss       creasingly photo-         high CDOM and CO2 at             estation and
+                                                 (e.g., Fennoscandia)     by photo- and        bleached CDOM
+                                                                                                                         concentrations stream gauges livestock
+
+                                                 time for processing      biodegradation                                 (i.e., at short                  practices
+
+                                                 of C within lakes                                                       residence
+
+                                                                                                                         times)
+
+B DVegetation; CO2 and              DOC and POC  Increase in the structur- Increase, particular- Increase in recalcitr-  Change in CO2 In situ sensors    Forest and land
+          temperature                                                                                                       and CH4 flux, for CDOM           management
+                                                 al, chemical comple- ly in the fall with ant DOC                           more sedimen- and CO2                               Tranvik et al.
+          effects on plant species                                                                                          tation
+                                                 xity of plant tissue     an increase in leaf
+          and litter production
+                                                 altering bioavailabi- litter
+
+                                                 lity and degradabil-
+
+                                                 ity
+
+C DAtmospheric deposition           DOC and POC More nitrate flux to More DON                  D in C : N in DOM         More CO2 and In situ sensors     Increase in littoral
+                                                                                                  and humic DOC                                              wetlands in
+to terrestrial system, more                      lakes, driving phos-                                                    CH4              for CDOM           watersheds
+
+nutrient flux from litter                        phorus limitation and                                                                    and CO2
+
+and soils                                        D in stoichiometry
+
+D DSeasonality of lake condi- DOC and POC Increase in ice-free            More DOC from        Lower SUVA                More CO2 and     In situ sensors Global reduction
+                                                                                                  (,color) of humic         CH4
+tion (e.g., ice-cover,                           period, driving in-      algal growth,           DOC, more non-                          for CDOM        in GHG
+                                                                                                  humic DOC
+flushing, stratification                         crease in summer         photolytic loss                                                 and CO2;
+                                                                                                                                          remote sensing
+and temporal permanency)                         phytoplankton and        of DOC
+
+                                                 anoxia-driven metha-
+
+                                                 nogenesis in lake sedi-
+
+                                                 ments
+
+E DAutochthonous production DOC and POC Change in trophic struc- More biolabile non- Lower SUVA                          Less CO2 flux In situ sensors Manage fishery
+                                                                                                                            and increase for CDOM
+due to littoral vegetation,                      ture as a result of      humic DOC, in-
+
+phytoplankton, or benthic                        loss of fish predators crease in POC                                    in CH4 from      and CO2;
+algal mats                                                                                                               sediment         remote sen-
+
+                                                                                                                                          sing
+
+F DMicrobial DOM degrada-           DOC and DIC Increase in water tem- Less DOC                Lower humic DOC More CO2 pro- In situ sensors Global reduction
+          tion                                                 perature, driving
+                                                                                               and more nonhu- duction in pe- for CDOM                    in GHG
+
+                                                 microbial degrada-                            mic DOC                   lagic zone       and CO2;
+                                                 tion                                                                                     remote sen-
+
+                                                                                                                                          sing
+
+G DPhotodecay caused by change DOC and DIC Increase in summer UV Less DOC                      Lower DOC absorb- More CO2 pro- In situ sensors            Reduce SO4 and
+                                                                                                                                                             NO3 deposi-
+in irradiance, water quality                     penetration due to                            ance (UVA)                duction in       for CDOM           tion
+(pH, iron, and NO3À), and                        photobleaching of
+stratification                                   CDOM during pro-                                                        pelagic zone     and CO2
+
+                                                 longed stratification
+                                                                                                                                                                                                                                                                                                                          Lakes, carbon, and climate  2305
+
+                                                                                Adaptation       Manage draw-                 * DOC, dissolved organic carbon; POC, particulate organic carbon; DIC, dissolved inorganic carbon; CDOM, colored dissolved organic matter; DON, dissolved organic nitrogen; DOM, dissolved
+                                                                                                    down through                  organic matter; C : N, carbon : nitrogen; SUVA 5 specific ultraviolet absorbance; UV, ultraviolet.
+                                                                                                       water markets
+
+                                                                                Monitoring       Less CO2 flux Sensor
+
+                                        Effect on GHG                           emission
+
+                                        Potential change                                         Lower SUVA                                                                                                                                                                                                                  Fig. 2. Schematic diagram showing pathways of carbon
+                                           in DOC quality                                                                                                                                                                                                                                                                 cycling mediated by lakes and other continental waters. The
+                                                                                                                                                                                                                                                                                                                          letters correspond to rows in Table 1.
+                                        driving lake C inputs Potential change  in DOC quantity  Drought-caused in- Less DOC
+                                                                                                    crease in salinity en-                                                                                                                                                                                                and quality of OC produced in the watershed (Canham et al.
+                     Example of change                                          and processing         hancing DOC floccu-                                                                                                                                                                                                2004; Sobek et al. 2007). Higher temperatures induce
+                                                                                                          lation                                                                                                                                                                                                          alterations in forest tree species (Petit et al. 2008), replace-
+                                                                                                                                                                                                                                                                                                                          ment of forest ecosystems with grassland-dominated ecosys-
+                                        C species                                                DOC and POC                                                                                                                                                                                                              tems (Anderson 1991), upward shifts of alpine plants
+                                           affected                                                                                                                                                                                                                                                                       (Walther et al. 2005), and primary succession in newly
+                                                                                                                                                                                                                                                                                                                          deglaciated landscapes (Engstrom et al. 2000). Changes in
+Table 1. Continued.                     Process controlling                                      H DSedimentation caused by                                                                                                                                                                                               plant species influence litter fall and humus accumulation in
+                                           C cycling in lakes                                       D salinity, pH, cations                                                                                                                                                                                               forest ecosystems (Kalbitz et al. 2000). Increases in watershed
+                                                                                                                                                                                                                                                                                                                          net primary production are likely to result in higher DOC
+                                                                                                                                                                                                                                                                                                                          concentrations, bacterial production, bacterial respiration,
+                                                                                                                                                                                                                                                                                                                          and emission of CO2 to the atmosphere in subarctic lakes
+                                                                                                                                                                                                                                                                                                                          (Jansson et al. 2008). Warming-induced decomposition of
+                                                                                                                                                                                                                                                                                                                          soil organic matter, especially in arctic and subarctic soils
+                                                                                                                                                                                                                                                                                                                          (Anderson 1991), will result in greater transport of
+                                                                                                                                                                                                                                                                                                                          allochthonous DOC to lakes that previously received low
+                                                                                                                                                                                                                                                                                                                          inputs (e.g., alpine lakes, or those resulting from glacial
+                                                                                                                                                                                                                                                                                                                          retreat) as well as altered DOC quality (e.g., replacement of
+                                                                                                                                                                                                                                                                                                                          herbs with less productive shrubs) (Shaver et al. 2000).
+
+                                                                                                                                                                                                                                                                                                                             The direct effects of increased CO2 on vegetation and
+                                                                                                                                                                                                                                                                                                                          DOC quality may be particularly pronounced. At present,
+                                                                                                                                                                                                                                                                                                                          atmospheric CO2 is nearly 35% higher than preindustrial
+                                                                                                                                                                                                                                                                                                                          levels and is increasing (IPCC 2007). Elevated CO2
+                                                                                                                                                                                                                                                                                                                          conditions lead to increased carbon fixation, subsequently
+                                                                                                                                                                                                                                                                                                                          increasing the concentration of carbohydrates and phenolic
+                                                                                                                                                                                                                                                                                                                          compounds (e.g., lignin and condensed tannins) in plant
+                                                                                                                                                                                                                                                                                                                          tissues (Tuchman et al. 2002). Overflow of carbon to
+                                                                                                                                                                                                                                                                                                                          secondary structural and defense compounds leads to
+                                                                                                                                                                                                                                                                                                                          higher C : nitrogen ratios and reduced bioavailability. Shifts
+                                                                                                                                                                                                                                                                                                                          in peatland plant species composition under elevated CO2
+                                                                                                                                                                                                                                                                                                                          concentrations and air temperatures boost DOC export
+                                                                                                                                                                                                                                                                                                                          (Fenner et al. 2007).
+
+                                                                                                                                                                                                                                                                                                                             The carbon flow from watersheds to lakes may also be
+                                                                                                                                                                                                                                                                                                                          modified by the cumulative effects of atmospheric nutrient
+2306  Tranvik et al.
+
+deposition in the watershed and could have important               Oxygen is often deficient in lakes. The primary attack on
+effects on carbon flow to lakes. Nitrogen saturation            organic matter via oxygenases and reactive oxygen species
+resulting from wet and dry deposition from agricultural         is an important step in the mineralization of OC and is
+or industrial processes will increase exchange of nitrogen      restricted to oxygenated environments (Zehnder and
+from plants to soil, the storage of OC in terrestrial           Svensson 1986). While autochthonous OC is mineralized
+ecosystems, and soil acidification (Vitousek et al. 1997;       at similar rates under both oxic and anoxic conditions, the
+Fenn et al. 1998). For example, DOC release from peat           mineralization of allochthonous OC is suppressed under
+increases upon fertilization from atmospheric nitrogen          anoxic conditions (Hulthe et al. 1998; Bastviken et al.
+deposition (Bragazza et al. 2006).                              2004b) because allochthonous OC is rich in aliphatic
+                                                                polymers, triterpenes, lignin, and humic matter, which are
+   Seasonality--At high latitudes, changes in snow cover        resistant to anaerobic degradation (Zehnder and Svensson
+and permafrost have led to increases in DOC and nitrogen        1986). Accordingly, even the OC of very old sediments can
+in nearby lakes and impoundments (Baron et al. 1994;            be readily degraded by aerobic bacteria under oxic
+Zimov et al. 2006). Changes in the duration of ice and snow     conditions (Moodley et al. 2005).
+cover modify the carbon flow from the watershed through
+effects on both runoff and vegetation. The length of the           Anoxia in hypolimnia and sediments therefore has two
+main growing and runoff season, as defined by annual            major carbon cycling effects: methanogenesis is stimulated,
+mean air temperatures and amplitudes, is a good predictor       and the mineralization of allochthonous OC is suppressed.
+for DOC concentrations, both on temporal and spatial            Accordingly, Huttunen et al. (2006) found that the diffusive
+scales (Weyhenmeyer and Karlsson 2009). Sobek et al.            flux of methane from lake sediments to the water column
+(2007) found that global lake DOC concentrations are            was negatively related to the oxygen penetration depth.
+better explained by altitude than by annual mean air            Climate change is likely to affect the mixing conditions of
+temperatures, which may be explained by lower DOC at            lakes (King et al. 1997). Longer and stronger stratification
+higher altitudes as a result of steep topography and thin       periods will result in decreased hypolimnetic oxygen
+soils. Annual temperature amplitude may contribute to this      concentrations (Jankowski et al. 2006), thereby shortening
+pattern, although this possibility is not resolved in the       the oxygen exposure time of sediment OC. Given the strong
+global data set of Sobek et al. (2007), which relied on a       dependence of OC burial efficiency on oxygen exposure
+global temperature database with limited resolution.            time, it is likely that climate change will enhance OC
+                                                                sequestration and hamper OC mineralization in sediments.
+   DOC mineralization and DIC release are also linked to        With prolonged periods of anoxia, a larger share of the
+seasonal changes in ice cover and lake stratification. Changes  total OC mineralization will occur as methanogenesis.
+in lake mixing regimes, resulting from increased temperature    Depending on the extent of methane oxidation in the water
+or modified hydrology, may create stronger and prolonged        column, which in turn primarily depends on water depth,
+stratification in lakes, resulting in oxygen deficiency,        increased methanogenesis may result in enhanced methane
+lowering of DOC mineralization rates (see below), and a         emission from lakes. Given that the radiative forcing of
+reduction in annual primary productivity (O'Reilly et al.       CH4 is about 20-fold higher than that of CO2, it takes only
+2003). The resulting increase in stability of the hypolimnion   a very small increase in methane emission to offset the
+and the creation of prolonged anoxia also favor DOC             positive feedback of OC sequestration to increased anoxia
+mineralization to methane (Bastviken et al. 2004a).             due to climate change.
+
+   Autochthonous primary production--Sources of autoch-            Photodegradation--The chromophoric (colored) fraction
+thonous DOC include extracellular release by phytoplank-        of aquatic CDOM absorbs light and is subject to
+ton, release by grazers, and lysis of plankton. A large         photochemical reactions upon exposure to solar radiation.
+fraction of this DOC is consumed and respired rapidly by        These photochemical reactions modify the chemical prop-
+microbial activity, while a smaller, more refractory fraction   erties and biological availability of CDOM (Molot and
+accumulates and is degraded over longer timescales              Dillon 1997; Bertilsson and Tranvik 2000). Exposure of
+(Stedmon and Markager 2005). Increases in nutrient input,       CDOM to solar irradiance can also result in direct
+from either watershed or airshed processes, may increase        photolysis to CO2 (Grane´li et al. 1996). Climate-related
+the autochthonous production of DOC and the relative            increases in the stability of lake stratification lead to
+importance of autochthonous DOC compared to that of             increasingly photodegraded epilimnetic CDOM and pro-
+allochthonous DOC. With decreasing allochthony, the             tection of hypolimnetic CDOM from sunlight. The
+evasion of CO2 to the atmosphere is expected to decrease        integrated outcome of these two alterations is unclear.
+(Jansson et al. 2008).
+                                                                   Sedimentation--The relative concentrations of particu-
+   Microbial degradation--Changes in the quality and            late and dissolved organic matter present in lake water and
+quantity of DOC available in aquatic ecosystems may have        in sediments will be influenced by flocculation and
+direct consequences on lake productivity. Increasing            sedimentation. Increases in salinity due to longer retention
+allochthonous DOC inflow benefits organisms that can            time or lower runoff will increase flocculation and
+directly utilize it and may cause a shift from a phytoplank-    absorption of DOC on CaCO3 particles in hard-water
+ton-dominated system to bacterioplankton-dominated sys-         lakes (Mulholland 1981). Such processes may increase
+tem (Jansson et al. 2000).                                      sedimentation of refractory or highly photobleached DOC.
+Lakes, carbon, and climate                                      2307
+
+   Fig. 3. Projected directions of future change in lake abundance. These projections are expressed as percentage changes from 2009 to
+2050 in the areal extent and numerical abundance of lakes, given conservative IPCC climate change scenario B1 (IPCC 2007) and the
+historical relationship between lake abundance and runoff derived from empirical analyses (Downing et al. 2006).
+
+The net rate of flocculation will also be modified by           regions, the lake-size distribution will be truncated at the
+changes in particle concentration, pH, and temperature          upper end, and large waterbodies with complex topography
+(Lick et al. 1992).                                             may be dissected into smaller ones. In regions in which
+                                                                runoff will increase, many small waterbodies will be
+   Management and monitoring of effects of climate change       formed, and small lakes will coalesce into large ones. In
+on inland water carbon cycling--Climate-related changes to      all geographic regions, the size distribution will be
+either the watershed inflows or DOC, POC, and DIC or the        dominated by small lakes (Downing et al. 2006). Using
+relative strength of the three major in-lake pathways           an empirical regression relating the numerical density of
+(sedimentation, mineralization, and downstream transport)       lakes to the size of lakes and local runoff (Downing et al.
+will induce a complex response in the carbon pool. As           2006), we projected future changes in global natural lake
+indicated in Table 1, the factors controlling the quality and   abundance (Figs. 3, 4). Projected local runoff for 2009 and
+quantity of carbon inputs to lakes (e.g., hydrology,            2050 was derived using the conservative B1 scenario (IPCC
+vegetation, atmospheric deposition, seasonality) are linked     2007) generated by the Community Climate System Model
+to in-lake processes (e.g., autochthonous production, micro-    (CCSM) of the National Center for Atmospheric Research.
+bial degradation, photochemical decay, sedimentation). As       The CCSM is a fully coupled atmospheric­ocean global
+the relative strength of the major carbon pathways changes,     circulation model and is one of the main models used in the
+the success of management strategies will be affected as well.  IPCC's Fourth Assessment Report (IPCC 2007). Changes
+Adaptive management strategies will help to address the         in projected lake abundance by 2050 are expressed as
+uncertainty and variability inherent in climate change (Clark   percentages of 2009 abundance in Fig. 3. This approach
+2002; Petts et al. 2006). Long-term monitoring (e.g., the       does not consider land slope or regional hypsometry but
+deployment of sensors that measure CDOM and CO2) will           does reflect relative rates of change in lake abundance and
+indicate changes in carbon inflow and pathways and will         moisture if conservative climate change scenarios are
+allow for appropriate modifications to watershed and lake       realized. Climate models, climate change scenarios, and
+management (Adrian et al. 2009).                                lake distribution models are all subject to variable
+                                                                uncertainty. Rates of change in lake area at various
+Anthropogenic change in occurrence of inland waters             latitudes were projected using this same approach
+and its consequences                                            (Fig. 4). These projections represent a new equilibrium
+                                                                state for lakes and are not adjusted for the length of time it
+   In addition to biogeochemical changes in lakes and           takes for an existing lake to decline (as a result of large
+impoundments, the other fundamental ways in which the           storage) or for a new lake to become established.
+future role of lakes with regard to carbon cycling and
+climate will be changed are through (1) alterations in the         These results indicate that the distribution of lakes will
+occurrence and geographic distribution of natural lakes         change regionally (Fig. 3). However, the total global area
+and (2) the construction of new waterbodies. Remote             of natural lakes will not be altered appreciably by 2050
+sensing can be used in the future to enumerate total lake       (Fig. 4). Still, much of the Earth will experience declines in
+area and to study temporal changes in lake numbers and          lake abundance, although these will be balanced by some
+sizes.                                                          large increases in localized areas with increased runoff. In
+                                                                general, much of the North American continent is projected
+   Changing size and distribution of lakes as a result of       to see substantial declines, as is Western Europe, much of
+altered runoff--In the future, as runoff declines in moist      Asia, Australia, and New Zealand. South America and
+                                                                Africa will likely see increases and decreases with high
+2308  Tranvik et al.
+
+   Fig. 4. Latitudinal distribution of change in lake area projected from the data on large lakes (Lehner and Do¨ ll 2004), corrected for
+the abundance of small lakes according to Downing et al. (2006), and rates of change projected as explained in the legend of Fig. 3.
+
+heterogeneity. Several circumpolar areas will have in-            carbon deposition imply that they bury carbon at a rate of 0.6
+creased lake abundance, provided the thawed soils can             Pg yr21, which is four times the carbon buried by the oceans
+retain lake basins.                                               annually and much greater than the amount estimated in past
+                                                                  studies (Mulholland and Elwood 1982; Dean and Gorham
+   Changing abundance of inland waters as a result of             1998). St. Louis et al. (2000) estimated that world artificial
+construction of impoundments--So much water is retained           reservoirs could emit 0.07 Pg CH4 yr21, 90% of the emissions
+behind dams that global sea level rise has been reduced by        occurring in the tropics. As a comparison, Bastviken et al.
+0.55 mm yr21 over the past 50 yr (Chao et al. 2008).              (2004a) calculated the global emissions from lakes to be
+Estimates of the total area of reservoirs vary (St. Louis et      0.008­0.048 Pg CH4 yr21. Obviously, the emissions from
+al. 2000; Shiklomanov and Rodda 2003; Lehner and Do¨ ll           reservoirs, in particular in the tropics, are a factor in the
+2004), but it is clear that their area is substantial compared    global methane budget, one that is at least equally important
+to that of natural lakes (Downing et al. 2006). As water          to the emissions from natural lakes (although as yet poorly
+demands for agriculture, domestic use, and hydroelectric          constrained) but most likely to increase with the growing
+generation increase, large impoundments and agricultural          number of impoundments.
+ponds will likely increase in area at a rate of about 1­2%
+per year (Downing et al. 2006). This means that impound-          Regional changes in inland water occurrence and
+ment surface areas worldwide will increase from about             carbon cycling
+400,000 km2 to nearly 1 million km2 by 2050, or by about a
+one-quarter measure of the natural lake area (4.2 million            Changing climate and runoff as well as impoundment
+km2), subject to the limitations imposed by land scarcity         construction are expected to change the role of inland
+and available runoff. Given the high burial rates and             waters in different ways in different geographic regions.
+methane emissions reported for these systems, this increase       Below we give examples of climatic and geographic zones in
+in impoundment surface area is likely a very important            which major changes are anticipated with regard to carbon
+global change in the freshwater carbon transformations.           cycling and climate effects (Table 2).
+The net effect of impoundments on the carbon cycle
+depends on the type of habitats being inundated. Possibly            Arctic regions--Carbon storage in high-latitude peat-
+wetlands comprise a substantial fraction of inundated             lands is estimated to represent one third or more of the
+areas, resulting in the loss of areas with high potential         global soil carbon pool (Post et al. 1982; Zimov et al. 2006).
+emissions of CH4 and also high carbon burial.                     With the melting of permafrost and the formation of thaw
+                                                                  ponds and lakes, this pool will become available for
+   The sediments of reservoirs have been estimated to             increased microbial and photochemical transformations,
+accumulate 0.16­0.2 Pg of OC annually (Mulholland and             especially under the increased runoff scenario predicted for
+Elwood 1982; Dean and Gorham 1998), substantially more            arctic and subarctic regions (IPCC 2007; Fig. 3). Larger
+than is buried in natural lakes, and this amount is still likely  emissions of CO2 and CH4 are expected, especially where
+underestimated (Cole et al. 2007). In addition, inventories of    thermokarst erosion and ponding is occurring (Walter et al.
+dams and major impoundments have typically missed small,          2006). The persistence of this aquatic state apparently
+low-tech agricultural ponds. Small agricultural impound-          varies substantially between regions of varying geomor-
+ments occupy .75,000 km2 globally (Downing et al. 2006),          phology (Smith et al. 2005). Part of this eroded carbon and
+so they may bury an additional amount of OC at an average         peat is also expected to reach the ocean in the future.
+rate of around 0.15 Pg of OC each year. This is an amount         Consequently, essentially all fluxes of the freshwater `pipe'
+similar to that buried by all larger impoundments and             (i.e., Fig. 1) in polar (mostly Arctic) regions will accelerate,
+represents one third the carbon delivered to the ocean            primarily driven by increased mobilization of OC from peat
+annually by the rivers of the world (Degens et al. 1991;          and increased precipitation.
+Stallard 1998). Considering the world's moderate-sized
+impoundments (0.01­100 km2), modern measurements of
+                                    Lakes, carbon, and climate        2309
+
+   Table 2. Examples of changes in carbon processing by lakes by 2050. Projections combine information on known mechanisms of
+carbon processing in lakes with projected changes in lake abundance, climate, and human perturbations (see text).
+
+  Region   Projected runoff change        Important perturbations          Effect on lake carbon processing
+Polar          Increased runoff
+Boreal         Increased runoff     Permafrost loss; increased        Increased CO2; increased CH4; decreased
+                                       temperature                       burial; increased export
+Temperate     Decreased runoff
+Tropics        Increased runoff     Increased temperature; increased  Increased CO2; increased CH4; increased
+                                       dams; increased abundance of      burial; increased export
+                                       beavers
+                                                                      Increased CH4; increased burial;
+                                    Increased eutrophication;            decreased export
+                                       droughts
+                                                                      Increased CH4; increased CO2; increased
+                                    Increased dams                       burial; decreased export
+
+   Boreal regions--Important perturbations to the aquatic        respiration and photochemical degradation of OC, the
+transport and processing in boreal regions are likely to         combined effects of increased autochthonous production
+comprise increased abundance of lakes fueled by increased        and increased OC burial efficiency due to increased anoxia
+precipitation and increased impoundment. Some of the             should offset increased CO2 production.
+anticipated increased impoundment in the Northern
+Hemisphere may occur from beaver activity, as beaver                Tropics--The most important changes in the tropics are
+habitat is expected to increase (Allen 1983). As is the case in  likely to be increased abundance of lakes as a result of
+the Arctic, the inputs from terrestrial systems should           increased water impoundment. Higher temperatures in the
+increase as a result of increased precipitation, resulting in    tropics should favor bacterial metabolism, and, thus, a
+higher DOC concentrations (Tranvik and Jansson 2002)             larger fraction of incoming OC should be respired.
+and intensification of sedimentation, mineralization, and        Increased temperatures should amplify anoxia and stimu-
+outgassing of carbon. Accordingly, precipitation and CO2         late methane production as well. Because methane is a
+outgassing evasion from the 37 largest lakes in Finland          potent greenhouse gas, the impoundment of water in the
+(.100 km2) were closely related (Rantakari and Kortelai-         tropics may be an important positive feedback process in
+nen 2005). Simultaneously, increased runoff will result in       the regulation of climate change.
+shorter water residence time in lakes and, hence, in a
+smaller fraction of the imported OC being processed before       Revising the active pipe model: the mass transfer of
+further transport downstream to the sea.                         carbon through inland waters and its contribution to
+                                                                 the global C cycle
+   Temperate regions--The most significant climate change
+affecting the function of temperate lakes in the global C           The current focus on the role of terrestrial DOC in lake
+cycle in the next several decades will be decreased runoff,      functioning has been referred to as `carbocentric limnology'
+which will most likely result in (1) reduced total lake          (Prairie 2008). This view was perhaps anticipated many
+abundance, (2) reductions in large lakes as a result of          years ago by some of the pioneers of limnology (``Kennt
+fragmentation, and (3) decreases in the areal extent of          man die Eigenfarbe eines Sees, so kennt man auch seine
+lakes. Prairie lakes in North America and Eurasia may            u¨ brigen Eigenschaften''--``if you know the color of a lake,
+become increasingly endorheic, resulting in evapoconcen-         you also know its other characteristics''; Thienemann 1925)
+tration of dissolved substances, including DOC. Hence, the       and is an integral part of the wider study of the global C
+frequency of lakes with high conductivity and high               cycle and climate change. According to Cole et al. (2007),
+concentrations of recalcitrant DOC with very low color           the processing of allochthonous carbon in lakes results in a
+because of extensive photobleaching (Waiser and Robarts          global annual burial of 0.23 Pg and emission of 0.75 Pg C.
+2000) will increase. Concomitant with projected alterations      In a separate study of lakes in Canada's boreal biome
+in lake abundance and size in temperate zones is a predicted     (Benoy et al. 2007) the estimated ratio of burial to emission
+increase in eutrophication and drought, resulting from           is similar (5.0­8.5 Tg buried to 3.3­5.8 Tg evaded). The
+growing requirements for biofuels and foods and their            synthesis in this paper indicates that, considering that lakes
+associated fertilizer and water demands. The additive effect     have a greater spatial extent (Downing et al. 2006) and that
+of decreased lake size and increased primary production          saline lakes emit more substantial carbon to the atmo-
+should yield an amplification in OC burial as a result of the    sphere (Duarte et al. 2008) than hitherto known, lakes
+increased autochthonous production and preservation              alone may emit as much as 0.53 Pg C yr21 as CO2 (0.11 Pg
+(Cotner and Biddanda 2002; Downing et al. 2008). Further,        C yr21 indicated by Cole et al. [2007]). Interestingly, Battin
+increased production, duration of stratification, and            et al. (2008) assessed the global net heterotrophy of riverine
+sedimentation should generate increased prevalence of            networks (and by implication net emission of mineralized
+hypolimnetic anoxia and, accordingly, CH4 production.            carbon), including streams, rivers, and estuaries, but
+Although increased temperatures and longer residence             without considering lakes and impoundments. For rivers
+times caused by decreased runoff will accelerate microbial       and estuaries they arrive at numbers similar to those
+2310  Tranvik et al.
+
+   Fig. 5. Revision of the `active pipe' hypothesis advanced by   CO2 to the atmosphere unless the same OC would have
+Cole et al. (2007). Revised values are explained in the text and  escaped mineralization if kept in soils or if transported to
+represent annual transport of carbon (Pg, 1015 g).                the ocean.
+
+reported by Cole et al. (2007), but for streams, which were          The mass of methane emission is of minor importance
+not analyzed by Cole et al. (2007), they add another 0.32 Pg      for the carbon mass transfer and hence is not included in
+C yr21. This number is based on in-stream heterotrophy            the calculations above. As a result of its 20 times higher
+and does not take into account release of CO2 imported as         greenhouse warming potential (GWP) compared to CO2,
+DIC from soils and groundwater. Hence, the total current          however, it is of great interest. The contribution from lakes
+emissions from inland waters, adding streams and a revised        (8­48 Tg yr21; Bastviken et al. 2004a) in combination with
+number for lakes to the budget of Cole et al. (2007), may be      the likely emissions from large impoundments (70 Tg yr21;
+as high as 1.4 Pg C yr21. Similarly, the carbon burial in         St. Louis et al. 2000) and an expected high but unknown
+sediments, considering larger lake area estimates and             amount of emission from the globally abundant small
+revised numbers for the burial in small impoundments,             impoundments such as farm ponds (Downing et al. 2008)
+may amount to 0.6 Pg C yr21 (Fig. 5).                             points to emissions from inland waters that are on the
+                                                                  order of 100 Tg yr21 or more. This is roughly an addition
+   Given the annual transport of 0.9 Pg C to the ocean, and       of 20% to the previously estimated global emissions (410­
+given the loss from inland waters via outgassing and burial       660 Tg CH4 yr21, including 92­232 Tg from wetlands, but
+(a total of 2 Pg), the total amount of OC imported to inland      without specifically considering lakes and reservoirs;
+waters from the terrestrial environment must be on the            Wuebbles and Hayhoe 2002). This also places CO2 and
+order of 2.9 Pg yr21. The outgassing of CO2 in the inland         CH4 from inland waters roughly equal in terms of GWP.
+waters corresponds largely to respiration of terrestrial OC,      Considering that impoundments are increasing worldwide,
+directly in the aquatic environment or in soils followed by       the substantial contribution of impoundments, including
+export to inland waters as DIC. The annual loss of 2 Pg is        tropical hydroelectric reservoirs, will increase substantially.
+similar to the total global net ecosystem production (about
+2 Pg C yr21; Randerson et al. 2002). For comparison, the             It is clear from this synthesis that lakes, impoundments,
+annual emissions of carbon from inland waters, previously         and other inland waters (1) constitute a significant
+not considered in global C budgets, constitute a number           component of the global C cycle, (2) have changed in their
+(1.4 Pg) of the same order of magnitude as fossil fuel            contribution, significantly as a result of human activities,
+combustion, carbon emissions caused by deforestation, and         and (3) will continue to change in the future in response to
+carbon uptake by the oceans (6.4 Pg, 1.6 Pg, and 2.6 Pg,          climate change coupled with increases in the small and
+respectively; Burgermeister [2007]; likewise for carbon           large impoundments. These changes include sequestration
+burial in inland waters [0.6 Pg]).                                in sediments and emissions to the atmosphere as well as
+                                                                  altered transport to the sea. Strong feedback effects on the
+   Given the large amounts of carbon being processed,             climate system from inland waters are expected from
+improved quantification of these fluxes is crucial to             increased methane emissions with continuing permafrost
+understanding of the global C cycle and climate system.           thaw and with continued construction of impoundments; in
+In addition, as also pointed out by Benoy et al. (2007),          both cases, the result will be enhanced emissions of
+better knowledge of the mechanisms regulating degrada-            methane. Lakes are active, changing, and important
+tion and preservation of OC in inland waters is essential to      regulators of the carbon cycle and global climate.
+assessing the ultimate net effect of carbon processing in
+these systems. For example, increased burial of OC in             Acknowledgments
+inland waters represents a net sequestration of carbon only          We thank Craig Williamson and Jasmine Saros for organizing
+if it would not have been sequestered in the terrestrial
+habitats that exported the carbon and if the carbon would         the Chapman Conference on ``Lakes and Reservoirs as Sentinels,
+not have been otherwise sequestered downstream in the sea.        Integrators, and Regulators of Climate Change'' and for
+Likewise, increased evasion of CO2 to the atmosphere as a         facilitating our work with this synthesis. The work of the first
+result of enhanced mineralization in lakes where the DOC          author was supported by the project ``Lake Ecosystem Response
+concentration has been increased is not a new source of           to Environmental Change (LEREC),'' funded by the Swedish
+                                                                  Research Council for Environment, Agricultural Sciences and
+                                                                  Spatial Planning. Some of the ideas developed here emerged from
+                                                                  the Integration of the Terrestrial and Aquatic Carbon Cycles
+                                                                  working group supported by the National Center for Ecological
+                                                                  Analysis and Synthesis, a center funded by the National Science
+                                                                  Foundation (NSF) (grant DEB-94-21535); the University of
+                                                                  California at Santa Barbara; and the State of California. Editors,
+                                                                  reviewers, and Glenn Benoy gave outstanding advice on the first
+                                                                  submitted version of the paper.
+
+                                                                  References
+
+                                                                  ABRIL, G., AND oTHERS. 2005. Carbon dioxide and methane
+                                                                       emissions and the carbon budget of a 10-year old tropical
+                                                                       reservoir (Petit Saut, French Guiana). Glob. Biogeochem.
+                                                                       Cycles 19: GB4007, doi: 10.1029/2005GB002457.
+Lakes, carbon, and climate                                          2311
+
+ADRIAN, R., AND oTHERS. 2009. Lakes as sentinels of climate         COLE, J. J., N. F. CARACO, G. W. KLING, AND T. K. KRATZ. 1994.
+     change. Limnol. Oceanogr. 54: 2283­2297.                            Carbon dioxide supersaturation in the surface waters of lakes.
+                                                                         Science 265: 1568­1570.
+ALGESTEN, G., S. SOBEK, A. K. BERGSTRO¨ M, A. A° GREN, L. J.
+     TRANVIK, AND M. JANSSON. 2004. Role of lakes for organic       ------, AND oTHERS. 2007. Plumbing the global carbon cycle:
+     carbon cycling in the boreal zone. Glob. Change Biol. 10:           Integrating inland waters into the terrestrial carbon budget.
+     141­147.                                                            Ecosystems 10: 171­184.
+
+------, ------, ------, A. JONSSON, L. TRANVIK, AND M.              COTNER, J. B., AND B. A. BIDDANDA. 2002. Small players, large
+     JANSSON. 2005. Contribution of sediment respiration to              role: Microbial influence on biogeochemical processes in
+     summer CO2 emission from low productive boreal and                  pelagic aquatic ecosystems. Ecosystems 5: 105­121.
+     subarctic lakes. Microb. Ecol. 50: 529­535.
+                                                                    DEAN, W. E., AND E. GORHAM. 1998. Magnitude and significance
+ALLAN, J. D., R. ABELL, Z. HOGAN, C. REVENGA, B. W. TAYLOR,              of carbon burial in lakes, reservoirs, and peatlands. Geology
+     R. L. WELCOMME, AND K. WINEMILLER. 2005. Overfishing of             26: 535­538.
+     inland waters. Bioscience 55: 1041­1051.
+                                                                    DEGENS, E. T., S. KEMPE, AND J. E. RICHEY. 1991. Summary:
+ALLEN, A. W. 1983. Habitat suitability index models: Beaver. U.S.        Biogeochemistry of major world rivers, p. 323­347. In E. T.
+     Fish and Wildlife Service. Report No. FWS/OBS-82/10.30              Degens, S. Kempe and J. E. Richey [eds.], Biogeochemistry of
+     [revised].                                                          major world rivers. Wiley.
+
+ANDERSON, J. M. 1991. The effects of climate change on              DEL GIORGIO, P. A., J. J. COLE, N. F. CARACO, AND R. H.
+     decomposition processes in grassland and coniferous forests.        PETERS. 1999. Linking planktonic biomass and metabolism to
+     Ecol. Appl. 1: 326­347.                                             net gas fluxes in northern temperate lakes. Ecology 80:
+                                                                         1422­1431.
+BARON, J. S., D. S. OJIMA, E. A. HOLLAND, AND W. J. PARTON.
+     1994. Analysis of nitrogen saturation potential in Rocky       ------, AND R. H. PETERS. 1993. Balance between phytoplankton
+     Mountain tundra and forest--implications for aquatic                production and plankton respiration in lakes. Can. J. Fish.
+     systems. Biogeochemistry 27: 61­82.                                 Aquat. Sci. 50: 282­289.
+
+BASTVIKEN, D., J. J. COLE, M. PACE, AND L. TRANVIK. 2004a.          DEN HEYER, C., AND J. KALFF. 1998. Organic matter mineraliza-
+     Methane emissions from lakes: Dependence of lake charac-            tion rates in sediments: A within- and among-lake study.
+     teristics, two regional assessments, and a global estimate.         Limnol. Oceanogr. 43: 695­705.
+     Glob. Biogeochem. Cycles 18: GB4009, doi: 10.1029/
+     2004GB002238.                                                  DOWNING, J. A. In press. Global limnology: Up-scaling aquatic
+                                                                         services and processes to the planet earth. Verh. Int. Ver.
+------, ------, M. L. PACE, AND M. C. V. DE BOGERT. 2008. Fates          Limnol.
+     of methane from different lake habitats: Connecting whole-
+     lake budgets and CH4 emissions. J. Geophys. Res. Biogeosci.    ------, AND oTHERS. 2006. The global abundance and size
+     113: G02024, doi: 10.1029/2007JG000608.                             distribution of lakes, ponds, and impoundments. Limnol.
+                                                                         Oceanogr. 51: 2388­2397.
+------, L. PERSSON, G. ODHAM, AND L. TRANVIK. 2004b.
+     Degradation of dissolved organic matter in oxic and anoxic     ------, AND ------. 2008. Sediment organic carbon burial in
+     lake water. Limnol. Oceanogr. 49: 109­116.                          agriculturally eutrophic impoundments over the last century.
+                                                                         Glob. Biogeochem. Cycles 22: GB1018, doi: 10.1029/
+BATTIN, T. J., AND oTHERS. 2008. Biophysical controls on                 2006GB002854.
+     organic carbon fluxes in fluvial networks. Nat. Geosci. 1:
+     95­100.                                                        DUARTE, C. M., AND Y. T. PRAIRIE. 2005. Prevalence of
+                                                                         heterotrophy and atmospheric CO2 emissions from aquatic
+BENOY, G., K. CASH, E. MCCAULEY, AND F. WRONA. 2007. Carbon              ecosystems. Ecosystems 8: 862­870.
+     dynamics in lakes of the boreal forest under a changing
+     climate. Environ. Rev. 15: 175­189.                            ------, ------, C. MONTES, J. J. COLE, R. G. STRIEGL, J. MELACK,
+                                                                         AND J. A. DOWNING. 2008. CO2 emissions from saline lakes: A
+BERGSTRO¨ M, I., S. MA¨ KELA¨ , P. KANKAALA, AND P. KORTELAINEN.         global estimate of a surprisingly large flux. J. Geophys. Res.
+     2007. Methane efflux from littoral vegetation stands of             113: G04041, doi: 10.129/2007JG000637.
+     southern boreal lakes: An upscaled regional estimate. Atmos.
+     Environ. 41: 339­351.                                          EINSELE, G., J. YAN, AND M. HINDERER. 2001. Atmospheric
+                                                                         carbon burial in modern lake basins and its significance for
+BERTILSSON, S., AND L. TRANVIK. 2000. Photochemical transfor-            the global carbon budget. Glob. Planet. Change 30: 167­195.
+     mation of dissolved organic matter in lakes. Limnol.
+     Oceanogr. 45: 753­762.                                         ENGSTROM, D. R., S. C. FRITZ, J. E. ALMENDINGER, AND S.
+                                                                         JUGGINS. 2000. Chemical and biological trends during lake
+BRAGAZZA, L., AND oTHERS. 2006. Atmospheric nitrogen deposi-             evolution in recently deglaciated terrain. Nature 408: 161­166.
+     tion promotes carbon loss from peat bogs. Proc. Natl. Acad.
+     Sci. USA 103: 19386­19389.                                     EVANS, C. D., P. J. CHAPMAN, J. M. CLARK, D. T. MONTEITH, AND
+                                                                         M. S. CRESSER. 2006. Alternative explanations for rising
+BURGERMEISTER, J. 2007. Missing carbon mystery: Case solved?             dissolved organic carbon export from organic soils. Glob.
+     Nat. Rep. 3: 36­37.                                                 Change Biol. 12: 2044­2053.
+
+CANHAM, C. D., AND oTHERS. 2004. A spatially explicit watershed-    FEARNSIDE, P. 2006. Greenhouse gas emissions from hydroelectric
+     scale analysis of dissolved organic carbon in Adirondack            dams: Reply to Rosa et al. Clim. Change 75: 103­109.
+     lakes. Ecol. Appl. 14: 839­854.
+                                                                    FEARNSIDE, P. M. 1995. Hydroelectric dams in the Brazilian
+CHAO, B. F., Y. H. WU, AND Y. S. LI. 2008. Impact of artificial          Amazon as sources of greenhouse gases. Environ. Conserv.
+     reservoir water impoundment on global sea level. Science 320:       22: 7­19.
+     212­214.
+                                                                    FENN, M. E., AND oTHERS. 1998. Nitrogen excess in North
+CHRISTENSEN, T. R., AND oTHERS. 2007. A catchment-scale carbon           American ecosystems: Predisposing factors, ecosystem re-
+     and greenhouse gas budget of a subarctic landscape. Philos.         sponses, and management strategies. Ecol. Appl. 8: 706­733.
+     Trans. R. Soc. A Math. Phys. Eng. Sci. 365: 1643­1656.
+                                                                    FENNER, N., C. FREEMAN, M. A. LOCK, H. HARMENS, B.
+CLARK, M. J. 2002. Dealing with uncertainty: Adaptive approach-          REYNOLDS, AND T. SPARKS. 2007. Interactions between
+     es to sustainable river management. Aquat. Conserv. Mar.            elevated CO2 and warming could amplify DOC exports from
+     Freshw. Ecosyst. 12: 347­363.                                       peatland catchments. Environ. Sci. Technol. 41: 3146­3152.
+2312  Tranvik et al.
+
+FICKE, A. D., C. A. MYRICK, AND L. J. HANSEN. 2007. Potential          KALBITZ, K., S. SOLINGER, J. H. PARK, B. MICHALZIK, AND E.
+     impacts of global climate change on freshwater fisheries. Rev.         MATZNER. 2000. Controls on the dynamics of dissolved
+     Fish Biol. Fish. 17: 581­613.                                          organic matter in soils: A review. Soil Sci. 165: 277­304.
+
+FINLAY, K., P. LEAVITT, B. WISSEL, AND Y. T. PRAIRIE. 2009.            KELLY, C. A., AND oTHERS. 1997. Increases in fluxes of greenhouse
+     Regulation of spatial and temporal variability of carbon flux          gases and methyl mercury following flooding of an experi-
+     in six hard-water lakes of the northern Great Plains. Limnol.          mental reservoir. Environ. Sci. Technol. 31: 1334­1344.
+     Oceanogr. 54: 2553­2564.
+                                                                       KEMENES, A., B. R. FORSBERG, AND J. M. MELACK. 2007. Methane
+FLANAGAN, K. M., E. MCCAULEY, AND F. WRONA. 2006.                           release below a tropical hydroelectric dam. Geophys. Res.
+     Freshwater food webs control carbon dioxide saturation                 Lett. 34: L12809, doi: 10.1029/2007GL029479.
+     through sedimentation. Glob. Change Biol. 12: 644­651.
+                                                                       KING, J. R., B. J. SHUTER, AND A. P. ZIMMERMAN. 1997. The
+FREEMAN, C., N. OSTLE, AND H. KANG. 2001. An enzymic `latch'                response of the thermal stratification of south bay (Lake
+     on a global carbon store--a shortage of oxygen locks up                Huron) to climatic variability. Can. J. Fish. Aquat. Sci. 54:
+     carbon in peatlands by restraining a single enzyme. Nature             1873­1882.
+     409: 149.
+                                                                       KLING, G. W., G. W. KIPPHUT, AND M. C. MILLER. 1991. Arctic
+GILES, J. 2006. Methane quashes green credentials of hydropower.            lakes and streams as gas conduits to the atmosphere:
+     Nature 444: 524­525.                                                   Implications for tundra carbon budgets. Science 251: 298­301.
+
+GORNITZ, V., C. ROSENZWEIG, AND D. HILLEL. 1997. Effects of            ------, ------, M. M. MILLER, AND W. J. O'BRIEN. 2000.
+     anthropogenic intervention in the land hydrologic cycle on             Integration of lakes and streams in a landscape perspective:
+     global sea level rise. Glob. Planet. Change 14: 147­161.               The importance of material processing on spatial patterns and
+                                                                            temporal coherence. Freshw. Biol. 43: 477­497.
+GRANE´ LI, W., M. J. LINDELL, AND L. J. TRANVIK. 1996. Photo-
+     oxidative production of dissolved inorganic carbon in lakes of    KORTELAINEN, P., AND oTHERS. 2006. Sediment respiration and lake
+     different humic content. Limnol. Oceanogr. 41: 698­706.                trophic state are important predictors of large CO2 evasion
+                                                                            from small boreal lakes. Glob. Change Biol. 12: 1554­1567.
+HAMMER, U. T. 1986. Saline lake ecosystems of the world. Dr W.
+     Junk Publishers.                                                  KRINNER, G. 2003. Impact of lakes and wetlands on boreal
+                                                                            climate. J. Geophys. Res. Atmos. 108: 4520, doi: 10.1029/
+HINTON, M. J., S. L. SCHIFF, AND M. C. ENGLISH. 1997. The                   2002JD002597.
+     significance of storms for the concentration and export of
+     dissolved organic carbon from two Precambrian Shield              KUTSER, T., D. C. PIERSON, K. Y. KALLIO, A. REINART, AND S.
+     catchments. Biogeochemistry 36: 67­88.                                 SOBEK. 2005a. Mapping lake CDOM by satellite remote
+                                                                            sensing. Remote Sens. Environ. 94: 535­540.
+HULTHE, G., S. HULTH, AND P. O. J. HALL. 1998. Effect of oxygen
+     on degradation rate of refractory and labile organic matter in    ------, D. PIERSON, L. TRANVIK, A. REINART, S. SOBEK, AND K.
+     continental margin sediments. Geochim. Cosmochim. Acta                 KALLIO. 2005b. Using satellite remote sensing to estimate the
+     62: 1319­1328.                                                         colored dissolved organic matter absorption coefficient in
+                                                                            lakes. Ecosystems 8: 709­720.
+HUTTUNEN, J. T., T. HAMMAR, P. MANNINEN, K. SERVOMAA, AND
+     P. J. MARTIKAINEN. 2004. Potential springtime greenhouse gas      LEHNER, B., AND P. DO¨ LL. 2004. Development and validation of a
+     emissions from a small southern boreal Lake Keihasjarvi                global database of lakes, reservoirs and wetlands. J. Hydrol.
+     (Finland). Boreal Environ. Res. 9: 421­427.                            296: 1­22.
+
+------, S. JUUTINEN, J. ALM, T. LARMOLA, T. HAMMAR, J. SILVOLA,        LESACK, L. F. W. 1988. Mass balance of nutrients, major solutes,
+     AND P. J. MARTIKAINEN. 2003a. Nitrous oxide flux to the                and water in an Amazon floodplain lake and biogeochemical
+     atmosphere from the littoral zone of a boreal lake. J.                 implications for the Amazon basin. Ph.D. thesis. Univ. of
+     Geophys. Res. Atmos. 108: 4421, doi: 10.1029/2002JD002989.             California.
+
+------, T. S. VAISANEN, S. K. HELLSTEN, AND P. J. MARTIKAINEN.         LICK, W., J. LICK, AND C. K. ZIEGLER. 1992. Flocculation and its
+     2006. Methane fluxes at the sediment­water interface in some           effect on the vertical transport of fine-grained sediments.
+     boreal lakes and reservoirs. Boreal Environ. Res. 11: 27­34.           Hydrobiologia 235: 1­16.
+
+------, AND oTHERS. 2003b. Fluxes of methane, carbon dioxide           MELACK, J., AND D. L. ENGLE. In press. An organic carbon budget
+     and nitrous oxide in boreal lakes and potential anthropogenic          for an Amazon floodplain lake. Verh. Int. Ver. Limnol.
+     effects on the aquatic greenhouse gas emissions. Chemosphere
+     52: 609­621.                                                      MELACK, J. M. 2004. Remote sensing of tropical wetlands, p. 319­
+                                                                            343. In S. Ustin [ed.], Manual of remote sensing, 3rd ed., v. 4.
+INTERGOVERNMENTAL PANEL ON CLIMATE CHANGE (IPCC). 2007.                     Remote sensing for natural resources management and
+     Solomon, S., D. Qin, M. Manning, Z. Chen, M. Marquis,                  environmental monitoring. Wiley.
+     K. B. Averyt, M. Tignor and H. L. Miller [eds.], Climate change
+     2007: The physical science basis. Contribution of Working         MENGIS, M., R. GACHTER, AND B. WEHRLI. 1997. Sources and
+     Group I to the Fourth Assessment Report of the Intergovern-            sinks of nitrous oxide (N2O) in deep lakes. Biogeochemistry
+     mental Panel on Climate Change. Cambridge Univ. Press.                 38: 281­301.
+
+JANKOWSKI, T., D. M. LIVINGSTONE, H. BUHRER, R. FORSTER, AND           MEYBECK, M. 1993. Riverine transport of atmospheric carbon--
+     P. NIEDERHAUSER. 2006. Consequences of the 2003 European               sources, global typology and budget. Water Air Soil Pollut.
+     heat wave for lake temperature profiles, thermal stability, and        70: 443­463.
+     hypolimnetic oxygen depletion: Implications for a warmer
+     world. Limnol. Oceanogr. 51: 815­819.                             MOLOT, L. A., AND P. J. DILLON. 1997. Photolytic regulation of
+                                                                            dissolved organic carbon in northern lakes. Glob. Biogeo-
+JANSSON, M., A.-K. BERGSTRO¨ M, P. BLOMQVIST, AND S. DRAKARE.               chem. Cycles 11: 357­365.
+     2000. Allochthonous organic carbon and phytoplankton/
+     bacterioplankton production relationship in lakes. Ecology        MONTEITH, D. T., AND oTHERS. 2007. Dissolved organic carbon
+     81: 3250­3255.                                                         trends resulting from changes in atmospheric deposition
+                                                                            chemistry. Nature 450: 537­540.
+------, T. HICKLER, A. JONSSON, AND J. KARLSSON. 2008. Links
+     between terrestrial primary production and bacterial produc-      MOODLEY, L., J. J. MIDDELBURG, P. M. J. HERMAN, K. SOETAERT,
+     tion and respiration in lakes in a climate gradient in subarctic       AND G. J. DE LANGE. 2005. Oxygenation and organic-matter
+     Sweden. Ecosystems 11: 367­376.                                        preservation in marine sediments: Direct experimental evi-
+                                                                            dence from ancient organic carbon-rich deposits. Geology 33:
+                                                                            889­892.
+Lakes, carbon, and climate                                           2313
+
+MULHOLLAND, P. J. 1981. Formation of particulate organic carbon      SHAVER, G. R., AND oTHERS. 2000. Global warming and terrestrial
+     in water from a southeastern swamp-stream. Limnol.                   ecosystems: A conceptual framework for analysis. Bioscience
+     Oceanogr. 26: 790­795.                                               50: 871­882.
+
+------, AND J. W. ELWOOD. 1982. The role of lake and reservoir       SHIKLOMANOV, I. A., AND J. C. RODDA. 2003. World water
+     sediments as sinks in the perturbated global carbon-cycle.           resources at the beginning of the twenty-first century.
+     Tellus 34: 490­499.                                                  Cambridge Univ. Press.
+
+O'REILLY, C. M., S. R. ALIN, P. D. PLISNIER, A. S. COHEN, AND B.     SMITH, L. C., Y. SHENG, G. M. MACDONALD, AND L. D. HINZMAN.
+     A. MCKEE. 2003. Climate change decreases aquatic ecosystem           2005. Disappearing arctic lakes. Science 308: 1429.
+     productivity of Lake Tanganyika, Africa. Nature 424:
+     766­768.                                                        SOBEK, S., G. ALGESTEN, A.-K. BERGSTRO¨ M, M. JANSSON, AND L. J.
+                                                                          TRANVIK. 2003. The catchment and climate regulation of
+OSTROVSKY, I., D. F. MCGINNIS, L. LAPIDUS, AND W. ECKERT.                 pCO2 in boreal lakes. Glob. Change Biol. 9: 630­641.
+     2008. Quantifying gas ebullition with echosounder: The role
+     of methane transport by bubbles in a medium-sized lake.         ------, B. SO¨ DERBA¨ CK, S. KARLSSON, E. ANDERSSON, AND A. K.
+     Limnol. Oceanogr. Methods 6: 105­118.                                BRUNBERG. 2006. A carbon budget of a small humic lake: An
+                                                                          example of the importance of lakes for organic matter cycling
+PACE, M. L., AND Y. T. PRAIRIE. 2005. Respiration in lakes, p.            in boreal catchments. AMBIO 35: 469­475.
+     103­122. In P. A. del Giorgio and P. J. L. B. Williams [eds.],
+     Respiration in aquatic ecosystems. Oxford Univ. Press.          ------, L. J. TRANVIK, AND J. J. COLE. 2005. Temperature
+                                                                          independence of carbon dioxide supersaturation in global
+PETIT, R. J., F. S. HU, AND C. W. DICK. 2008. Forests of the past:        lakes. Glob. Biogeochem. Cycles 19: GB2003, doi: 10.1029/
+     A window to future changes. Science 320: 1450­1452.                  2004GB002264.
+
+PETTS, G. E., J. NESTLER, AND R. KENNEDY. 2006. Advancing            ------, ------, Y. T. PRAIRIE, P. KORTELAINEN, AND J. J. COLE.
+     science for water resources management. Hydrobiologia 565:           2007. Patterns and regulation of dissolved organic carbon: An
+     277­288.                                                             analysis of 7,500 widely distributed lakes. Limnol. Oceanogr.
+                                                                          52: 1208­1219.
+POST, W. M., W. R. EMANUEL, P. J. ZINKE, AND A. G.
+     STANGENBERGER. 1982. Soil carbon pools and world life           STALLARD, R. F. 1998. Terrestrial sedimentation and the carbon
+     zones. Nature 298: 156­159.                                          cycle: Coupling weathering and erosion to carbon burial.
+                                                                          Glob. Biogeochem. Cycles 12: 231­257.
+PRAIRIE, Y. T. 2008. Carbocentric limnology: Looking
+     back, looking forward. Can. J. Fish. Aquat. Sci. 65: 543­       STEDMON, C. A., AND S. MARKAGER. 2005. Tracing the production
+     548.                                                                 and degradation of autochthonous fractions of dissolved
+                                                                          organic matter by fluorescence analysis. Limnol. Oceanogr.
+RANDERSON, J. T., F. S. CHAPIN, J. W. HARDEN, J. C. NEFF, AND             50: 1415­1426.
+     M. E. HARMON. 2002. Net ecosystem production: A compre-
+     hensive measure of net carbon accumulation by ecosystems.       STETS, E. G., R. G. STRIEGL, G. R. AIKEN, D. O. ROSENBERRY, AND
+     Ecol. Appl. 12: 937­947.                                             T. C. WINTER. 2009. Hydrologic support of carbon dioxide
+                                                                          flux revealed by whole-lake carbon budgets. J. Geophys. Res.
+RANTAKARI, M., AND P. KORTELAINEN. 2005. Interannual variation            Biogeosci. 114: G01008, doi: 10.1029/2008JG000783.
+     and climatic regulation of the CO2 emission from large boreal
+     lakes. Glob. Change Biol. 11: 1368­1380.                        STRIEGL, R. G., AND C. M. MICHMERHUIZEN. 1998. Hydrologic
+                                                                          influence on methane and carbon dioxide dynamics at two
+RICHEY, J. E., J. M. MELACK, A. K. AUFDENKAMPE, V. M.                     north-central Minnesota lakes. Limnol. Oceanogr. 43:
+     BALLESTER, AND L. L. HESS. 2002. Outgassing from Amazo-              1519­1529.
+     nian rivers and wetlands as a large tropical source of
+     atmospheric CO2. Nature 416: 617­620.                           THIENEMANN, A. 1925. Inland waters of central Europe. E.
+                                                                          Schweizbart'sche Verlagsbuchshandlung. [Written in German].
+ROSA, L. P., M. A. DOS SANTOS, B. MATVIENKO, E. O. DOS SANTOS,
+     AND E. SIKAR. 2004. Greenhouse gas emissions from               TRANVIK, L. J., AND M. JANSSON. 2002. Climate change--terrestrial
+     hydroelectric reservoirs in tropical regions. Clim. Change           export of organic carbon. Nature 415: 861­862.
+     66: 9­21.
+                                                                     TREMBLAY, A., L. VARFALVY, C. ROEHM, AND M. GARNEU. 2005.
+RUDD, J. W. M., R. HARRIS, C. A. KELLY, AND R. E. HECKY. 1993.            Greenhouse gas emissions--fluxes and processes. Springer-
+     Are hydroelectric reservoirs significant sources of greenhouse       Verlag.
+     gases? AMBIO 22: 246­248.
+                                                                     TUCHMAN, N. C., R. G. WETZEL, S. T. RIER, K. A. WAHTERA, AND
+ST. LOUIS, V. L., C. A. KELLY, E. DUCHEMIN, J. W. M. RUDD, AND            J. A. TEERI. 2002. Elevated atmospheric CO2 lowers leaf litter
+     D. M. ROSENBERG. 2000. Reservoir surfaces as sources of              nutritional quality for stream ecosystem food webs. Glob.
+     greenhouse gases to the atmosphere: A global estimate.               Change Biol. 8: 163­170.
+     Bioscience 50: 766­775.
+                                                                     VITOUSEK, P. M., AND oTHERS. 1997. Human alteration of the global
+SALONEN, K., AND A. VA¨ HA¨ TALO. 1994. Photochemical minerali-           nitrogen cycle: Sources and consequences. Ecol. Appl. 7:
+     zation of dissolved organic-matter in Lake Skjervatjern.             737­750.
+     Environ. Int. 20: 307­312.
+                                                                     vON WACHENFELDT, E., S. SOBEK, D. BASTVIKEN, AND L. J. TRANVIK.
+SARMIENTO, J. L., AND E. T. SUNDQUIST. 1992. Revised budget for           2008. Linking allochthonous dissolved organic matter and
+     the oceanic uptake of anthropogenic carbon dioxide. Nature           boreal lake sediment carbon sequestration: The role of light-
+     356: 589­593.                                                        mediated flocculation. Limnol. Oceanogr. 53: 2416­2426.
+
+SCHEFFER, M. 1998. Ecology of shallow lakes. Chapman and Hall.       ------, AND L. J. TRANVIK. 2008. Sedimentation in boreal lakes--
+SCHINDLER, D. E., S. R. CARPENTER, J. J. COLE, J. F. KITCHELL, AND        the role of flocculation of allochthonous dissolved organic
+                                                                          matter in the water column. Ecosystems 11: 803­814.
+     M. L. PACE. 1997. Influence of food web structure on carbon
+     exchange between lakes and the atmosphere. Science 277:         VO¨ RO¨ SMARTY, C. J., AND D. SAHAGIAN. 2000. Anthropogenic
+     248­251.                                                             disturbance of the terrestrial water cycle. Bioscience 50:
+SCHINDLER, D. W., P. J. CURTIS, S. E. BAYLEY, B. R. PARKER, K.            753­765.
+     G. BEATY, AND M. P. STAINTON. 1997. Climate-induced
+     changes in the dissolved organic carbon budgets of boreal       WAISER, M. J., AND R. D. ROBARTS. 2000. Changes in composition
+     lakes. Biogeochemistry 36: 9­28.                                     and reactivity of allochthonous DOM in a prairie saline lake.
+                                                                          Limnol. Oceanogr. 45: 763­774.
+2314  Tranvik et al.
+
+WALTER, K. M., S. A. ZIMOV, J. P. CHANTON, D. VERBYLA, AND F.         WILLIAMS, A. L., K. E. WILLS, J. K. JANES, J. K. V. SCHOOR, P. C.
+     S. CHAPIN. 2006. Methane bubbling from Siberian thaw lakes            D. NEWTON, AND M. J. HOVENDEN. 2007. Warming and free-
+     as a positive feedback to climate warming. Nature 443: 71­75.         air CO2 enrichment alter demographics in four co-occurring
+                                                                           grassland species. New Phytol. 176: 365­374.
+WALTHER, G. R., S. BERGER, AND M. T. SYKES. 2005. An
+     ecological `footprint' of climate change. Proc. R. Soc. B Biol.  WUEBBLES, D. J., AND K. HAYHOE. 2002. Atmospheric methane
+     Sci. 272: 1427­1432.                                                  and global change. Earth Sci. Rev. 57: 177­210.
+
+WANG, H. J., W. D. WANG, C. Q. YIN, Y. C. WANG, AND J. W. LU.         ZEHNDER, A. J. B., AND B. H. SVENSSON. 1986. Life without
+     2006. Littoral zones as the ``hotspots'' of nitrous oxide (N2O)       oxygen--what can and what cannot. Experientia 42:
+     emission in a hyper-eutrophic lake in China. Atmos. Environ.          1197­1205.
+     40: 5522­5527.
+                                                                      ZIMOV, S. A., E. A. G. SCHUUR, AND F. S. CHAPIN. 2006.
+WETZEL, R. G. 2001. Limnology, 3rd ed. Academic Press.                     Permafrost and the global carbon budget. Science 312:
+WEYHENMEYER, G. A., AND J. KARLSSON. 2009. Nonlinear                       1612­1613.
+
+     response of dissolved organic carbon concentrations in boreal       Associate editors: John P. Smol and Warwick F. Vincent
+     lakes to increasing temperatures. Limnol. Oceanogr 54:
+     2513­2519.                                                                                                 Received: 15 October 2008
+WHALEN, S. C., AND J. C. CORNWELL. 1985. Nitrogen, phosphorus,                                                     Accepted: 14 April 2009
+     and organic-carbon cycling in an Arctic lake. Can. J. Fish.                                                   Amended: 19 May 2009
+     Aquat. Sci. 42: 797­808.
+
