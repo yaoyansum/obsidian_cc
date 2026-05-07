@@ -61,26 +61,40 @@ Obsidian Vault/
 │   ├── Weekly/
 │   └── Monthly/
 │
-├── 03_Projects/                    # 当前科研、写作、模型和数据处理项目
-│   ├── Lake_DOC/
-│   ├── Lake_DIC/
-│   ├── Algal_Bloom_Model/
-│   ├── GLM_AED_Project/
-│   └── Other_Projects/
+├── 03_Projects/                    # 当前科研、写作、模型和数据处理项目；按状态管理，便于未来换方向扩展
+│   ├── Active/                     # 正在推进的项目
+│   │   ├── Lake_DOC_Global_Change/
+│   │   ├── Lake_DIC_Global_Change/
+│   │   ├── Algal_Bloom_Model/
+│   │   └── GLM_AED_Project/
+│   ├── Paused/                     # 暂停但未来可能继续的项目
+│   ├── Finished/                   # 已完成项目
+│   └── Ideas/                      # 尚未正式启动的项目想法
 │
-├── 04_Knowledge_Base/              # 长期专业知识库
-│   ├── Lake_Science/
-│   ├── Remote_Sensing/
-│   ├── Modeling/
-│   ├── Statistics/
-│   └── Scientific_Writing/
+├── 04_Knowledge_Base/              # 长期专业知识库，不按单个项目组织，而按可复用知识组织
+│   ├── Lake_Carbon/                # 主业知识：湖泊碳循环与 DOC/DIC/POC 等
+│   ├── Lake_Water_Quality/         # 水质与水生态过程
+│   ├── Remote_Sensing/             # 遥感与 GEE
+│   ├── Modeling/                   # 过程模型、机器学习模型与情景预测
+│   ├── Statistics/                 # 统计、趋势、归一化、不确定性等方法
+│   └── Scientific_Writing/         # 科学写作、论文结构、英文表达
 │
-├── 05_Literature/                  # 文献笔记和文献主题整理
-│   ├── DOC/
-│   ├── DIC/
-│   ├── Algal_Bloom/
-│   ├── Remote_Sensing/
-│   ├── GLM_AED/
+├── 05_Literature/                  # 文献笔记和文献主题整理；主题与方法分开，避免被当前研究方向锁死
+│   ├── By_Topic/
+│   │   ├── Lake_Carbon/
+│   │   │   ├── DOC/
+│   │   │   ├── DIC/
+│   │   │   ├── POC/
+│   │   │   └── CO2_CH4/
+│   │   ├── Lake_Water_Quality/
+│   │   ├── Remote_Sensing/
+│   │   ├── Modeling/
+│   │   └── Climate_Human_Impacts/
+│   ├── By_Method/
+│   │   ├── Machine_Learning/
+│   │   ├── GLM_AED/
+│   │   ├── Trend_Analysis/
+│   │   └── Uncertainty/
 │   └── Reading_Notes/
 │
 ├── 06_Skills/                      # 从网页、教程、视频、AI 对话中学到的技能
@@ -117,16 +131,27 @@ Obsidian Vault/
 │   └── Paper_Section_Template.md
 │
 ├── 11_Archive/                     # 已完成、暂停、废弃或过时内容
-│   ├── Finished_Projects/
 │   ├── Old_Notes/
 │   └── Deprecated/
 │
-└── 99_Attachments/                 # 图片、PDF、截图、图件等附件
-    ├── Images/
-    ├── PDFs/
-    ├── Figures/
-    └── Screenshots/
+└── 99_Raw_Data/                    # 原始材料、附件、截图、PDF、图片、表格等统一暂存；只保留整个文件夹，不设子目录
 ```
+
+---
+
+## `99_Raw_Data/` 使用规范
+
+`99_Raw_Data/` 用于临时保存所有原始材料，包括 PDF、图片、截图、网页下载文件、原始表格、图件和其他未经整理的材料。
+
+该目录只作为原始材料暂存区，**不再设置子目录**。所有有长期价值的内容都应被整理到对应页面中：
+
+- 文献 PDF 的阅读结果整理到 `05_Literature/`
+- 图片或图件说明整理到 `09_Writing/` 或相关项目页
+- 数据结构说明整理到 `08_Data_Documentation/`
+- 网页学习内容整理到 `06_Skills/`
+- 代码报错截图整理到 `07_Code_and_Debug/`
+
+`99_Raw_Data/` 不作为知识库主体，只保存原始材料本体。整理完成后，应该在对应知识页、项目页、文献页或写作页中注明原始材料来源。
 
 ---
 
@@ -203,8 +228,8 @@ GLM_AED_湖泊水生态模型.md
 ## 1. 快速入口
 
 - [[Log]]
-- [[Lake_DOC]]
-- [[Lake_DIC]]
+- [[Lake_DOC_Global_Change]]
+- [[Lake_DIC_Global_Change]]
 - [[Algal_Bloom_Model]]
 - [[GLM_AED_Project]]
 - [[Paragraph_Bank]]
@@ -213,19 +238,20 @@ GLM_AED_湖泊水生态模型.md
 
 ## 2. 当前重点项目
 
-### 湖泊 DOC 研究
+### 湖泊 DOC 全球变化研究
 
-- [[Lake_DOC]]
+- [[Lake_DOC_Global_Change]]
 - [[DOC_Dataset]]
 - [[DOC]]
 - [[Lake_Carbon_Cycle]]
+- [[Carbon_Storage]]
 
-### 湖泊 DIC 研究
+### 湖泊 DIC 全球变化研究
 
-- [[Lake_DIC]]
+- [[Lake_DIC_Global_Change]]
 - [[DIC_Dataset]]
 - [[DIC]]
-- [[Carbon_Cycle]]
+- [[Lake_Carbon_Cycle]]
 - [[Runoff_Dilution]]
 - [[Evaporation_Concentration]]
 
@@ -247,13 +273,22 @@ GLM_AED_湖泊水生态模型.md
 
 ## 3. 专业知识库
 
-### 湖泊科学
+### 湖泊碳循环
 
 - [[DOC]]
 - [[DIC]]
-- [[Carbon_Cycle]]
+- [[POC]]
+- [[Lake_Carbon_Cycle]]
+- [[Carbon_Storage]]
+- [[Carbon_Flux]]
+- [[Runoff_Dilution]]
+- [[Evaporation_Concentration]]
+
+### 湖泊水质与水生态
+
 - [[Nutrients]]
 - [[Dissolved_Oxygen]]
+- [[Chlorophyll]]
 - [[Algal_Blooms]]
 - [[Aquatic_Vegetation]]
 
@@ -280,6 +315,7 @@ GLM_AED_湖泊水生态模型.md
 
 ## 4. 文献笔记
 
+- [[Lake_Carbon_Literature]]
 - [[DOC_Literature]]
 - [[DIC_Literature]]
 - [[Algal_Bloom_Literature]]
@@ -368,6 +404,7 @@ GLM_AED_湖泊水生态模型.md
 - [ ] 记录 Python 数据处理报错
 ```
 
+
 ---
 
 ## `01_Log/Log.md` 维护规范
@@ -450,7 +487,7 @@ query          # 问答沉淀
 
 ### 1. 项目页：`03_Projects/`
 
-用于记录一个正在推进的科研、写作或数据处理项目。
+用于记录一个正在推进的科研、写作或数据处理项目。项目目录按状态管理：正在推进的项目放入 `03_Projects/Active/`，暂停项目放入 `03_Projects/Paused/`，已完成项目放入 `03_Projects/Finished/`，尚未正式启动的想法放入 `03_Projects/Ideas/`。
 
 ```yaml
 ---
@@ -491,8 +528,8 @@ related_pages: []
 适合页面：
 
 ```text
-Lake_DOC.md
-Lake_DIC.md
+Lake_DOC_Global_Change.md
+Lake_DIC_Global_Change.md
 Algal_Bloom_Model.md
 GLM_AED_Project.md
 ```
@@ -507,7 +544,7 @@ GLM_AED_Project.md
 ---
 type: knowledge
 title:
-domain: lake_science|remote_sensing|modeling|statistics|scientific_writing
+domain: lake_carbon|lake_water_quality|remote_sensing|modeling|statistics|scientific_writing
 related: []
 source_files: []
 source_count: 0
@@ -543,7 +580,10 @@ confidence: high|medium|low
 ```text
 DOC.md
 DIC.md
-Carbon_Cycle.md
+POC.md
+Lake_Carbon_Cycle.md
+Carbon_Storage.md
+Carbon_Flux.md
 Runoff_Dilution.md
 Evaporation_Concentration.md
 GLM_AED.md
@@ -566,7 +606,7 @@ Trend_Analysis.md
 
 ### 3. 文献笔记页：`05_Literature/`
 
-用于记录论文、书籍、报告等学术来源。
+用于记录论文、书籍、报告等学术来源。文献优先按主题放入 `By_Topic/`，方法类文献也可以同时在 `By_Method/` 建立主题汇总页或链接，不建议复制同一篇文献笔记。
 
 ```yaml
 ---
@@ -861,7 +901,7 @@ tags: []
 
 当用户要求整理论文、文献、书籍或报告时：
 
-1. 创建或更新 `05_Literature/对应主题/文献标题.md`。
+1. 创建或更新 `05_Literature/By_Topic/对应主题/文献标题.md`，如果文献主要属于方法类，也可以放入 `05_Literature/By_Method/对应方法/文献标题.md`。
 2. 提取研究问题、数据方法、主要结论、对用户研究的价值。
 3. 将重要机制或概念同步到 `04_Knowledge_Base/`。
 4. 如果该文献对某个项目有用，在项目页中添加链接。
@@ -914,7 +954,7 @@ tags: []
 
 当用户讨论某个项目的方案、结果、图件、方法或写作时：
 
-1. 更新 `03_Projects/对应项目/` 下的项目页。
+1. 更新 `03_Projects/Active/对应项目/` 下的项目页。
 2. 将稳定的方法和概念迁移到 `04_Knowledge_Base/`。
 3. 将正式文字放入 `09_Writing/`。
 4. 将数据结构和路径放入 `08_Data_Documentation/`。
@@ -950,7 +990,7 @@ tags: []
 
 当项目完成、页面过时或内容暂时不用时：
 
-1. 移动到 `11_Archive/`。
+1. 移动到 `11_Archive/Old_Notes/` 或 `11_Archive/Deprecated/`；项目如果已经完成，也可以移动到 `03_Projects/Finished/`。
 2. 保留原页面标题和关键链接。
 3. 在原项目页或 `Index.md` 中移除高频入口。
 4. 追加 `Log.md`。
@@ -1011,8 +1051,8 @@ Lake_DIC_Paper 需要强调降水/径流稀释和蒸发浓缩两个机制。
 但机制本身应该迁移到：
 
 ```text
-04_Knowledge_Base/Lake_Science/Runoff_Dilution.md
-04_Knowledge_Base/Lake_Science/Evaporation_Concentration.md
+04_Knowledge_Base/Lake_Carbon/Runoff_Dilution.md
+04_Knowledge_Base/Lake_Carbon/Evaporation_Concentration.md
 ```
 
 ### Literature 不是摘抄库
@@ -1031,12 +1071,12 @@ Lake_DIC_Paper 需要强调降水/径流稀释和蒸发浓缩两个机制。
 
 每个重要声明必须尽量提供来源。来源可以是：
 
-- 文献笔记：`[[05_Literature/DOC/Paper_Title]]`
-- 专业知识页：`[[04_Knowledge_Base/Lake_Science/DIC]]`
+- 文献笔记：`[[05_Literature/By_Topic/Lake_Carbon/DOC/Paper_Title]]`
+- 专业知识页：`[[04_Knowledge_Base/Lake_Carbon/DIC]]`
 - 数据说明页：`[[08_Data_Documentation/DOC_Dataset]]`
-- 项目页：`[[03_Projects/Lake_DIC/Lake_DIC]]`
+- 项目页：`[[03_Projects/Active/Lake_DIC_Global_Change/Lake_DIC_Global_Change]]`
 - 网页链接：直接写 URL
-- 原始文件路径：写本地路径或相对路径
+- 原始文件路径：写本地路径或相对路径；如果原始材料存入 Obsidian，则优先写 `99_Raw_Data/文件名`
 
 示例：
 
@@ -1132,8 +1172,8 @@ xarray 导出 netCDF 时报错：failed to prevent overwriting existing key _Fil
 2. 将机制沉淀到：
 
 ```text
-04_Knowledge_Base/Lake_Science/Runoff_Dilution.md
-04_Knowledge_Base/Lake_Science/Evaporation_Concentration.md
+04_Knowledge_Base/Lake_Carbon/Runoff_Dilution.md
+04_Knowledge_Base/Lake_Carbon/Evaporation_Concentration.md
 ```
 
 3. 将正式段落保存到：
@@ -1163,26 +1203,26 @@ xarray 导出 netCDF 时报错：failed to prevent overwriting existing key _Fil
 1. 生成文献笔记：
 
 ```text
-05_Literature/DOC/Paper_Title.md
+05_Literature/By_Topic/Lake_Carbon/DOC/Paper_Title.md
 ```
 
 2. 如果论文提出重要机制，更新：
 
 ```text
-04_Knowledge_Base/Lake_Science/DOC.md
-04_Knowledge_Base/Lake_Science/Lake_Carbon_Cycle.md
+04_Knowledge_Base/Lake_Carbon/DOC.md
+04_Knowledge_Base/Lake_Carbon/Lake_Carbon_Cycle.md
 ```
 
 3. 如果论文对当前文章有用，更新：
 
 ```text
-03_Projects/Lake_DOC/Lake_DOC.md
+03_Projects/Active/Lake_DOC_Global_Change/Lake_DOC_Global_Change.md
 ```
 
 4. 在 `Log.md` 追加：
 
 ```markdown
-## [2026-05-07] literature | Paper_Title | 新增 DOC 文献笔记并关联 Lake_DOC 项目
+## [2026-05-07] literature | Paper_Title | 新增 DOC 文献笔记并关联 Lake_DOC_Global_Change_Global_Change 项目
 ```
 
 ---
@@ -1201,6 +1241,7 @@ xarray 导出 netCDF 时报错：failed to prevent overwriting existing key _Fil
 数据说明 → Data_Documentation
 正式写作 → Writing
 历史内容 → Archive
+原始材料 → Raw_Data
 ```
 
 任何有长期价值的信息，都不应该只留在聊天记录或 `Log.md` 中。
