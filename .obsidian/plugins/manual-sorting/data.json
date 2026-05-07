@@ -365,15 +365,7 @@
     },
     "99_Raw_Data": {
       "children": [
-        "99_Raw_Data/reitsema_2018.txt",
-        "99_Raw_Data/porcal_2009.txt",
-        "99_Raw_Data/evans_2005.txt",
-        "99_Raw_Data/reitsema_2018.pdf",
-        "99_Raw_Data/porcal_2009.pdf",
-        "99_Raw_Data/evans_2005.pdf",
-        "99_Raw_Data/Evans 等 - 2005 - Long-term increases in surface water dissolved organic carbon Observations, possible causes and env.pdf",
-        "99_Raw_Data/Porcal 等 - 2009 - Humic substances-part 7 the biogeochemistry of dissolved organic carbon and its interactions with c.pdf",
-        "99_Raw_Data/Reitsema 等 - 2018 - The Future of Freshwater Macrophytes in a Changing World Dissolved Organic Carbon Quantity and Qual.pdf"
+        "99_Raw_Data/A_Hybrid_Bayesian_Data_Fusion_Framework_to_Enhance.pdf"
       ],
       "sortOrder": "custom"
     }
