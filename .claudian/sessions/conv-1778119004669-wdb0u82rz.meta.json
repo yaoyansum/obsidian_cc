@@ -4,6 +4,20 @@
   "title": "Create TOC from CLAUDE.zh-CN.md",
   "titleGenerationStatus": "success",
   "createdAt": 1778119004671,
-  "updatedAt": 1778119010396,
-  "sessionId": null
+  "updatedAt": 1778119489282,
+  "lastResponseAt": 1778119489282,
+  "sessionId": "1b7b48fc-7ec8-4755-b302-e0750f23053d",
+  "providerState": {
+    "providerSessionId": "1b7b48fc-7ec8-4755-b302-e0750f23053d"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 105,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 102016,
+    "contextWindow": 200000,
+    "contextTokens": 102121,
+    "percentage": 51,
+    "contextWindowIsAuthoritative": true
+  }
 }

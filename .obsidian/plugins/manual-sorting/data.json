@@ -2,8 +2,371 @@
   "customOrder": {
     "/": {
       "children": [
+        "00_Index",
+        "01_Log",
+        "02_Diary",
+        "03_Projects",
+        "04_Knowledge_Base",
+        "05_Literature",
+        "06_Skills",
+        "07_Code_and_Debug",
+        "08_Data_Documentation",
+        "09_Writing",
+        "10_Templates",
+        "11_Archive",
+        "99_Raw_Data",
         "CLAUDE.zh-CN.md"
       ],
+      "sortOrder": "custom"
+    },
+    "00_Index": {
+      "children": [
+        "00_Index/Index.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "01_Log": {
+      "children": [
+        "01_Log/Log.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "02_Diary": {
+      "children": [
+        "02_Diary/Daily",
+        "02_Diary/Monthly",
+        "02_Diary/Weekly"
+      ],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Daily": {
+      "children": [
+        "02_Diary/Daily/2026-03-23.md",
+        "02_Diary/Daily/2026-03-25.md",
+        "02_Diary/Daily/2026-05-03.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Monthly": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Weekly": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "03_Projects": {
+      "children": [
+        "03_Projects/Active",
+        "03_Projects/Finished",
+        "03_Projects/Ideas",
+        "03_Projects/Paused"
+      ],
+      "sortOrder": "custom"
+    },
+    "03_Projects/Active": {
+      "children": [
+        "03_Projects/Active/Algal_Bloom_Model",
+        "03_Projects/Active/GLM_AED_Project",
+        "03_Projects/Active/Lake_DIC_Global_Change",
+        "03_Projects/Active/Lake_DOC_Global_Change"
+      ],
+      "sortOrder": "custom"
+    },
+    "03_Projects/Active/Algal_Bloom_Model": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "03_Projects/Active/GLM_AED_Project": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "03_Projects/Active/Lake_DIC_Global_Change": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "03_Projects/Active/Lake_DOC_Global_Change": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "03_Projects/Finished": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "03_Projects/Ideas": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "03_Projects/Paused": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base": {
+      "children": [
+        "04_Knowledge_Base/Lake_Carbon",
+        "04_Knowledge_Base/Lake_Water_Quality",
+        "04_Knowledge_Base/Modeling",
+        "04_Knowledge_Base/Remote_Sensing",
+        "04_Knowledge_Base/Scientific_Writing",
+        "04_Knowledge_Base/Statistics"
+      ],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base/Lake_Carbon": {
+      "children": [
+        "04_Knowledge_Base/Lake_Carbon/01.20260504.湖泊DIC研究总结.md",
+        "04_Knowledge_Base/Lake_Carbon/02.20260429.湖泊溶解有机碳（DOC）研究综述.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base/Lake_Water_Quality": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base/Modeling": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base/Remote_Sensing": {
+      "children": [
+        "04_Knowledge_Base/Remote_Sensing/01_20260503_大气校正原理.md",
+        "04_Knowledge_Base/Remote_Sensing/02_20260503_大气校正方法总述与工具.md",
+        "04_Knowledge_Base/Remote_Sensing/03_20260503_6SV模型参数详解.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base/Scientific_Writing": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base/Statistics": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "05_Literature": {
+      "children": [
+        "05_Literature/By_Method",
+        "05_Literature/By_Topic",
+        "05_Literature/Reading_Notes"
+      ],
+      "sortOrder": "custom"
+    },
+    "05_Literature/By_Method": {
+      "children": [
+        "05_Literature/By_Method/GLM_AED",
+        "05_Literature/By_Method/Machine_Learning",
+        "05_Literature/By_Method/Trend_Analysis",
+        "05_Literature/By_Method/Uncertainty"
+      ],
+      "sortOrder": "custom"
+    },
+    "05_Literature/By_Method/GLM_AED": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "05_Literature/By_Method/Machine_Learning": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "05_Literature/By_Method/Trend_Analysis": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "05_Literature/By_Method/Uncertainty": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "05_Literature/By_Topic": {
+      "children": [
+        "05_Literature/By_Topic/Climate_Human_Impacts",
+        "05_Literature/By_Topic/Lake_Carbon",
+        "05_Literature/By_Topic/Lake_Water_Quality",
+        "05_Literature/By_Topic/Modeling",
+        "05_Literature/By_Topic/Remote_Sensing"
+      ],
+      "sortOrder": "custom"
+    },
+    "05_Literature/By_Topic/Climate_Human_Impacts": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "05_Literature/By_Topic/Lake_Carbon": {
+      "children": [
+        "05_Literature/By_Topic/Lake_Carbon/CO2_CH4",
+        "05_Literature/By_Topic/Lake_Carbon/DIC",
+        "05_Literature/By_Topic/Lake_Carbon/DOC",
+        "05_Literature/By_Topic/Lake_Carbon/POC"
+      ],
+      "sortOrder": "custom"
+    },
+    "05_Literature/By_Topic/Lake_Carbon/CO2_CH4": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "05_Literature/By_Topic/Lake_Carbon/DIC": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "05_Literature/By_Topic/Lake_Carbon/DOC": {
+      "children": [
+        "05_Literature/By_Topic/Lake_Carbon/DOC/01.20260429.全球湖泊DOC系统文献梳理.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "05_Literature/By_Topic/Lake_Carbon/POC": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "05_Literature/By_Topic/Lake_Water_Quality": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "05_Literature/By_Topic/Modeling": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "05_Literature/By_Topic/Remote_Sensing": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "05_Literature/Reading_Notes": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "06_Skills": {
+      "children": [
+        "06_Skills/AI_Tools",
+        "06_Skills/GIS_RS",
+        "06_Skills/Python",
+        "06_Skills/Web_Learning",
+        "06_Skills/Writing_Tools"
+      ],
+      "sortOrder": "custom"
+    },
+    "06_Skills/AI_Tools": {
+      "children": [
+        "06_Skills/AI_Tools/Obsidian"
+      ],
+      "sortOrder": "custom"
+    },
+    "06_Skills/AI_Tools/Obsidian": {
+      "children": [
+        "06_Skills/AI_Tools/Obsidian/Markdown基础语言.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "06_Skills/GIS_RS": {
+      "children": [
+        "06_Skills/GIS_RS/04_20260503_ENVI-SNAP-SEADAS大气校正.md",
+        "06_Skills/GIS_RS/05_20260503_OLCI大气校正实践.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "06_Skills/Python": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "06_Skills/Web_Learning": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "06_Skills/Writing_Tools": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "07_Code_and_Debug": {
+      "children": [
+        "07_Code_and_Debug/Automation",
+        "07_Code_and_Debug/Data_Processing_Workflows",
+        "07_Code_and_Debug/Error_Solutions",
+        "07_Code_and_Debug/Python_Scripts"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Code_and_Debug/Automation": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "07_Code_and_Debug/Data_Processing_Workflows": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "07_Code_and_Debug/Error_Solutions": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "07_Code_and_Debug/Python_Scripts": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "08_Data_Documentation": {
+      "children": [
+        "08_Data_Documentation/CMIP6.md",
+        "08_Data_Documentation/DIC_Dataset.md",
+        "08_Data_Documentation/DOC_Dataset.md",
+        "08_Data_Documentation/HydroLAKES.md",
+        "08_Data_Documentation/Remote_Sensing_Dataset.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "09_Writing": {
+      "children": [
+        "09_Writing/Papers",
+        "09_Writing/Paragraph_Bank",
+        "09_Writing/Proposals",
+        "09_Writing/Reports"
+      ],
+      "sortOrder": "custom"
+    },
+    "09_Writing/Papers": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "09_Writing/Paragraph_Bank": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "09_Writing/Proposals": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "09_Writing/Reports": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "10_Templates": {
+      "children": [
+        "10_Templates/读书笔记模板.md",
+        "10_Templates/每日笔记模板.md",
+        "10_Templates/学习笔记模板系统.md",
+        "10_Templates/周报模板.md",
+        "10_Templates/Code_Debug_Template.md",
+        "10_Templates/Literature_Note_Template.md",
+        "10_Templates/Paper_Section_Template.md",
+        "10_Templates/Project_Template.md",
+        "10_Templates/Web_Learning_Template.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "11_Archive": {
+      "children": [
+        "11_Archive/Deprecated",
+        "11_Archive/Old_Notes"
+      ],
+      "sortOrder": "custom"
+    },
+    "11_Archive/Deprecated": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "11_Archive/Old_Notes": {
+      "children": [
+        "11_Archive/Old_Notes/20260504.亲密关系.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "99_Raw_Data": {
+      "children": [],
       "sortOrder": "custom"
     }
   },
