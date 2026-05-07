@@ -1,0 +1,23 @@
+{
+  "id": "conv-1778126652858-xte8tnwiy",
+  "providerId": "claude",
+  "title": "Summarize DOC trends and mechanisms",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778126652858,
+  "updatedAt": 1778126833062,
+  "lastResponseAt": 1778126833062,
+  "sessionId": "d0e669d6-a6cc-4887-b7b6-b4e241d0a10a",
+  "providerState": {
+    "providerSessionId": "d0e669d6-a6cc-4887-b7b6-b4e241d0a10a"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 152,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 97408,
+    "contextWindow": 200000,
+    "contextTokens": 97560,
+    "percentage": 49,
+    "contextWindowIsAuthoritative": true
+  }
+}
