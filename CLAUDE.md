@@ -59,10 +59,6 @@ Obsidian Vault/
 │
 ├── 03_Projects/                    # 当前科研、写作、模型和数据处理项目；按状态管理，便于未来换方向扩展
 │   ├── Active/                     # 正在推进的项目
-│   │   ├── Lake_DOC_Global_Change/
-│   │   ├── Lake_DIC_Global_Change/
-│   │   ├── Algal_Bloom_Model/
-│   │   └── GLM_AED_Project/
 │   ├── Paused/                     # 暂停但未来可能继续的项目
 │   ├── Finished/                   # 已完成项目
 │   └── Ideas/                      # 尚未正式启动的项目想法
@@ -195,7 +191,7 @@ Obsidian Vault/
 
 ---
 
-## 01. 当前重点项目
+## 03. 当前重点项目
 
 ### 湖泊 DOC 全球变化研究
 
@@ -213,20 +209,6 @@ Obsidian Vault/
 - [[Lake_Carbon_Cycle]]
 - [[Runoff_Dilution]]
 - [[Evaporation_Concentration]]
-
-### 藻华机器学习模型
-
-- [[Algal_Bloom_Model]]
-- [[Feature_Distillation]]
-- [[Remote_Sensing]]
-- [[Machine_Learning]]
-
-### GLM-AED 水生态预测
-
-- [[GLM_AED_Project]]
-- [[GLM_AED]]
-- [[Scenario_Prediction]]
-- [[Lake_Ecosystem_Modeling]]
 
 ---
 
