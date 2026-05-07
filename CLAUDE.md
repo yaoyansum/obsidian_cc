@@ -744,13 +744,7 @@ Lake_DIC_Paper 需要强调降水/径流稀释和蒸发浓缩两个机制。
 
 应该执行：
 
-1. 生成文献笔记：
-
-```text
-04_Knowledge_Base/Lake_Carbon/Paper_Title.md
-```
-
-2. 如果论文提出重要机制，更新：
+1. 如果论文提出重要机制，更新：
 
 ```text
 04_Knowledge_Base/Lake_Carbon/DOC.md
