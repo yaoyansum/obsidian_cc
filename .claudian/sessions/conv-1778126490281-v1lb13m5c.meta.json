@@ -1,0 +1,23 @@
+{
+  "id": "conv-1778126490281-v1lb13m5c",
+  "providerId": "claude",
+  "title": "Summarize DOC trends and mechanisms into Lake C...",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778126490282,
+  "updatedAt": 1778126600061,
+  "lastResponseAt": 1778126600061,
+  "sessionId": "ac84dbcf-5046-4d7b-80d1-caf08445176f",
+  "providerState": {
+    "providerSessionId": "ac84dbcf-5046-4d7b-80d1-caf08445176f"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0,
+    "contextWindowIsAuthoritative": true
+  }
+}
