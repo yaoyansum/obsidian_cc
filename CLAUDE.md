@@ -687,11 +687,7 @@ Lake_DIC_Paper 需要强调降水/径流稀释和蒸发浓缩两个机制。
 2. 在 Log.md 追加今日目标
 3. 工作过程中把操作写入 Log.md
 4. 发现稳定知识，迁移到 Knowledge_Base
-5. 读文献，写入 Literature
-6. 学技能，写入 Skills
-7. 遇到代码问题，写入 Code_and_Debug
-8. 写正式段落，放入 Writing
-9. 完成或废弃内容，移入 Archive
+5. 写正式段落，放入 Writing
 ```
 
 ---
@@ -706,38 +702,6 @@ Lake_DIC_Paper 需要强调降水/径流稀释和蒸发浓缩两个机制。
 如果无法直接编辑文件，也必须告诉用户应该追加到哪个页面，以及建议追加的 Markdown 内容。
 
 ---
-
-## 示例：处理一次代码问题
-
-用户说：
-
-```text
-xarray 导出 netCDF 时报错：failed to prevent overwriting existing key _FillValue
-```
-
-应该执行：
-
-1. 回答报错原因和解决代码。
-2. 更新或新建：
-
-```text
-07_Code_and_Debug/Error_Solutions/xarray_FillValue_Error.md
-```
-
-3. 如果涉及 DOC 数据处理，同时更新：
-
-```text
-08_Data_Documentation/DOC_Dataset.md
-```
-
-4. 在 `Log.md` 追加：
-
-```markdown
-## [2026-05-07] code-debug | xarray_FillValue_Error | 记录 netCDF 导出编码冲突及解决方案
-```
-
----
-
 ## 示例：处理一次论文写作
 
 用户说：
