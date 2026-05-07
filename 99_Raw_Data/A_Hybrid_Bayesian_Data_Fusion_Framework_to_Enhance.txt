@@ -1,0 +1,592 @@
+RESEARCH ARTICLE
+10.1029/2025WR041979
+Shunping Zhou and Pan Yang contributed equally to this work.
+Key Points: · A Bayesian framework developed for
+watershed-scale total nitrogen (TN) modeling · Integrating high-frequency spatial inversion data improves TN modeling performance by 55% · The relative contribution of inversion data is more pronounced with less gauge measurements
+Supporting Information: Supporting Information may be found in the online version of this article.
+Correspondence to: Q. Tan, qian_tan@gdut.edu.cn
+Citation: Zhou, S., Yang, P., Gan, Y., & Tan, Q. (2026). A Hybrid Bayesian data fusion framework to enhance watershed nitrogen modeling by integrating in situ observations with spatial inversion data. Water Resources Research, 62, e2025WR041979. https://doi.org/10.1029/ 2025WR041979
+Received 15 AUG 2025 Accepted 15 MAR 2026
+Author Contributions: Conceptualization: Pan Yang, Qian Tan Data curation: Shunping Zhou, Pan Yang, Yuheng Gan, Qian Tan Formal analysis: Shunping Zhou, Pan Yang, Qian Tan Investigation: Pan Yang, Qian Tan Methodology: Shunping Zhou, Pan Yang, Qian Tan Resources: Pan Yang, Qian Tan Software: Shunping Zhou, Pan Yang, Yuheng Gan, Qian Tan Supervision: Pan Yang, Qian Tan Validation: Shunping Zhou, Pan Yang, Qian Tan
+© 2026 The Author(s). This is an open access article under the terms of the Creative Commons Attribution-NonCommercial License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited and is not used for commercial purposes.
+
+A Hybrid Bayesian Data Fusion Framework to Enhance Watershed Nitrogen Modeling by Integrating In Situ Observations With Spatial Inversion Data
+Shunping Zhou1,2 , Pan Yang1,2 , Yuheng Gan1,2, and Qian Tan1,2
+1Guangdong Basic Research Center of Excellence for Ecological Security and Green Development, School of Ecology, Environment and Ocean, Guangdong University of Technology, Guangzhou, China, 2Guangdong Provincial Key Laboratory of Water Quality Improvement and Ecological Restoration for Watersheds, School of Ecology, Environment and Ocean, Guangdong University of Technology, Guangzhou, China
+Abstract Process-based watershed models require robust, spatially distributed data for accurate total
+nitrogen (TN) simulation. However, traditional calibrations are often constrained by sparse in situ monitoring networks, resulting in substantial estimation errors and biases, particularly in ungauged sub-basins. While newly available spatial inversion data offer high-resolution observations of TN, their complex, heterogeneous, and non-stationary error structures pose challenges for rigorous integration into process-based models. This study presents a Hybrid Inversion-Observation Bayesian Data Fusion (HIOBF) framework to address this issue. The framework incorporates a geography-driven spatial extrapolation model to characterize inversion data errors in unmonitored areas, systematically merging high-resolution spatial inversion data with conventional point-scale measurements. We implemented and tested this framework using the Soil and Water Assessment Tool model in the Dongjiang River Basin, China. Results from independent validation demonstrated that by synergizing the spatial coverage of inversion data with the temporal precision of gauge measurements, the HIOBF framework significantly reduced parametric uncertainty and improved the Nash-Sutcliffe Efficiency by an average margin of 55% compared to the traditional gauge measurement-only baseline. This work provides a transferable methodology, offering a robust approach to enhance simulation accuracy and provide defensible uncertainty estimates for water resource management in data-scarce contexts.
+1. Introduction
+Process-based watershed modeling has become increasingly critical under accelerating global environmental change and intensified agricultural nutrient loading. Tools such as Soil and Water Assessment Tool (SWAT) (Gassman et al., 2007), Hydrological Simulation Program-FORTRAN (Johanson et al., 1980) and Annualized Agricultural Non-Point Source Pollution (AnnAGNPS) model (Bingner et al., 2003) have been widely adopted for their ability to represent hydrological and biogeochemical processes across scales (Fu et al., 2019; Keller et al., 2023; Valeh et al., 2021; Wellen et al., 2015). Their effective application hinges on the ability to generate credible, spatially explicit predictions across all internal sub-basins and river reaches (Abbaspour et al., 2007; Chen et al., 2024)--a prerequisite for targeting Best Management Practices (BMPs) (Johnson & Sample, 2017; Lemke et al., 2011), supporting early warning systems (Liu et al., 2024; Qian et al., 2024), and advancing understandings of watershed biogeochemistry (Kaushal et al., 2018; Yang et al., 2024).
+Despite their process-based rigor and widespread adoption (Dile et al., 2020), models such as SWAT are generally calibrated using limited in situ measurements of streamflow and nutrient concentrations at only a few monitoring stations (Malagó et al., 2017; Moazenzadeh & Izady, 2022; Rahman et al., 2020). While this outlet-centered calibration may yield acceptable performance in well-instrumented sub-basins, it fails to constrain sub-basins and river reaches where observations are scarce or absent (Paul et al., 2021; Yu et al., 2025). This creates a structurally ill-posed problem, where estimating a large set of internal parameters from a limited set of outlet observations leads to equifinality--multiple parameter sets yielding similar outputs (Beven, 1989, 2006). Extrapolating parameters from gauged to ungauged sub-basins overlooks local heterogeneity in geomorphology, land use, and pollution sources, increasing parameter uncertainty (Qi et al., 2020), reducing predictive accuracy, and introducing spatial inconsistency (Guo et al., 2005; Panchanathan et al., 2023).
+
+ZHOU ET AL.
+
+1 of 21
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+Visualization: Shunping Zhou, Pan Yang, Qian Tan Writing ­ original draft: Shunping Zhou, Pan Yang, Qian Tan Writing ­ review & editing: Pan Yang, Qian Tan
+
+To alleviate the spatial constraints of conventional monitoring, recent studies have explored alternative ground- based data sources--notably crowdsourced measurements and low-cost sensors--that enable denser, though lower-quality, monitoring networks (Akhie & Joksimovic, 2023; Avellaneda et al., 2020; Liu et al., 2020; Mazzoleni et al., 2018; Poupry et al., 2023; Wongchuig et al., 2024; Yang & Ng, 2019). These opportunistic data stream have shown promise in better constraining dynamic model processes. For example, assimilating crowdsourced observations, despite their asynchronous and uncertain nature, with traditional, static sensor networks has improved flood forecast performance by 10%­16% (Songchon et al., 2023). Similarly, assimilating sub-hourly in situ electrical conductivity sensors in SWAT has reduced the modeling uncertainty and management cost by 70% (Han et al., 2023). However, while these strategies successfully increase the number of observation points, they introduce challenges related to data quality control, unknown measurement errors, and systematic biases. More importantly, their long-term reliability is hindered by difficulties in sustaining public participation and sensor maintenance (Zheng et al., 2018). There remains a critical need for more reliable alternative water quality data sources to complement sparse gauge networks in watershed modeling.
+In recent years, the scientific community has increasingly turned to spatially continuous data products. Among these, high-frequency spatial inversion data derived from big earth data technologies represents a reliable and powerful solution, providing the synoptic coverage, that is, impossible to achieve with point-scale measurements (Frederiksen et al., 2025; Isles, 2024; Rahat et al., 2023). The value of this approach is well-established in water quantity modeling, where the assimilation of analogous spatial data for variables such as water surface elevation and flood extent has markedly improved large-scale hydrologic and hydrodynamic forecasting (Dasgupta et al., 2021; Wongchuig et al., 2024; Wongchuig-Correa et al., 2020). Such multi-source data fusion is typically performed via the Bayesian calibration (BC) framework (T. J. Smith & Marshall, 2008; Vrugt et al., 2009; Zheng & Han, 2015). By applying Bayes' rule, BC combines prior parameter knowledge with a likelihood function that quantifies the probability of observing the data given a particular parameter set (Vrugt et al., 2009). This likelihood is established by explicitly modeling the residual between model outputs and observations (Evin et al., 2013; Schoups & Vrugt, 2010), and the resulting posterior parameter distribution is typically explored using simulation algorithms such as Markov chain Monte Carlo (MCMC) (Gelman et al., 1995). Critically, BC allows for the incorporation of heterogeneous data types with distinct error structures, making it well-suited for assimilating both sparse, high-quality in situ data and spatially extensive, error-prone inversion products (Han & Zheng, 2016, 2018; Nascimento et al., 2023; Xie et al., 2024).
+The integration of such inversion data in water quality modeling is comparatively underdeveloped (Cho et al., 2020), despite recent advancements in water quality (e.g., total nitrogen) inversion that have demonstrated strong regional accuracy (Virro et al., 2022; Zhang et al., 2024). The primary barrier to their use is not a lack of potential, but rather the methodological difficulty of their assimilation (Ribeiro et al., 2022; Shi et al., 2022; Song et al., 2022), specifically the formulation of likelihood function in the BC framework for spatial inversion water quality data at ungauged subwatersheds.
+The formulation of spatial inversion water quality data errors and associated likelihood functions at ungauged subwatersheds is not straightforward. Traditionally, assuming a consistent error structure over space and time, the error structure of TN observation can be determined a priori based on historical in situ data (He et al., 2025; Wei et al., 2024). But such assumption rarely stands for spatial inversion products as their errors are complex, spatially non-stationary, and temporally autocorrelated (Rahat et al., 2023). The difficulty thus lies in a reliable "guess" of the error structure at ungauged locations. To the best of the authors' knowledge, this remains a key methodological gap, limiting the full potential of high-coverage inversion data in watershed water quality modeling.
+To address the challenge of data fusion in watershed modeling, this study introduces a novel Hybrid Inversion­ Observation Bayesian Data Fusion (HIOBF) framework, specifically designed to integrate recently developed TN inversion data (https://engine-aiearth.aliyun.com/#/space/detail /kMie305012) into the SWAT model. Crucially, this study addresses the above barrier of spatial inversion data error formulation by introducing a geography- driven spatial extrapolation model. This approach is grounded in the assumption that the error structure of spatial inversion data can be reliably inferred from key sub-basin characteristics--such as catchment area, mean annual discharge, and spatial proximity--using established machine learning techniques. The geography-driven spatial extrapolation model act as a major modification of the traditional BC framework, which allows the reliable formulation of the likelihood function of spatial inversion data at ungauged sub-basins. We implement and test this framework in the Dongjiang River Basin (DJB), China, through three distinct fusion scenarios: (a) purely in
+
+ZHOU ET AL.
+
+2 of 21
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+ZHOU ET AL.
+
+Figure 1. Schematic workflow of the geospatial extrapolation-Bayesian data fusion framework for SWAT parameter calibration in data-scarce sub-basins of the Dongjiang River Basin (DJB).
+situ observation-based (POBF), (b) purely inversion-based (Pure Inversion Bayesian Fusion (PIBF)), and (c) the fully integrated hybrid scheme (HIOBF). This comparative analysis allows us to isolate the contributions of each data source. Ultimately, the HIOBF framework offers a transferable methodology for robust data fusion in complex environmental models, enhancing simulation accuracy and providing defensible uncertainty estimates in the era of data-rich Earth observation.
+2. Methodology
+2.1. Study Framework
+Our methodological workflow (Figure 1) employs a robust Bayesian framework to enhance the simulation of streamflow and TN within the DJB. The process follows a structured, sequential approach (Hsu et al., 2009; Seis et al., 2024; Zhang & Arhonditsis, 2009). First, a Sobol global sensitivity analysis identifies the most influential SWAT parameters for both streamflow and TN simulations. Next, a deterministic calibration of the flow-related parameters is conducted using the Differential Evolution algorithm. Finally, the TN-related parameters are calibrated via a stochastic Bayesian calibration framework.
+The framework's key innovation--the strategic integration of diverse data sources--is implemented in the third step, following the calibration of flow-related parameters. This step fuses daily in situ TN observations (Z) with high-frequency spatial inversion data (U), the latter offering critical spatial coverage. To make the inversion data suitable for Bayesian analysis, two distinct processing branches are employed. For gauged sub-basins, inversion data are combined with in situ observations to inform a Gaussian error model. For the more challenging ungauged sub-basins, a geography-driven spatial extrapolation method is employed to establish a robust relationship between the inversion data and their in situ equivalents. For both data streams, error structures are explicitly characterized, incorporating heteroscedasticity and correcting for temporal autocorrelation, to formulate a robust and integrative likelihood function.
+With flow parameters fixed and the likelihood function defined, stochastic Bayesian calibration is conducted for the TN-related parameters. Posterior sampling is conducted using an efficient MCMC sampler DREAMzs (Laloy & Vrugt, 2012). To assess the contribution of each data source, three distinct data fusion scenarios are evaluated: Pure Observation Bayesian Data Fusion (POBF), PIBF, and the proposed Hybrid Inversion-Observation Bayesian Fusion (HIOBF). Model outputs from each scenario are rigorously validated against an independent multi-station data set to demonstrate the effectiveness of the proposed hybrid approach.
+3 of 21
+
+ZHOU ET AL.
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+2.2. Algorithm Development
+To enable the systematic integration of heterogeneous data sources, a Bayesian data fusion framework was developed. This framework is grounded in foundational Bayesian principles and incorporates novel components tailored to the complex error structures of high-frequency spatial inversion data. The following sections describe the Hybrid Inversion-Observation Bayesian Fusion (HIOBF) we propose, as well as each constituent element of the framework.
+
+2.2.1. The Bayesian Calibration Framework
+Our method is based on the Bayesian Calibration (BC) paradigm, which systematically updates knowledge about a set of model parameters  = {1, ... , d} based on observed data. This process is governed by Bayes' theorem, which defines the posterior probability distribution of the parameters as being proportional to the product of the likelihood function and the prior probability distribution:
+
+p(|Z)  L(|Z) · p()
+
+(1)
+
+where p(|Z) is the posterior distribution of the parameters given observations Z, L(|Z) is the likelihood function that quantifies the model's goodness-of-fit for a given parameter set, and p() is the prior distribution reflecting initial knowledge about the parameters. The central task in BC is to define a statistically rigorous likelihood function, which relies on the assumption of model output's residual distributions. Let Y() denote the model output, Z the corresponding observation, and Y~ the ground-truth of Y(), the following relationship can be developed:
+
+Z = Y + e = Y() +  + e
+
+(2)
+
+In the BC framework, observational errors e in Z and total modeling errors  (resulting from model structural, parametric and input errors) in Y are often combined into a lumped residual error term , which is commonly described by an independent, heteroscedastic, and Gaussian error model (Schoups & Vrugt, 2010; Vrugt et al., 2009). Following this principle,  is assumed to exhibit a zero mean and heteroscedasticity is explicitly modeled by parameterizing the error standard deviation ,t as an exponential function of yt (the model output at time t):
+
+,t = exp (  +  · yt)
+
+(3)
+
+where  and  are two parameters to be estimated using Maximum Likelihood Estimation. This design inherently prevents non-physical negative standard deviation values caused by extreme fluctuations in yt, while simultaneously accommodating heteroscedasticity through the log-linear dependence on covariates. Under the assumption that residual  is independent, the log-likelihood function for this error model of in situ observation data Z can be expressed as (Han et al., 2023; Schoups & Vrugt, 2010; Vrugt et al., 2009):
+
+log L(|Y, , Z) = - T log(2) - 2
+
+T
+t=1
+
+log(,t )
+
+-
+
+1 2
+
+T
+t=1
+
+(
+
+zt
+
+- yt 2,t
+
+)2
+
+(4)
+
+where  denotes the two hyperparameters for  (i.e.,  and  ), zt is the value of Z at time t, and T is the number of time steps. This likelihood function forms the statistical basis for calibrating the model using conventional, high-quality point measurements.
+
+2.2.2. Modeling for Spatial Inversion Data
+While the Gaussian error model described above is suitable for direct in situ observations, spatial inversion data (U) introduces additional layers of complexity, including a different error structure (i.e., spatial reflectance errors, inversion model errors, and unknown errors) and the challenge of application in ungauged regions. A first step to address these challenges is to develop mathematical relationships linking the inversion data U, the in situ
+
+4 of 21
+
+ZHOU ET AL.
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+observation data Z, and the model output Y(). Recognizing that U serves as an imperfect proxy for Z, their relationship is modeled using a linear regression with an explicit error term (Han et al., 2023):
+
+U = f (Z) = 0 + 1 · Zvirtual + 
+
+(5)
+
+where 0 and 1 represent the intercept and the slope, respectively, and  denotes the regression error term. Note that the in situ observation is denoted as Zvirtual in Equation 5 as it represents the theoretical observation at ungauged sub-basins. Following rigorous statistical assumptions,  is modeled as following a normal distribution with a mean of 0 and a standard deviation of  (   N( 0, 2)). Furthermore,  is strictly independent of the observation error  (   N( 0, 2 )). By substituting Zvirtual = Y() +  into Equation 5, we can relate the inversion data U directly to the SWAT model output Y():
+
+U = 0 + 1 · [Y() + ] + 
+
+(6)
+
+Let Y = 0 + 1 · Y(), a new residual term for the inversion data, e = U - Y, can then be derived as:
+
+e = 1 ·  + 
+
+(7)
+
+Given the independence and normality of  and , the composite residual e also follows a normal distribution with a mean of 0. Crucially, the variance of e is not an independently inferred parameter, but is co-determined by both error sources: e2 = ( 1 · )2 + 2.
+Consequently, correctly characterizing the statistical properties of e requires addressing both the variance propagated from the observation error model and the inherent uncertainty of the spatial regression (), alongside any temporal autocorrelation inherent to the spatial inversion time series.
+
+2.2.3. Spatial Extrapolation Model for Ungauged Basins
+A primary challenge in this study was the development of a robust spatial extrapolation model from a limited number of in situ monitoring stations. To avoid overfitting and ensure generalizability, we adopted a regionalized, "cluster-then-regress" framework trained on a diverse set of 13 stations (11 from the neighboring Bei Jiang and Delta basins, plus 2 from the DJB), validated on 4 external stations, and prospectively tested on 4 independent DJB stations. The predictive functions ( f0 and f1) for any ungauged sub-basin i are expressed conceptually as:
+
+0(i) = f0 (CATCH SKMi, DIS AV CMSi,  j · Disti,j)
+
+(8)
+
+jS
+
+1(i) = f1 (CATCH SKMi, DIS AV CMSi,  j · Disti,j)
+
+(9)
+
+jS
+
+where the predictors include key hydrological descriptors: CATCH SKMi (sub-basin drainage area in km2), DIS AV CMSi (mean annual discharge in m3/s), and a spatial proximity metric Disti,j - defined as the Euclidean distance between the ungauged sub-basin i and gauged sub-basin j within the training set S. The set S comprises sub-basins with in situ observational data and spatial inversion data, j denotes the spatial weight assigned to sub- basins j. River segment characteristics used in this study were extracted from the Global RiverATLAS data set within the HydroSHEDS framework (Lehner et al., 2022; Linke et al., 2019).
+This approach first partitions the training sites into hydrologically similar archetypes using a K-Means clustering algorithm based on catchment area (CATCH_SKM) and mean annual discharge (DIS_AV_CMS). Subsequently, within each cluster, a separate XGBoost (eXtreme Gradient Boosting) model was trained to learn the specific, non-linear relationship between these geographic features and the Z-U coefficients (0 and 1). For any ungauged sub-basin in the DJB, its cluster membership was first determined using the K-Means algorithm, and the corresponding cluster-specific model was then applied to predict its coefficients. This two-stage methodology is fundamentally more robust than a single global model because it recognizes the underlying hydrological
+
+5 of 21
+
+ZHOU ET AL.
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+heterogeneity. The strong performance on the independent, prospectively tested set (as presented in Section 3.2) provides high confidence in the model's ability to generate reliable pseudo-observations.
+
+2.2.4. Temporal Autocorrelation Correction
+Diagnostic analysis revealed that the raw residuals, e, exhibit strong temporal autocorrelation, violating the
+independence assumption of the likelihood function (see Section 3.3). To address this, we implement a pre- whitening framework using a first-order autoregressive (AR (1)) model (Bürger, 2023) to generate a new set of uncorrelated residuals ear. The correction is formalized as:
+
+ear[1] = e[1]
+
+{ ear[t] =  · ear[t -
+
+1] + (e[t] -
+
+ · e[t -
+
+1]), t = 2, 3, ..., T
+
+(10)
+
+where e[1] denotes the raw residual at the initial time step t = 1, ear[t] denotes adjusted residuals at time t,  is the lag-1 autocorrelation coefficient estimated from the raw residuals e, e[t] is raw residual at time t, derived
+from the initial model, the term  · ear[t - 1] accounts for historical dependency, propagating the autocorrelation
+structure. The residual increment (e[t] -  · e[t - 1]) removes lagged autocorrelation from the current re-
+sidual, ensuring stationarity. By applying this transformation, we ensure the statistical validity of the subsequent likelihood calculation.
+
+2.2.5. Hybrid Inversion-Observation Bayesian Data Fusion
+The final HIOBF framework integrates all preceding components into a unified inference scheme. A critical improvement in this framework lies in the rigorous formulation of the likelihood function for inversion data, which explicitly accounts for the composite error structure derived in Section 2.2.2. With the temporally independent residuals ear obtained after pre-whitening, the log-likelihood function for the inversion data U is formulated as:
+
+log L(|Y, , U) = - T log(2) -
+  2
+
+T
+t=1
+
+log(e
+
+,t) -
+
+1T
+
+(
+
+ear,t
+
+2
+)
+
+2 t=1 e ,t
+
+(11)
+
+where e ,t is the standard deviation, calculated as the square root of the variance of the composite residual in
+Equation 7.
+The HIOBF framework achieves data fusion by constructing a joint likelihood function that combines the information from both the in situ observations and the spatial inversion data. Assuming the errors between the two data sources are conditionally independent, the joint log-likelihood is the sum of their individual log-likelihoods:
+
+log L(, , Zreal, U) = log L(|Y, , Zreal) + log L(|Y, , U)
+
+(12)
+
+Note that the in situ observations in Equation 12 is denoted as Zreal to distinguish it from the Zvirtual in Equation 5. Finally, we apply Bayes' theorem (Efron, 2013). The posterior probability distribution of all parameters is proportional to the product of the prior distribution and this joint likelihood function. We then employ MCMC sampling (via DREAMzs) (Gelman et al., 1995), to efficiently sample from this high-dimensional posterior distribution to infer the parameters and evaluate the simulation uncertainty.
+
+2.3. Study Area
+The Dongjiang River (East River), a tributary of the Pearl River, originates in Jiangxi Province, China, and flows predominantly through Guangdong Province before discharging into the Pearl River Delta (Figure 2a). The DJB spans approximately 562 km with a drainage area of 35,340 km2, geographically situated between 113°52­115° 52E and 22°38­25°14N. The basin exhibits complex topography, characterized by higher elevations in the northeast and lower elevations in the southwest (Figure 2b), encompassing mountains, hills, river valleys, plains, and a river delta network (Lyu et al., 2023). The region is dominated by a humid subtropical monsoon climate, receiving an average annual precipitation of approximately 1,800 mm, with 80% occurring during the flood
+
+6 of 21
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+Figure 2. Dongjiang River Basin (DJB). (a) Location of the DJB within the Pearl River Basin, (b) Spatial distribution of water quality monitoring stations--including those in the Beijiang River Basin, Pearl River Delta Basin, and DJB--overlaid on the Soil and Water Assessment Tool (SWAT) model domain of the DJB. Note: Red circles indicate independent validation stations for Total Nitrogen (TN), including Longchuan (Sub-basin 11), Ruhu (Sub-basin 19), and Boluo (Xinjiao) (Sub-basin 24). Pink circles indicate gauged stations used for TN data fusion, including Jiulongtan (Sub-basin 17), Shilongnanhe (Sub-basin 21), and Dadun (Sub-basin 27). Blue diamonds represent hydrometric stations, including Heyuan and Boluo.
+season (May to September) (Lin et al., 2014; Yan et al., 2015; Zhong et al., 2020). The Dongjiang River serves as a primary freshwater source for major cities in the Guangdong­Hong Kong­Macao Greater Bay Area, including Hong Kong, Guangzhou, Shenzhen, and Dongguan (Huang et al., 2024; Su & Chen, 2019). The availability and quality of water are critical concerns within the basin. Rapid development in recent years has intensified water resource allocation conflicts between upstream and downstream regions (Huang et al., 2022).
+For analytical purposes, the DJB is delineated into 29 sub-basins in this study. The inherent data scarcity in certain sub-basins, coupled with the complex hydro-environmental dynamics, renders the DJB an ideal and challenging study area for developing and validating advanced water quality management modeling and data fusion techniques.
+2.4. Data Sources
+Daily streamflow data were collected from two key hydrological monitoring stations within the DJB: Heyuan and Boluo. The period 2014­2017 was used for calibration, and 2019­2022 for validation. In situ total nitrogen (TN) concentration measurements from six cross-sectional monitoring stations during 2021­2022 were used for water quality calibration and validation. Specifically, calibration was performed using TN data from Jiulongtan (sub- basin 17), Shilongnanhe (sub-basin 21) and Dadun (sub-basin 27). Validation utilized data from three independent stations: Longchuan City Railway Bridge (Longchuan, sub-basin 11), Huizhou Ruhu (Ruhu, sub-basin 19), and Boluo Chengxia Xinjiao (Boluo (Xinjiao), sub-basin 24). It is noted that the TN validation station Longchuan and the Heyuan hydrological station (approximately 84.2 km apart) both locate in sub-basin 11, while the Boluo (Xinjiao) TN station and the Boluo hydrological station (approximately 7.1 km apart) both locate in sub-basin 24. The distances between water quality and hydrological stations in sub-basins 11 and 24 ensure sufficient spatial independence for TN validation purposes. Crucially, the Ruhu station serves as a fully independent TN validation site, entirely unaffected by data used in the prior hydrological or water quality calibration steps. All basic data required for the SWAT model setup, including Digital Elevation Models, land use maps, soil maps, climate data, and point source pollution data, are detailed in Table S1 of the Supporting Information S1.
+
+ZHOU ET AL.
+
+7 of 21
+
+ZHOU ET AL.
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+The spatial TN inversion data used in this study is from a proprietary Pearl River Basin daily TN concentration data set previously developed by our research group and publicly available on the AI-Earth platform (https://engi ne-aiearth.aliyun.com/#/space/detail/kMie305012). This high-precision data set, generated using spatial- geographical big data technology based on 88 TN monitoring stations across the Pearl River Basin, provides daily, spatially continuous 5-km resolution coverage from 2015 to 2024. The 6 water quality monitoring stations used in this study (3 calibration and 3 validation stations) in Figure 2 were not included in the training of the TN inversion data. Figure S1 in the Supporting Information S1 illustrates the daily gridded TN data for the Pearl River Basin during the study period (2021­2022) extracted from the AI-Earth platform, highlighting its spatial coverage and resolution. It is important to note that the inversion data set relies in part on VIIRS-DNB nighttime-light observations, which are severely degraded by cloud cover and atmospheric aerosols. By applying stringent cloud- masking and aerosol-screening filters, we retained only those acquisition dates with reliable VIIRS-DNB signals --resulting in approximately 200 valid days in 2021 and 2022. Despite this temporal intermittency, a comparison of its daily estimation at the 6 water quality stations against our collected in situ observation data suggests a high degree of agreement in spatial TN distribution: the R2 of inversion and in situ observation data exceeds 0.8 for over 90% of the valid days, while RMSE remains below 0.4 for nearly 80% of valid days in both 2021 and 2022 (Figure S2 of the Supporting Information S1).
+To integrate this spatially continuous data with the point-based SWAT model outputs, a hydrologically consistent framework was employed. First, to ensure data quality, the raw time series for each inversion data pixel was screened, and any data points falling outside of 1.5 times the interquartile range from the long-term median were removed as statistical outliers (Dash et al., 2023; Hoaglin et al., 1986). For gauged sub-basins, the inversion data is identified as the screened inversion data corresponding to the location of the monitoring station. For ungauged sub-basins, a nearest-neighbor assignment method was adopted: selecting the screened data point closest to the SWAT's sub-basin outlet. The relationship between this assigned inversion data and the in situ equivalent values was then established using the spatial extrapolation model (detailed in Section 2.2.3).
+2.5. Sensitivity Analysis for Parameters to Be Calibrated
+To identify the most influential parameters for subsequent calibration, we employed the Sobol global sensitivity analysis to quantify the contribution of SWAT model parameters to the uncertainty in both streamflow and TN simulations (Ballester-Ripoll et al., 2019; Sobol, 2001). The sensitivity analysis was conducted for 28 parameters that are considered influential for streamflow and total nitrogen simulation performance (Table S2 in Supporting Information S1). The detailed methodology, equations, and the specific sampling strategy used for the variance decomposition framework are provided in Text S3 of the Supporting Information S1.
+2.6. Flow-Related Parameter Calibration
+Following the identification of critical parameters through sensitivity analysis, an initial deterministic calibration was performed for the identified streamflow-related parameters. We employed a rigorous split-sample test strategy covering the period from 2011 to 2022. A 3-year warm-up period (2011­2013) was used to initialize and stabilize the model states. Daily streamflow observations from the Heyuan and Boluo stations for 2014­2017 served as the calibration period. Model validation was then conducted for the subsequent 2019­2022 period. Note that daily streamflow data for the year 2018 were unavailable due to monitoring gaps and were therefore excluded from the analysis.
+For the calibration, the Differential Evolution (DE) algorithm (Storn & Price, 1997) was employed via the DEoptim package in R. Key hyperparameters for the algorithm were selected to ensure a thorough search of the parameter space for the 16 calibrated parameters: the population size (NP) was set to 160, the crossover probability (CR) was 0.9, and the differential weighting factor (F) was 0.8. The optimization was run for a maximum of 500 generations (itermax), resulting in 80,000 total model simulations to explore the parameter space and converge toward an optimal solution. Model performance during this process was quantitatively assessed using a suite of statistical metrics, including the Nash-Sutcliffe Efficiency (NSE), the coefficient of determination (R2), and the percent bias (PBIAS), with the objective function set to maximize the NSE.
+
+8 of 21
+
+ZHOU ET AL.
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+2.7. Bayesian Data Fusion Scenarios for Water Quality-Related Parameters
+To rigorously evaluate the performance of the proposed Hybrid Inversion-Observation Bayesian Data Fusion (HIOBF) method, particularly its efficacy in data-scarce regions, this study designed three distinct data fusion scenarios for comparative validation. Due to the high computational demands of Bayesian fusion, the TN simulation window was set to 2018­2022. This includes a requisite 3-year burn-in period (2018­2020) to stabilize nutrient pools, followed by a calibration period of 2021­2022. In this phase, TN parameters were calibrated while fixing the streamflow parameters inherited from the long-term hydrological model (Section 2.6). The Bayesian calibration for TN load parameters within each fusion scenario was conducted by fixing the previously calibrated streamflow parameters. The MCMC sampling was performed using the BayesianTools package in R, with DREAMzs employed for posterior sampling. Each calibration run generated up to 500,000 samples, and Markov chain convergence was confirmed using the Gelman-Rubin diagnostic (Gelman & Rubin, 1992). The initial 30% of samples from each chain were discarded as a burn-in period, with the last 50% of all points from the Markov chains used for subsequent analysis. The R code for the likelihood functions of in situ observation data (Equation 4) and spatial inversion data (Equation 11) is provided in Text S1 of Supporting Information S1; specific MCMC parameter settings are detailed in Text S2 of Supporting Information S1. The overall model calibration performance is presented in Section 3.4. These scenarios are structured to isolate and quantify the incremental value of integrating different data sources:
+1. Pure Observation Bayesian Data Fusion (POBF): This baseline scenario represents a traditional approach, where model parameters are calibrated solely using in situ TN observations from a subset of gauged sub-basins (specifically, sub-basins 17, 21, and 27). This setup provides a benchmark against which the benefits of incorporating inversion data can be assessed.
+2. Pure Inversion Bayesian Data Fusion (PIBF): This scenario explores the potential of inversion data as a standalone input for model calibration. It utilizes TN concentrations from a larger set of sub-basins (9, 12, 13, 22, 23, and 26), demonstrating the utility of spatial inversion data in the absence of direct ground observations.
+3. Hybrid Inversion-Observation Bayesian Data Fusion (HIOBF): This is the core proposed method, designed to leverage the complementary strengths of both in situ observations and inversion data. It integrates data from all available gauged and inversion-covered sub-basins (9, 12, 13, 17, 21, 22, 23, 26, and 27). Crucially, data fusion in this scenario is spatially stratified: high-quality in situ observations are prioritized at gauged locations (using L(Zreal|)), while inversion data are fused exclusively at ungauged locations (using L(U|)).
+It is noted that this experimental design involves asymmetric sample sizes (3 in situ sites vs. 6 inversion sites). This structure was intentionally chosen to reflect the realistic disparity between typically sparse monitoring networks and spatially continuous earth observation data. To isolate the effect of data quantity versus information type, a comprehensive scalability analysis with varying sample sizes is provided in Section 4.1.
+All three fusion scenarios are consistently validated against an independent set of three sub-basins (11, 19, and 24) to ensure a fair and robust comparison of their predictive capabilities across different data availability conditions. This comparative experimental design allows for a clear quantification of the added value of multi-source fusion in addressing the critical challenge of data scarcity in watershed modeling.
+3. Results
+3.1. Parameter Sensitivity and Streamflow Calibration
+16 Streamflow parameters and 6 TN parameters were selected for SWAT calibration based on the Sobol sensitivity analysis. The detailed sensitivity ranking based on the total-effect sensitivity index (STi), parameter bounds, and a comprehensive discussion of the dominant controlling processes (e.g., the high sensitivity of CN2 for streamflow and ERORGN for TN) are presented in Text S4 and Table S3 of the Supporting Information S1.
+A streamflow calibration of the identified parameters achieved NSE values of 0.66 (R2 = 0.74, PBIAS = - 18.20%) at Heyuan and 0.70 (R2 = 0.72, PBIAS = 11.10%) at Boluo stations (Figure S3 of the Supporting Information S1). Performances remained satisfactory during the validation period, with NSE values of 0.54 (R2 = 0.65, PBIAS = - 22.70%) at Heyuan and 0.62 (R2 = 0.66, PBIAS = 16.80%) at Boluo (Figure 3). These daily simulation results compare favorably with state-of-the-art daily modeling studies in the DJB, which typically report NSE values ranging from 0.52 to 0.61 (He et al., 2026; Wang et al., 2023). Higher NSE values reported in other literature (0.81­0.87) are generally associated with monthly streamflow simulations (Ke
+9 of 21
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+ZHOU ET AL.
+
+Figure 3. Comparisons between the simulated and observed daily streamflow in (a) Heyuan, (b) Boluo during validation periods.
+et al., 2024; Wu et al., 2019). Our model performed relatively poorly for simulating extreme high and low flows, a common problem in hydrological modeling (Muñoz-Castro et al., 2025; Todorovi et al., 2024). Moreover, the PBIAS values reveal a systematic underestimation at Heyuan and an overestimation at Boluo; but both fall within the acceptable ranges for hydrological modeling (Arnold et al., 2012; Krause et al., 2005).
+It is important to note that parameters related to sediment transport, despite their strong influence on nitrogen cycling, were intentionally excluded from this initial hydrological calibration. They were reserved for the secondary, TN-specific calibration phase to ensure a focused, stepwise optimization process where the water balance is constrained before addressing nutrient loads.
+3.2. Spatial Extrapolation of Inversion Data at Ungauged Sub-Basins
+A central challenge in watershed modeling is the reliable parameterization of ungauged sub-basins, where model predictions are often uncertain. This study directly addresses this by developing a spatial extrapolation model (as detailed in Section 2.2.3, Equations 8 and 9) to infer the relationship between in situ measurements (Z) and spatial inversion (U) in these data-scarce regions. The accuracy of this extrapolation is paramount, as it directly governs the quality of the "pseudo-observation" data used to construct the likelihood function and, consequently, the performance of the HIOBF model in unmonitored areas.
+The spatial extrapolation model, trained on the regional data set, was then subjected to a rigorous prospective test to validate its predictive skill specifically within the DJB. This validation was conducted at four independent DJB monitoring stations (Longchuan, Ruhu, Boluo (Xinjiao), and Dadun), which were not used in the training phase
+10 of 21
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+ZHOU ET AL.
+
+Figure 4. Prospectively tested results across sub-basins: (a) Longchuan (sub-basin 11), (b) Ruhu (sub-basin 19) (c) Boluo (Xinjiao) (sub-basin 24), and (d) Dadun (sub-basin 27) stations, with the extrapolation-predicted formula shown in the lower- right corner of each subplot.
+and were selected to represent a range of hydrological conditions. The results, presented in Figure 4 and Table 1, confirm the high reliability of the extrapolation framework. The model achieved high R2 values between the predicted U and the observed U (ranging from 0.80 to 0.89) and low RMSE across all four sites. This strong performance, even in complex downstream locations, provides a confident foundation for applying the generated pseudo-observations in the subsequent multi-source data fusion. The results of the clustering step are presented in the (Figure S4 Supporting Information S1), and the results of the external validation against the held-out regional sites are provided in Figure S5 and Table S4 of the same Supporting Information S1 document.
+3.3. Error Models of Spatial Inversion Data
+The autocorrelation function (ACF) plots for the original residuals at representative sub-basins (11, 19, and 24) clearly exhibit autocorrelation within the inversion data (Figures 5a, 5c, and 5e). This is quantitatively confirmed
+
+Table 1 Detailed Metrics Results of Spatial Extrapolation on Prospectively Tested Sets
+
+Site
+
+Prediction formula
+
+Actual R2
+
+Longchuan Ruhu Boluo (Xinjiao) Dadun
+
+U = 0.927Z + 0.122 U = 0.830Z + 0.300 U = 0.841Z + 0.496 U = 0.821Z + 0.554
+
+0.870 0.938 0.910 0.937
+
+Predicted R2 0.836 0.867 0.800 0.891
+
+Predicted RMSE 0.125 0.145 0.159 0.124
+11 of 21
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+Figure 5. Autocorrelation function (ACF) plots of model residuals for selected sub-basins (11, 19, and 24). Panels (a, c, e) show the ACF of the original residuals for sub- basins 11 (Longchuan), 19 (Ruhu), and 24 (Boluo (Xinjiao)), respectively. Panels (b, d, f) show the ACF of the residuals after applying an AR (1) correction to the original residuals for the corresponding sub-basins. The shaded regions represent the 95% confidence intervals for the autocorrelations under the assumption of white noise.
+by Durbin-Watson (DW) statistics of 0.218, 0.055, and 0.046, respectively, which are substantially below the no- correlation threshold of 2.0 (Durbin, 1970).
+To address this, we implemented the first-order autoregressive (AR (1)) pre-whitening framework described in Section 2.2.4 (Equation 10). This correction proved highly effective. The ACF plots of the adjusted residuals (Figures 5b, 5d, and 5f) show that the serial correlation has been substantially reduced or eliminated, with the corresponding DW statistics changed to 2.554, 2.386, and 2.342. These values, now approaching the ideal value of 2, suggest the corrected residuals approximate white noise. This crucial step ensures the statistical validity of the likelihood function for inversion data (Equation 11), thereby enabling its unbiased integration within our hybrid fusion scenarios.
+3.4. Multi-Source Data Fusion Performance
+With the error structures corrected and the spatial relationships established, this subsection assesses how the integration of different data sources impacts both the model's parametric uncertainty and its predictive accuracy in independent validation sub-basins.
+3.4.1. Posterior Parameter Distributions Under Fusion Schemes
+The posterior Cumulative Distribution Functions (CDFs) for the TN-related parameters provide a clear, quantitative measure of parametric uncertainty under each scheme (Figure 6), where a steeper curve signifies a more constrained parameter with lower uncertainty. The HIOBF scenario consistently yields the steepest CDFs, suggesting the synergistic value of integrating the in situ measurement data with the inversion data in reducing SWAT simulation uncertainties. In contrast, the single-source POBF and PIBF scenarios exhibit higher uncertainty, reflected in their flatter CDFs. The consistently broad distributions for the least sensitive parameter, USLE_P, across all scenarios are an important finding. It demonstrates that the Bayesian framework correctly identifies the inherent limits of calibration, as no amount of observational data can fully constrain a parameter to
+
+ZHOU ET AL.
+
+12 of 21
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+Figure 6. Cumulative Distribution Functions of selected sensitive parameters under the different data fusion scenarios. Note that the Pure Inversion Bayesian Fusion scenario serves to illustrate the parameter uncertainty when relying solely on inversion data.
+which the model output is not strongly sensitive. This finding is reinforced by the full joint-parameter correlations and distributions shapes are provided in the (Figures S6 and S7 in Supporting Information S1).
+The results indicate that single-source data fusion scenarios (POBF and PIBF) may produce biased parameter estimates, as each data stream captures different system dynamics. For instance, the parameter ERORGN is estimated around 3.0 under POBF and approximately 2.2 under PIBF, reflecting divergent interpretations based on isolated data types. Interestingly, although the HIOBF framework integrates both in situ and inversion measurements, its parameter estimates do not always fall between those of the single-source approaches. In the case of ERORGN, HIOBF yields a value around 3.6--beyond both POBF and PIBF estimates--suggesting a synergistic reinterpretation rather than a compromise. Only for the parameter CDN, does the HIOBF estimate lie within the range defined by the two single-source scenarios. These findings highlight that HIOBF does not simply average inputs but can lead to more informed, and sometimes qualitatively different, parameter inferences through integrated data assimilation (Song et al., 2024; Tran et al., 2020).
+3.4.2. Validation Performance Across Independent Sub-Basins
+Figure 7 and Table 2 present the evaluation of the three fusion scenarios against an independent set of three hydrologically distinct sub-basins by comparing simulated and observed TN concentrations. The results confirm the superiority of the hybrid approach. On average, HIOBF improves the NSE by approximately 55% relative to the in situ observation-only baseline (POBF), with the Longchuan station alone exhibiting a gain over 119%. This is complemented by an average increase of 41% in R2 and a 9.2% average reduction in the 95% prediction interval width (PINAW). Moreover, HIOBF reduces systematic bias, lowering the average absolute PBIAS from 10% under POBF to 8%. Importantly, all three scenarios maintain PBIAS within ±12%, indicating that bias remains at an acceptably low level across methods.
+A site-specific analysis reveals the nuanced mechanisms underlying HIOBF's improved performance. At the upstream Longchuan station (Figures 7a­7d, and 7g), POBF performs poorly in capturing TN dynamics (NSE = 0.146), where PIBF provides a substantial improvement, highlighting the value of inversion data in data- scarce regions. HIOBF further improves performance, achieving the highest predictive skill (NSE = 0.319) by synergizing both data sources. In contrast, at the mid-stream fully independent validation station Ruhu
+
+ZHOU ET AL.
+
+13 of 21
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+Figure 7. Comparison of total nitrogen (TN) simulation performance under different Bayesian fusion scenarios--POBF (line 1), PIBF (line 2), HIOBF (line 3) at three independent validation sub-basins: (a, d, g) Longchuan (Sub-basin 11), (b, e, h) Huizhou Ruhu (Sub-basin 19), and (c, f, i) Boluo (Xinjiao) (Sub-basin 24).
+
+(Figures 7b­7e, and 7h), the PIBF (NSE = 0.254) underperforms relative to POBF (NSE = 0.271), indicating the inversion data alone can introduce localized biases depending on site conditions. Here, the HIOBF framework demonstrates its robustness by reconciling these conflicting data streams and achieving a higher NSE value (0.362). Finally, at the downstream Boluo (Xinjiao) station (Figures 7c­7f, and 7i), where POBF already performs reasonably well (NSE = 0.277), HIOBF still delivers a notable 42% improvement in NSE. This shows that the fusion approach not only corrects errors in data-scarce regions but also enhances model performance in relatively well-instrumented regions. The simulation performance of sub-basins 17, 21, and 27 under different Bayesian fusion scenarios is shown in Figure S8 of Supporting Information S1.
+
+Table 2 Performance Metrics of the Three Bayesian Data Fusion Scenarios (POBF, PIBF, and HIOBF) at the Three Independent Validation Sites
+
+Scenario
+
+Station
+
+R2 NSE PBIAS (%) PINAW
+
+POBF PIBF HIOBF
+
+LONGCHUAN RUHU
+BOLUO (Xinjiao) LONGCHUAN RUHU
+BOLUO (Xinjiao) LONGCHUAN RUHU
+BOLUO (Xinjiao)
+
+0.221 0.373 0.355 0.378 0.348 0.383 0.443 0.412 0.486
+
+0.146 0.271 0.277 0.282 0.254 0.267 0.319 0.362 0.394
+
+11.5 8.92 - 9.23 - 7.22 11.2 6.51 -6.55 9.54 7.89
+
+0.350 0.329 0.369 0.322 0.271 0.380 0.328 0.305 0.327
+
+Note. Values in bold indicate the best performing one.
+
+It is important to place these validation results in the context of the broader challenges associated with watershed-scale nutrient modeling. The achieved NSE values in the HIOBF scenario, ranging from 0.32 to 0.39, represent a robust performance for daily total nitrogen (TN) concentration modeling. Simulating TN is significantly more difficult than simulating streamflow due to the complex, non-linear biogeochemical processes and the high spatiotemporal variability of non-point source pollution. Achieving high NSE values at a daily time step is particularly challenging in a large, heterogeneous catchment such as the Dongjiang River Basin (35,340 km2). For instance, SWAT model for the Big Sunflower River (Dakhlalla & Parajuli, 2019) and the 6,642 km2 Chungju Reservoir watershed in South Korea (Jung & Kim, 2017) achieved R2 values of 0.31 and 0.33 for daily TN load during the calibration period, respectively. In the Ax catchment, UK, SWAT model only achieves a satisfactory daily TN load simulation with NSE = 0.54, while the daily TN concentration simulation was substantially poorer (NSE = 0.12) (Glavan et al., 2011). Even with the integration of advanced techniques, challenges persist. For example, in the 220.7 km2 Tuckahoe Creek Watershed (USA), a hybrid SWAT-Deep Learning model achieved a daily Nitrate-N NSE of 0.37 during calibration and 0.09 during validation (Lee et al., 2024). Similarly, in
+
+ZHOU ET AL.
+
+14 of 21
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+the 12,100 km2 Adige River Basin in Italy, which features complex mountainous topography comparable to the upper DJB, a SWAT-based simulation reported a daily TN NSE of only 0.07 (Pedretti et al., 2025), further underscoring the difficulty of capturing high-frequency nutrient dynamics in large- scale watersheds. Consequently, many studies report higher performance metrics for TN loads at a monthly scale, which benefits from the smoothing of daily fluctuations. For example, in the 218 km2 Fengyu River watershed (Lei et al., 2024), monthly TN load NSE values of 0.67 have been achieved using a modified SWAT model. Likewise, in the Four Lakes Basin, a monthly TN load NSE of 0.62 was achieved (Long et al., 2025). Similarly, SWAT model for the 12,176 km2 St. Joseph River Basin, monthly NSE values of 0.72 for TN load (Aboelnour et al., 2024) and as high as 0.79 for nitrogen components (Ren et al., 2022) have been achieved.
+
+Figure 8. Impact of Number of Calibrated Sub-basins on Average Nash- Sutcliffe Efficiency for POBF versus HIOBF.
+
+In summary, validation across the three independent sites provides compelling evidence for the robustness and generalizability of the HIOBF frame-
+
+work. Its consistent enhancement of predictive skill is not merely a
+
+consequence of increased data volume, but a result of effectively leveraging the complementary strengths of each
+
+data source. By using spatial inversion data to inform dynamics in data-scarce regions, anchoring the model with
+
+in situ data to correct biases, and reconciling conflicting information in complex environments, HIOBF provides a
+
+more accurate and reliable simulation of watershed-scale TN dynamics, especially at ungauged or poorly
+
+monitored sub-basins.
+
+4. Discussions
+4.1. Scalability and Robustness of Data Fusion Benefits
+While the main analysis in Section 3.4.2 demonstrated the power of the fully configured HIOBF scenario (3 in situ + 6 inversion sites), supplementary experiments were conducted to assess how performance scales when augmenting a sparse in situ network with spatial inversion data (detailed in the SI, Table S5 in Supporting Information S1). The average performance across the independent validation sites for each experiment is summarized in Figure 8.
+The results reveal a clear and consistent trend: at every level of in situ data availability--whether using 1, 2, or 3 gauges--the HIOBF approach substantially outperform the traditional observation-only (POBF) baseline. For instance, augmenting a single in situ site with inversion data increases the average NSE by approximately 81% (from 0.16 to 0.29). As more in situ "anchor" sites are added, performance continues to climb non-linearly. This consistent superiority confirms that the performance gain of HIOBF stems from the complementarity of information types (the broad spatial coverage of inversion data vs. the temporal precision of in situ gauges) rather than merely the volume of data points assimilated. The consistency of this improvement across individual validation sites is detailed in Table S6 of Supporting Information S1 and visualized in the dumbbell plots in Figure S9 of the Supporting Information S1. This effectively addresses the concern that improvements might be artifacts of unequal sample sizes, highlighting the unique value of spatial inversion products in filling the "spatial gap" of traditional monitoring networks.
+
+4.2. Limitations and Future Works
+While our results demonstrate the clear superiority of the HIOBF framework, a critical discussion of its underlying assumptions and operational limitations is warranted. One central challenge relates to the spatial representation of the inversion data. The assignment of a single pixel value to represent the average condition at a SWAT sub-basin outlet is a necessary simplification to reconcile scale mismatches. This process, however, can introduce representation errors, particularly in heterogeneous sub-basins where the selected pixel may not fully capture the integrated hydrological response. Furthermore, although the inversion data set shows strong aggregate performance, it is not free from localized biases. This was evident in the Ruhu sub-basin, where the PIBF scenario degraded performance relative to the POBF baseline. This phenomenon may suggest that for certain sub-basins (e.g., Ruhu), whose geomorphological characteristics or pollution source profiles might differ significantly from those used to train the spatial extrapolation model, the inferred Z-U relationship could introduce bias.
+
+ZHOU ET AL.
+
+15 of 21
+
+ZHOU ET AL.
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+Our framework, like many Bayesian applications, relies on a Gaussian error assumption. While the autoregressive correction effectively addresses temporal dependence, other forms of non-Gaussian behavior or more complex heteroscedastic relationships may still persist (Ammann et al., 2019; Schoups & Vrugt, 2010; Samadi et al., 2017). Addressing these more intricate error structures remains an important avenue for future methodological refinement.
+Our sequential calibration strategy--where hydrological parameters were fixed deterministically prior to TN fusion--theoretically underestimates the total predictive uncertainty by neglecting the propagation of hydrological simulation errors. Moreover, the incorrect assumption of deterministic hydrological parameters may introduce additional errors in the estimated water quality parameters as the inference process forces nutrient parameters to compensate for biases in the underlying hydrological drivers (Guzman et al., 2015; Zhang & Shao, 2018). Nevertheless, given the substantial performance margin of HIOBF over the traditional in situ observation-based baseline (as shown in Figures 7 and 8), our core conclusion remains robust: integrating spatial inversion TN data via the HIOBF framework significantly improves SWAT simulation accuracy in ungauged sub-basins. Future studies could systematically estimate the total uncertainty via a comprehensive uncertainty estimation framework that incorporates uncertainties from model structure, parameter estimation, and data observation errors from all sources (in situ and spatial inversed) (Moges et al., 2021; Moreno-Rodenas et al., 2019).
+The reliability of the HIOBF framework hinges on the performance of the spatial extrapolation model. The high predictive accuracy (R2 > 0.8) achieved during internal validation provides strong support for its application in the DJB. This success is likely attributable to the rich set of geomorphological predictors that effectively capture the drivers of spatial heterogeneity. Nonetheless, the extrapolation model remains region-specific; applying the same coefficients to vastly different hydro-climatic regions would require re-training. Thus, while the HIOBF methodology is transferable, the specific model parameters are not universal. Future research could explore advanced machine learning techniques, such as Graph Neural Networks (Wan et al., 2025), to learn more generalizable spatial relationships, further enhancing the model's robustness and transferability in basins with limited observational data.
+Our model performance (Figures 7 and 8 and Table 2) can be further improved by incorporating deep learning (DL) algorithms with the SWAT model. This can be done by using DL to estimate SWAT modeling residuals (Yifru et al., 2024), or using SWAT outputs as inputs of DL for TN prediction at ungauged sub-basins (Huan et al., 2025; Jeong et al., 2026). The integration of DL and HIOBF-calibrated SWAT is complementary, as the improved SWAT parameterization based on HIOBF allows more accurate and transferable physical process description, that is, usually absent in DL, while DL can significantly improve the final TN prediction accuracy via its data fitting capacity. A more integrated approach could treat DL-derived residuals as informative signals to dynamically update SWAT parameters via data assimilation algorithms like the Ensemble Kalman Filter (Liu et al., 2025). However, this results in dynamically evolving parameters, which may limit the model's reliability for long-term planning applications such as BMP optimization. For a robust, theory-guided integration, a Physics- Informed Neural Network framework could be applied. By using hydrological and water quality governing equations to constrain the DL model, PINNs offer a promising avenue for synthesizing DL, process-based models, and spatial inversion data with high precision (Lawal et al., 2022; Zhao et al., 2024), representing a valuable direction for future research.
+Finally, our study aligns with ongoing efforts to integrate large-volume, alternative data sources--such as spatial inversion products, low-cost sensor networks, social media mining, and crowdsourced data--with conventional high-quality, low-volume in situ measurements in hydrological and water quality modeling (Han et al., 2023; Songchon et al., 2023; Wongchuig et al., 2024). Similar to spatial inversion data, the error structures of these alternative sources are often complex, heterogeneous, and spatially non-stationary due to variations in sensor accuracy, maintenance protocols, and operator experience (Jayaraman et al., 2024; Ribeiro et al., 2022; Wu et al., 2025). Although the importance of observation error in such data is widely recognized, many existing approaches still rely on oversimplified, homogeneous error assumptions (Cho et al., 2020; Rasmussen et al., 2016). The HIOBF framework addresses this limitation by providing a generalizable methodology to characterize spatially variable error structures, thereby advancing robust multi-source data integration for hydrological modeling in future studies.
+
+16 of 21
+
+ZHOU ET AL.
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+5. Conclusions
+This study addressed the persistent challenge of accurately simulating watershed-scale total nitrogen (TN) dynamics in data-scarce regions. By developing and rigorously testing a novel HIOBF framework, we demonstrated a powerful and transferable methodology for systematically integrating high-frequency spatial inversion data with traditional in situ measurements. The core innovation of our work lies not only in the combination of diverse data sets, but in the creation of a statistically robust framework that explicitly characterizes the complex error structures inherent in spatial data streams. This breakthrough enables their coherent and formal assimilation within a unified Bayesian process, overcoming the theoretical barriers that have previously limited the use of inversion data in distributed modeling.
+The principal conclusions of this work are as follows:
+1. A primary methodological contribution of this research is the development of a geography-driven spatial extrapolation model, which adequately addresses the fundamental problem of defining Bayesian likelihood functions in ungauged regions. By inferring the complex error relationship between in situ measurements and spatial inversion data based on catchment characteristics, it allows for the construction of a robust error model when ground truth is absent.
+2. The rigorous independent validation results unequivocally demonstrate that the HIOBF framework consistently outperforms both the observation-only (POBF) and inversion-only (PIBF) baselines. By synergistically combining the spatial coverage of inversion data with the temporal precision of in situ observations, HIOBF yields a more constrained and robust posterior parameter set. This leads to a significant enhancement in predictive skill, increasing the NSE by an average of 55% relative to the traditional POBF baseline across independent validation sites.
+3. The value of data fusion lies in synergy, not just volume. The Supporting Information S1 analysis on data availability revealed that the benefits of the HIOBF framework are evident even under severely data-limited conditions. The significant performance lift achieved by fusing just one or two sub-basins of each data type indicates that the primary value is derived from the complementarity of information types, rather than the sheer quantity of data assimilated. This suggests that for practical watershed management, a cost-effective strategy may involve deploying a sparse but strategically placed network of ground sensors augmented by spatially continuous inversion data.
+In summary, this research provides compelling evidence that the structured integration of high-frequency spatial inversion data within a formal Bayesian framework offers a powerful and scalable solution for advancing water quality modeling. The HIOBF approach enhances methodological rigor and practical utility by reducing parameter uncertainty, increasing predictive accuracy, and producing more reliable uncertainty estimates. This paradigm provides a promising pathway for data-informed watershed management and can be readily extended to other water quality constituents in diverse hydrological settings.
+Conflict of Interest
+The authors declare no conflicts of interest relevant to this study.
+Availability Statement
+The high-frequency spatial inversion data for Total Nitrogen used in this study were obtained from the Pearl River Basin Total Nitrogen Concentration Database, which is publicly available on the AI-Earth platform (https://engi ne-aiearth.aliyun.com/#/space/detail/kMie305012). The analytical framework was implemented in the R programming environment. The SWAT model (version 2012) was executed using the SWATrunR package, openly available on GitHub (https://github.com/chrisschuerz/SWATrunR, Schuerz et al., 2022). All Bayesian inference, including the DREAMzs MCMC sampling, was conducted using the BayesianTools R package, also available on GitHub (https://github.com/florianhartig/BayesianTools, Hartig et al., 2017), which provides the necessary parallel computing capabilities. Methodologies for the parallel execution of SWAT within the BayesianTools framework were informed by similar applications in environmental modeling (e.g., https://github.com/jds485/ RHESSys_ParamSA-Cal-GIOpt, J. D. Smith, 2024). Due to the computationally intensive nature of the MCMC
+
+17 of 21
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+simulations, all analyses were performed on a high-performance workstation (AMD Ryzen Threadripper PRO 5995WX 64-Cores; 256 GB RAM).
+
+Acknowledgments This research was financially supported by National Natural Science Foundation of China (52125902, 52388101, and 52209009), the Guangdong Provincial Key Laboratory Project (2023B1212060068), the National Key Research and Development Program of China (2022YFC3202200), and Guangdong Basic and Applied Basic Research Foundation (2026A1515011313).
+
+References
+Abbaspour, K. C., Yang, J., Maximov, I., Siber, R., Bogner, K., Mieleitner, J., et al. (2007). Modelling hydrology and water quality in the pre- alpine/alpine Thur watershed using SWAT. Journal of Hydrology, 333(2), 413­430. https://doi.org/10.1016/j.jhydrol.2006.09.014
+Aboelnour, M. A., Tank, J. L., Hamlet, A. F., Bertassello, L. E., Ren, D., & Bolster, D. (2024). A SWAT model depicts the impact of land use change on hydrology, nutrient, and sediment loads in a Lake Michigan watershed. Modeling Earth Systems and Environment, 11(1), 22. https:// doi.org/10.1007/s40808-024-02259-x
+Akhie, A. A., & Joksimovic, D. (2023). Monitoring of a productive blue-green roof using low-cost sensors. Sensors, 23(24), 9788. https://doi.org/1 0.3390/s23249788
+Ammann, L., Fenicia, F., & Reichert, P. (2019). A likelihood framework for deterministic hydrological models and the importance of non- stationary autocorrelation. Hydrology and Earth System Sciences, 23(4), 2147­2172. https://doi.org/10.5194/hess-23-2147-2019
+Arnold, J. G., Moriasi, D. N., Gassman, P. W., Abbaspour, K. C., White, M. J., Srinivasan, R., et al. (2012). SWAT: Model use, calibration, and validation. Transactions of the ASABE, 55(4), 1491­1508. https://doi.org/10.13031/2013.42256
+Avellaneda, P. M., Ficklin, D. L., Lowry, C. S., Knouft, J. H., & Hall, D. M. (2020). Improving hydrological models with the assimilation of crowdsourced data. Water Resources Research, 56(5), e2019WR026325. https://doi.org/10.1029/2019wr026325
+Ballester-Ripoll, R., Paredes, E. G., & Pajarola, R. (2019). Sobol tensor trains for global sensitivity analysis. Reliability Engineering & System Safety, 183, 311­322. https://doi.org/10.1016/j.ress.2018.11.007
+Beven, K. (1989). Changing ideas in hydrology -- The case of physically-based models. Journal of Hydrology, 105(1), 157­172. https://doi.org/1 0.1016/0022-1694(89)90101-7
+Beven, K. (2006). A manifesto for the equifinality thesis. Journal of Hydrology, 320(1), 18­36. https://doi.org/10.1016/j.jhydrol.2005.07.007 Bingner, R. L., Theurer, F. D., & Yuan, Y. (2003). AnnAGNPS technical processes. Bürger, G. (2023). Trends? Complicated answers to a simple question. Hydrological Sciences Journal, 68(12), 1680­1692. https://doi.org/10.108
+0/02626667.2023.2224922 Chen, L., Pu, Y., Zhu, K., Guo, C., Wang, Y., & Shen, Z. (2024). Integrating best management practices with dynamic water environmental
+capacity for optimal watershed management. Journal of Environmental Management, 371, 123264. https://doi.org/10.1016/j.jenvman.2024.12 3264 Cho, K. H., Pachepsky, Y., Ligaray, M., Kwon, Y., & Kim, K. H. (2020). Data assimilation in surface water quality modeling: A review. Water Research, 186, 116307. https://doi.org/10.1016/j.watres.2020.116307 Dakhlalla, A. O., & Parajuli, P. B. (2019). Assessing model parameters sensitivity and uncertainty of streamflow, sediment, and nutrient transport using SWAT. Information Processing in Agriculture, 6(1), 61­72. https://doi.org/10.1016/j.inpa.2018.08.007 Dasgupta, A., Hostache, R., Ramsankaran, R., Grimaldi, S., Matgen, P., Chini, M., et al. (2021). Chapter 12 - Earth observation and hydraulic data assimilation for improved flood inundation forecasting. In G. J. Schumann (Ed.), Earth observation for flood applications (pp. 255­294). Elsevier. https://doi.org/10.1016/B978-0-12-819412-6.00012-2 Dash, C. S. K., Behera, A. K., Dehuri, S., & Ghosh, A. (2023). An outliers detection and elimination framework in classification task of data mining. Decision Analytics Journal, 6, 100164. https://doi.org/10.1016/j.dajour.2023.100164 Dile, Y. T., Ayana, E. K., Worqlul, A. W., Xie, H., Srinivasan, R., Lefore, N., et al. (2020). Evaluating satellite-based evapotranspiration estimates for hydrological applications in data-scarce regions: A case in Ethiopia. Science of the Total Environment, 743, 140702. https://doi.org/10.101 6/j.scitotenv.2020.140702 Durbin, J. (1970). Testing for serial correlation in least-squares regression when some of the regressors are lagged dependent variables. Econometrica, 38(3), 410. https://doi.org/10.2307/1909547 Efron, B. (2013). Bayes' Theorem in the 21st century. Science, 340(6137), 1177­1178. https://doi.org/10.1126/science.1236536 Evin, G., Kavetski, D., Thyer, M., & Kuczera, G. (2013). Pitfalls and improvements in the joint inference of heteroscedasticity and autocorrelation in hydrological model calibration. Water Resources Research, 49(7), 4518­4524. https://doi.org/10.1002/wrcr.20284 Frederiksen, R. R., Larsen, S. E., Tornbjerg, H., Thodsen, H., & Kronvang, B. (2025). Modeling annual total organic nitrogen concentrations in streams using machine learning at National Scale. Water Resources Research, 61(6), e2024WR039451. https://doi.org/10.1029/2024WR03 9451 Fu, B., Merritt, W. S., Croke, B. F. W., Weber, T. R., & Jakeman, A. J. (2019). A review of catchment-scale water quality and erosion models and a synthesis of future prospects. Environmental Modelling & Software, 114, 75­97. https://doi.org/10.1016/j.envsoft.2018.12.008 Gassman, P. W., Reyes, M. R., Green, C. H., & Arnold, J. G. (2007). The soil and water assessment tool: Historical development, applications, and future research directions. Transactions of the ASABE, 50(4), 1211­1250. https://doi.org/10.13031/2013.23637 Gelman, A., Carlin, J. B., Stern, H. S., & Rubin, D. B. (1995). Bayesian data analysis. Chapman and Hall/CRC. Gelman, A., & Rubin, D. B. (1992). Inference from iterative simulation using multiple sequences. Statistical Science, 7(4). https://doi.org/10.121 4/ss/1177011136 Glavan, M., White, S., & Holman, I. P. (2011). Evaluation of River water quality simulations at a daily time step ­ Experience with SWAT in the axe catchment, UK. Clean: Soil, Air, Water, 39(1), 43­54. https://doi.org/10.1002/clen.200900298 Guo, S., Chen, H., Zhang, H., Xiong, L., Liu, P., Pang, B., et al. (2005). A semi-distributed monthly water balance model and its application in a climate change impact Study in the middle and lower yellow River Basin. Water International, 30(2), 250­260. https://doi.org/10.1080/025080 60508691864 Guzman, J. A., Shirmohammadi, A., Sadeghi, A. M., Wang, X., Chu, M. L., Jha, M. K., et al. (2015). Uncertainty considerations in calibration and validation of hydrologic and water quality models. Transactions of the ASABE, 58(6), 1745­1762. https://doi.org/10.13031/trans.58.10710 Han, F., Hu, Z., Chen, N., Wang, Y., Jiang, J., & Zheng, Y. (2023). Assimilating low-cost high-frequency sensor data in watershed water quality modeling: A Bayesian approach. Water Resources Research, 59(4), e2022WR033673. https://doi.org/10.1029/2022wr033673 Han, F., & Zheng, Y. (2016). Multiple-response Bayesian calibration of watershed water quality models with significant input and model structure errors. Advances in Water Resources, 88, 109­123. https://doi.org/10.1016/j.advwatres.2015.12.007 Han, F., & Zheng, Y. (2018). Joint analysis of input and parametric uncertainties in watershed water quality modeling: A formal Bayesian approach. Advances in Water Resources, 116, 77­94. https://doi.org/10.1016/j.advwatres.2018.04.006 Hartig, F., Minunno, F., & Paul, S. (2017). BayesianTools: General-purpose MCMC and SMC samplers and tools for Bayesian statistics [Dataset]. In CRAN: Contributed packages. The R Foundation. https://doi.org/10.32614/cran.package.bayesiantools
+
+ZHOU ET AL.
+
+18 of 21
+
+ZHOU ET AL.
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+He, R., Lv, Z., Yang, Y., & Jia, S. (2025). Inversion of river water quality parameters from UAV hyperspectral data using a spatial­spectral attention CNN: A case study in Shenzhen. Science of Remote Sensing, 12, 100282. https://doi.org/10.1016/j.srs.2025.100282
+He, Y., Yang, Y., Zhang, Z., Wu, L., Tan, Q., Wang, Z., & Yang, P. (2026). Hydrological response to land use change under low carbon-optimal economic scenario. Journal of Hydrology, 664, 134501. https://doi.org/10.1016/j.jhydrol.2025.134501
+Hoaglin, D. C., Iglewicz, B., & Tukey, J. W. (1986). Performance of some resistant rules for outlier labeling. Journal of the American Statistical Association, 81(396), 991­999. https://doi.org/10.1080/01621459.1986.10478363
+Hsu, K., Moradkhani, H., & Sorooshian, S. (2009). A sequential Bayesian approach for hydrologic model selection and prediction. Water Resources Research, 45(12). https://doi.org/10.1029/2008WR006824
+Huan, J., Fan, Y., Xu, X., Zhou, L., Zhang, H., Zhang, C., et al. (2025). Deep learning model based on coupled SWAT and interpretable methods for water quality prediction under the influence of non-point source pollution. Computers and Electronics in Agriculture, 231, 109985. https:// doi.org/10.1016/j.compag.2025.109985
+Huang, Y., Cai, Y., He, Y., Dai, C., Wan, H., & Guo, H. (2024). A water quality prediction approach for the Downstream and Delta of Dongjiang River Basin under the joint effects of water intakes, pollution sources, and climate change. Journal of Hydrology, 640, 131686. https://doi.org/1 0.1016/j.jhydrol.2024.131686
+Huang, Y., Cai, Y., Xie, Y., Zhang, F., He, Y., Zhang, P., et al. (2022). An optimization model for water resources allocation in Dongjiang River Basin of Guangdong-Hong Kong-Macao Greater Bay Area under multiple complexities. Science of the Total Environment, 820, 153198. https://doi.org/10.1016/j.scitotenv.2022.153198
+Isles, P. D. F. (2024). A random forest approach to improve estimates of tributary nutrient loading. Water Research, 248, 120876. https://doi.org/1 0.1016/j.watres.2023.120876
+Jayaraman, P., Nagarajan, K. K., Partheeban, P., & Krishnamurthy, V. (2024). Critical review on water quality analysis using IoT and machine learning models. International Journal of Information Management Data Insights, 4(1), 100210. https://doi.org/10.1016/j.jjimei.2023.100210
+Jeong, D. S., Jeong, H., Kim, J. H., Kwon, D. H., Kim, J. H., & Park, Y. (2026). Assessing the applicability of the soil and water assessment tool­ deep learning hybrid model for predicting total nitrogen loads in a mixed agricultural watershed. Journal of Contaminant Hydrology, 276, 104737. https://doi.org/10.1016/j.jconhyd.2025.104737
+Johanson, R. C., Imhoff, J. C., & Davis, H. H. (1980). Users Manual for Hydrological Simulation Program - FORTRAN (HSPF). Johnson, R. D., & Sample, D. J. (2017). A semi-distributed model for locating stormwater best management practices in coastal environments.
+Environmental Modelling & Software, 91, 70­86. https://doi.org/10.1016/j.envsoft.2017.01.015 Jung, C., & Kim, S. (2017). SWAT modeling of nitrogen dynamics considering atmospheric deposition and nitrogen fixation in a watershed scale.
+Agricultural Sciences, 8(4), 326­340. https://doi.org/10.4236/as.2017.84024 Kaushal, S. S., Gold, A. J., Bernal, S., Johnson, T. A. N., Addy, K., Burgin, A., et al. (2018). Watershed `chemical cocktails': Forming novel
+elemental combinations in Anthropocene fresh waters. Biogeochemistry, 141(3), 281­305. https://doi.org/10.1007/s10533-018-0502-6 Ke, Z., Xiaoqi, L., Chuanfu, Z., Yiwen, L., Xintong, Q., & Miaolin, D. (2024). Transformation characteristics and mechanism of blue and green
+water flows at watershed and typical ecosystem scale in China. Ecohydrology and Hydrobiology, 24(1), 201­216. https://doi.org/10.1016/j.eco hyd.2023.09.002 Keller, A. A., Garner, K., Rao, N., Knipping, E., & Thomas, J. (2023). Hydrological models for climate-based assessments at the watershed scale: A critical review of existing hydrologic and water quality models. Science of the Total Environment, 867, 161209. https://doi.org/10.1016/j.scit otenv.2022.161209 Krause, P., Boyle, D. P., & Bäse, F. (2005). Comparison of different efficiency criteria for hydrological model assessment. Advances in Geosciences, 5, 89­97. https://doi.org/10.5194/adgeo-5-89-2005 Laloy, E., & Vrugt, J. A. (2012). High-dimensional posterior exploration of hydrologic models using multiple-try DREAM(ZS) and high- performance computing. Water Resources Research, 48(1). https://doi.org/10.1029/2011WR010608 Lawal, Z. K., Yassin, H., Lai, D. T., & Che Idris, A. (2022). Physics-Informed neural network (PINN) evolution and beyond: A systematic literature review and bibliometric analysis. Big Data and Cognitive Computing, 6(4), 140. https://doi.org/10.3390/bdcc6040140 Lee, J., Kim, D., Hong, S., Yun, D., Kwon, D., Hill, R. L., et al. (2024). Comparative efficiency of the SWAT model and a deep learning model in estimating nitrate loads at the Tuckahoe creek watershed, Maryland. Science of the Total Environment, 954, 176256. https://doi.org/10.1016/j.s citotenv.2024.176256 Lehner, B., Messager, M. L., Korver, M. C., & Linke, S. (2022). Global hydro-environmental lake characteristics at high spatial resolution. Scientific Data, 9(1), 351. https://doi.org/10.1038/s41597-022-01425-z Lei, Q., Zhang, T., An, M., Luo, J., Qin, L., Zhu, A., et al. (2024). Sensitivity analysis of SWAT streamflow and water quality to the uncertainty in soil properties generated by the SoLIM model. Journal of Hydrology, 642, 131879. https://doi.org/10.1016/j.jhydrol.2024.131879 Lemke, A. M., Kirkham, K. G., Lindenbaum, T. T., Herbert, M. E., Tear, T. H., Perry, W. L., & Herkert, J. R. (2011). Evaluating agricultural best management practices in tile-drained subwatersheds of the Mackinaw River, Illinois. Journal of Environmental Quality, 40(4), 1215­1228. https://doi.org/10.2134/jeq2010.0119 Lin, K., Lv, F., Chen, L., Singh, V. P., Zhang, Q., & Chen, X. (2014). Xinanjiang model combined with Curve Number to simulate the effect of land use change on environmental flow. Journal of Hydrology, 519, 3142­3152. https://doi.org/10.1016/j.jhydrol.2014.10.049 Linke, S., Lehner, B., Ouellet Dallaire, C., Ariwi, J., Grill, G., Anand, M., et al. (2019). Global hydro-environmental sub-basin and river reach characteristics at high spatial resolution. Scientific Data, 6(1), 283. https://doi.org/10.1038/s41597-019-0300-6 Liu, J., Zhang, X., Yang, Y., Fu, K., & Wang, K. (2025). High-resolution remote sensing-driven water management in semi-arid basins: A CNN- Attention-SWAT fusion framework for the Fen River. Science of Remote Sensing, 12, 100333. https://doi.org/10.1016/j.srs.2025.100333 Liu, X., Jayaratne, R., Thai, P., Kuhn, T., Zing, I., Christensen, B., et al. (2020). Low-cost sensors as an alternative for long-term air quality monitoring. Environmental Research, 185, 109438. https://doi.org/10.1016/j.envres.2020.109438 Liu, Z., Zhang, Z., Sang, J., Yin, Y., & Ding, X. (2024). Development and application of early warning system for heavy metal pollution accident in drinking water source area. Process Safety and Environmental Protection, 183, 293­306. https://doi.org/10.1016/j.psep.2024.01.014 Long, A., Sun, R., Mao, X., Duan, Q., & Wu, M. (2025). Surrogate modelling-based multi-objective optimization for best management practices of nonpoint source pollution. Water Research, 269, 122788. https://doi.org/10.1016/j.watres.2024.122788 Lyu, L., Bi, S., Yang, Y., Zheng, D., & Li, Q. (2023). Effects of vegetation distribution and landscape pattern on water conservation in the Dongjiang River basin. Ecological Indicators, 155, 111017. https://doi.org/10.1016/j.ecolind.2023.111017 Malagó, A., Bouraoui, F., Vigiak, O., Grizzetti, B., & Pastori, M. (2017). Modelling water and nutrient fluxes in the Danube River Basin with SWAT. Science of the Total Environment, 603­604, 196­218. https://doi.org/10.1016/j.scitotenv.2017.05.242 Mazzoleni, M., Cortes Arevalo, V. J., Wehn, U., Alfonso, L., Norbiato, D., Monego, M., et al. (2018). Exploring the influence of citizen involvement on the assimilation of crowdsourced observations: A modelling study based on the 2013 flood event in the Bacchiglione catchment (Italy). Hydrology and Earth System Sciences, 22(1), 391­416. https://doi.org/10.5194/hess-22-391-2018
+19 of 21
+
+ZHOU ET AL.
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+Moazenzadeh, R., & Izady, A. (2022). A hybrid calibration method for improving hydrological systems using ground-based and remotely-sensed observations. Journal of Hydrology, 615, 128688. https://doi.org/10.1016/j.jhydrol.2022.128688
+Moges, E., Demissie, Y., Larsen, L., & Yassin, F. (2021). Review: Sources of hydrological model uncertainties and advances in their analysis. Water, 13(1), 28. https://doi.org/10.3390/w13010028
+Moreno-Rodenas, A. M., Tscheikner-Gratl, F., Langeveld, J. G., & Clemens, F. H. L. R. (2019). Uncertainty analysis in a large-scale water quality integrated catchment modelling study. Water Research, 158, 46­60. https://doi.org/10.1016/j.watres.2019.04.016
+Muñoz-Castro, E., Anderson, B. J., Astagneau, P. C., Swain, D. L., Mendoza, P. A., & Brunner, M. I. (2025). How well do hydrological models simulate streamflow extremes and drought-to-flood transitions? EGUsphere, 2025, 1­37. https://doi.org/10.5194/egusphere-2025-781
+Nascimento, R. G., Viana, F. A. C., Corbetta, M., & Kulkarni, C. S. (2023). A framework for Li-ion battery prognosis based on hybrid Bayesian physics-informed neural networks. Scientific Reports, 13(1), 13856. https://doi.org/10.1038/s41598-023-33018-0
+Panchanathan, A., Haghighi, A. T., & Oussalah, M. (2023). A multi-criteria approach for improving streamflow prediction in a rapidly urbanizing data scarce catchment. International Journal of River Basin Management, 1­14. https://doi.org/10.1080/15715124.2023.2188597
+Paul, M., Rajib, A., Negahban-Azar, M., Shirmohammadi, A., & Srivastava, P. (2021). Improved agricultural Water management in data-scarce semi-arid watersheds: Value of integrating remotely sensed leaf area index in hydrological modeling. Science of the Total Environment, 791, 148177. https://doi.org/10.1016/j.scitotenv.2021.148177
+Pedretti, D., Camera, C. A. S., Libera, N. D., Pasini, S., Gelmini, Y., & Braidot, A. (2025). High-Resolution flow and nutrient modeling under climate change in the flat, urbanized and intensively cultivated Adige River lowland Basin (Italy) using SWAT. Hydrology, 12(9), 239. https:// doi.org/10.3390/hydrology12090239
+Poupry, S., Medjaher, K., & Béler, C. (2023). Data reliability and fault diagnostic for air quality monitoring station based on low cost sensors and active redundancy. Measurement, 223, 113800. https://doi.org/10.1016/j.measurement.2023.113800
+Qi, J., Zhang, X., Yang, Q., Srinivasan, R., Arnold, J. G., Li, J., et al. (2020). SWAT ungauged: Water quality modeling in the Upper Mississippi River Basin. Journal of Hydrology, 584, 124601. https://doi.org/10.1016/j.jhydrol.2020.124601
+Qian, J., Qian, L., Pu, N., Bi, Y., Wilhelms, A., & Norra, S. (2024). An intelligent early warning System for harmful algal blooms: Harnessing the power of big data and deep learning. Environmental Science and Technology, 58(35), 15607­15618. https://doi.org/10.1021/acs.est.3c03906
+Rahat, S. H., Steissberg, T., Chang, W., Chen, X., Mandavya, G., Tracy, J., et al. (2023). Remote sensing-enabled machine learning for river water quality modeling under multidimensional uncertainty. Science of the Total Environment, 898, 165504. https://doi.org/10.1016/j.scitotenv.2023. 165504
+Rahman, K. U., Shang, S., Shahid, M., & Wen, Y. (2020). Hydrological evaluation of merged satellite precipitation datasets for streamflow simulation using SWAT: A case study of Potohar Plateau, Pakistan. Journal of Hydrology, 587, 125040. https://doi.org/10.1016/j.jhydrol.2020. 125040
+Rasmussen, J., Madsen, H., Jensen, K. H., & Refsgaard, J. C. (2016). Data assimilation in integrated hydrological modelling in the presence of observation bias. Hydrology and Earth System Sciences, 20(5), 2103­2118. https://doi.org/10.5194/hess-20-2103-2016
+Ren, D., Engel, B., Mercado, J. A. V., Guo, T., Liu, Y., & Huang, G. (2022). Modeling and assessing water and nutrient balances in a tile-drained agricultural watershed in the U.S. Corn Belt. Water Research, 210, 117976. https://doi.org/10.1016/j.watres.2021.117976
+Ribeiro, A. M. T., Ribeiro Junior, P. J., & Bonat, W. H. (2022). A Kronecker-based covariance specification for spatially continuous multivariate data. Stochastic Environmental Research and Risk Assessment, 36(12), 4087­4102. https://doi.org/10.1007/s00477-022-02252-9
+Samadi, S., Tufford, D. L., & Carbone, G. J. (2017). Estimating hydrologic model uncertainty in the presence of complex residual error structures. Stochastic Environmental Research and Risk Assessment, 32(5), 1259­1281. https://doi.org/10.1007/s00477-017-1489-6
+Schoups, G., & Vrugt, J. A. (2010). A formal likelihood function for parameter and predictive inference of hydrologic models with correlated, heteroscedastic, and Non-Gaussian errors. Water Resources Research, 46(10). https://doi.org/10.1029/2009wr008933
+Schuerz, C., Hsieh, N.-H., & Willem. (2022). chrisschuerz/SWATplusR: SWATplusR 0.6 (Version 0.6) [Computer software]. Zenodo. https://doi. org/10.5281/ZENODO.6517027
+Seis, W., Veldhuis, M. T., Rouault, P., Steffelbauer, D., & Medema, G. (2024). A new Bayesian approach for managing bathing water quality at river bathing locations vulnerable to short-term pollution. Water Research, 252, 121186. https://doi.org/10.1016/j.watres.2024.121186
+Shi, P., Six, J., Sila, A., Vanlauwe, B., & Van Oost, K. (2022). Towards spatially continuous mapping of soil organic carbon in croplands using multitemporal Sentinel-2 remote sensing. ISPRS Journal of Photogrammetry and Remote Sensing, 193, 187­199. https://doi.org/10.1016/j.ispr sjprs.2022.09.013
+Smith, J. D. (2024). jds485/RHESSys_ParamSA-Cal-GIOpt: Robust optimization paper (Version v0.2) [Computer software]. Zenodo. https://doi. org/10.5281/ZENODO.11894592
+Smith, T. J., & Marshall, L. A. (2008). Bayesian methods in hydrologic modeling: A study of recent advancements in Markov chain Monte Carlo techniques. Water Resources Research, 44(12). https://doi.org/10.1029/2007wr006705
+Sobol, I. M. (2001). Global sensitivity indices for nonlinear mathematical models and their Monte Carlo estimates. Mathematics and Computers in Simulation, 55(1), 271­280. https://doi.org/10.1016/S0378-4754(00)00270-6
+Song, G., Li, S., Xing, J., Yang, J., Dong, L., Lin, H., et al. (2022). Surface UV-assisted retrieval of spatially continuous surface ozone with high spatial transferability. Remote Sensing of Environment, 274, 112996. https://doi.org/10.1016/j.rse.2022.112996
+Song, J., Huang, J., Huang, H., Xiao, G., Li, X., Li, L., et al. (2024). Improving crop yield estimation by unified model parameters and state variable with Bayesian inference. Agricultural and Forest Meteorology, 355, 110101. https://doi.org/10.1016/j.agrformet.2024.110101
+Songchon, C., Wright, G., & Beevers, L. (2023). The use of crowdsourced social media data to improve flood forecasting. Journal of Hydrology, 622, 129703. https://doi.org/10.1016/j.jhydrol.2023.129703
+Storn, R., & Price, K. (1997). Differential evolution ­ A simple and efficient heuristic for global optimization over continuous spaces. Journal of Global Optimization, 11(4), 341­359. https://doi.org/10.1023/A:1008202821328
+Su, C., & Chen, X. (2019). Assessing the effects of reservoirs on extreme flows using nonstationary flood frequency models with the modified reservoir index as a covariate. Advances in Water Resources, 124, 29­40. https://doi.org/10.1016/j.advwatres.2018.12.004
+Todorovi, A., Grabs, T., & Teutschbein, C. (2024). Improving performance of bucket-type hydrological models in high latitudes with multi- model combination methods: Can we wring water from a stone? Journal of Hydrology, 632, 130829. https://doi.org/10.1016/j.jhydrol.2024. 130829
+Tran, V. N., Dwelle, M. C., Sargsyan, K., Ivanov, V. Y., & Kim, J. (2020). A novel modeling framework for computationally efficient and accurate real-time ensemble flood forecasting with uncertainty quantification. Water Resources Research, 56(3), e2019WR025727. https://doi. org/10.1029/2019WR025727
+Valeh, S., Motamedvairi, B., Kiadaliri, H., & Ahmadi, H. (2021). Hydrological simulation of Ammameh basin by artificial neural network and SWAT models. Physics and Chemistry of the Earth, 123, 103014. https://doi.org/10.1016/j.pce.2021.103014
+
+20 of 21
+
+ZHOU ET AL.
+
+Water Resources Research
+
+10.1029/2025WR041979
+
+Virro, H., Kmoch, A., Vainu, M., & Uuemaa, E. (2022). Random forest-based modeling of stream nutrients at national level in a data-scarce region. Science of the Total Environment, 840, 156613. https://doi.org/10.1016/j.scitotenv.2022.156613
+Vrugt, J. A., ter Braak, C. J. F., Gupta, H. V., & Robinson, B. A. (2009). Equifinality of formal (DREAM) and informal (GLUE) Bayesian approaches in hydrologic modeling? Stochastic Environmental Research and Risk Assessment, 23(7), 1011­1026. https://doi.org/10.1007/s004 77-008-0274-y
+Wan, H., Xiang, L., Cai, Y., Xie, Y., & Xu, R. (2025). Temporal and spatial feature extraction using graph neural networks for multi-point water quality prediction in river network areas. Water Research, 281, 123561. https://doi.org/10.1016/j.watres.2025.123561
+Wang, Z., He, Y., Li, W., Chen, X., Yang, P., & Bai, X. (2023). A generalized reservoir module for SWAT applications in watersheds regulated by reservoirs. Journal of Hydrology, 616, 128770. https://doi.org/10.1016/j.jhydrol.2022.128770
+Wei, Z., Alam, S., Verma, M., Hilderbran, M., Wu, Y., Anderson, B., et al. (2024). Integrating water quality data with a Bayesian network model to improve spatial and temporal phosphorus attribution: Application to the Maumee River Basin. Journal of Environmental Management, 360, 121120. https://doi.org/10.1016/j.jenvman.2024.121120
+Wellen, C., Kamran-Disfani, A., & Arhonditsis, G. B. (2015). Evaluation of the current state of distributed watershed nutrient water quality modeling. Environmental Science and Technology, 49(6), 3278­3290. https://doi.org/10.1021/es5049557
+Wongchuig, S., Paiva, R., Siqueira, V., Papa, F., Fleischmann, A., Biancamaria, S., et al. (2024). Multi-Satellite data assimilation for large-scale hydrological-hydrodynamic prediction: Proof of concept in the Amazon Basin. Water Resources Research, 60(8), e2024WR037155. https:// doi.org/10.1029/2024wr037155
+Wongchuig-Correa, S., Cauduro Dias De Paiva, R., Biancamaria, S., & Collischonn, W. (2020). Assimilation of future SWOT-based river elevations, surface extent observations and discharge estimations into uncertain global hydrological models. Journal of Hydrology, 590, 125473. https://doi.org/10.1016/j.jhydrol.2020.125473
+Wu, J., Chen, X., Yu, Z., Yao, H., Li, W., & Zhang, D. (2019). Assessing the impact of human regulations on hydrological drought development and recovery based on a `simulated-observed' comparison of the SWAT model. Journal of Hydrology, 577, 123990. https://doi.org/10.1016/j.j hydrol.2019.123990
+Wu, Y., Feng, L., Yang, S., & Zheng, C. (2025). Satellite observations reveal recent increases in water clarity in Chinese coastal waters. Environmental Science and Technology, 59(38), 20452­20461. https://doi.org/10.1021/acs.est.5c07097
+Xie, F., Zhang, X., Wu, S., Ji, T., & Zheng, Y. (2024). Multi-fidelity Bayesian neural networks for aerodynamic data fusion with heterogeneous uncertainties. Computer Methods in Applied Mechanics and Engineering, 435, 117666. https://doi.org/10.1016/j.cma.2024.117666
+Yan, D., Werners, S. E., Ludwig, F., & Huang, H. Q. (2015). Hydrological response to climate change: The Pearl River, China under different RCP scenarios. Journal of Hydrology-Regional Studies, 4, 228­245. https://doi.org/10.1016/j.ejrh.2015.06.006
+Yang, P., & Ng, T. L. (2019). Fast bayesian regression kriging method for real-time merging of radar, rain gauge, and crowdsourced rainfall data. Water Resources Research, 55(4), 3194­3214. https://doi.org/10.1029/2018wr023857
+Yang, X., Tetzlaff, D., Jin, J., Li, Q., Borchardt, D., & Soulsby, C. (2024). Linking terrestrial biogeochemical processes and water ages to catchment water quality: A new Damköhler analysis based on coupled modeling of isotope tracers and nitrate dynamics. Water Research, 262, 122118. https://doi.org/10.1016/j.watres.2024.122118
+Yifru, B. A., Lim, K. J., Bae, J. H., Park, W., & Lee, S. (2024). A hybrid deep learning approach for streamflow prediction utilizing watershed memory and process-based modeling. Hydrology Research, 55(4), 498­518. https://doi.org/10.2166/nh.2024.016
+Yu, C., Wang, Q., Zhang, Z., Zhong, Z., Ding, Y., Lai, T., et al. (2025). Multi-source data joint processing framework for DEM calibration and fusion. International Journal of Applied Earth Observation and Geoinformation, 139, 104484. https://doi.org/10.1016/j.jag.2025.104484
+Zhang, W., & Arhonditsis, G. B. (2009). A Bayesian hierarchical framework for calibrating aquatic biogeochemical models. Ecological Modelling, 220(18), 2142­2161. https://doi.org/10.1016/j.ecolmodel.2009.05.023
+Zhang, Y., & Shao, Q. (2018). Uncertainty and its propagation estimation for an integrated water system model: An experiment from water quantity to quality simulations. Journal of Hydrology, 565, 623­635. https://doi.org/10.1016/j.jhydrol.2018.08.070
+Zhang, Z., Li, C., Yang, P., Xu, Z., Yao, L., Wang, Q., et al. (2024). Enhancing remote sensing water quality inversion through integration of Multisource spatial covariates: A case Study of Hong Kong's coastal nutrient concentrations. Remote Sensing, 16(17), 3337. https://doi.org/10. 3390/rs16173337
+Zhao, C., Zhang, F., Lou, W., Wang, X., & Yang, J. (2024). A comprehensive review of advances in physics-informed neural networks and their applications in complex fluid dynamics. Physics of Fluids, 36(10), 101301. https://doi.org/10.1063/5.0226562
+Zheng, F., Tao, R., Maier, H. R., See, L., Savic, D., Zhang, T., et al. (2018). Crowdsourcing methods for data collection in geophysics: State of the art, issues, and future directions. Reviews of Geophysics, 56(4), 698­740. https://doi.org/10.1029/2018RG000616
+Zheng, Y., & Han, F. (2015). Markov Chain Monte Carlo (MCMC) uncertainty analysis for watershed water quality modeling and management. Stochastic Environmental Research and Risk Assessment, 30(1), 293­308. https://doi.org/10.1007/s00477-015-1091-8
+Zhong, R., Zhao, T., & Chen, X. (2020). Hydrological model calibration for dammed basins using satellite altimetry information. Water Resources Research, 56(8), e2020WR027442. https://doi.org/10.1029/2020wr027442
+References From the Supporting Information
+Gutiérrez-Jurado, K. Y., Partington, D., Batelaan, O., Cook, P., & Shanafield, M. (2019). What triggers streamflow for intermittent Rivers and ephemeral streams in low-gradient catchments in Mediterranean climates. Water Resources Research, 55(11), 9926­9946. https://doi.org/10.10 29/2019WR025041
+Kerins, D., Knapp, A. S., Liu, F. S., Smykalov, V. D., Berzonsky, M. P., Vierbicher, A., et al. (2025). Controls from above and below: Snow, soil, and steepness drive diverging trends of subsurface water and streamflow dynamics. Hydrological Processes, 39(4), e70120. https://doi.org/10.1002/ hyp.70120
+Lu, L., & Liu, C. (2020). Chinese soil dataset based on the World Soil Database (HWSD) (v1.1). In National cryosphere desert. Data Center. https://doi.org/10.12072/ncdc.westdc.db3647.2023
+Xu, X., Liu, J., Zhang, S., Li, R., Yan, C., & Wu, S. (2018). China multi-period land use remote sensing monitoring dataset (CNLUCC). https:// doi.org/10.12078/2018070201
+
+21 of 21
+
+

@@ -1,0 +1,23 @@
+{
+  "id": "conv-1778141782941-lcxsdl823",
+  "providerId": "claude",
+  "title": "Summarize Bayesian estimation from PDFs",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778141782941,
+  "updatedAt": 1778141926663,
+  "lastResponseAt": 1778141926663,
+  "sessionId": "7509d095-c6f6-474a-981b-b703d7902797",
+  "providerState": {
+    "providerSessionId": "7509d095-c6f6-474a-981b-b703d7902797"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 175,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 62592,
+    "contextWindow": 200000,
+    "contextTokens": 62767,
+    "percentage": 31,
+    "contextWindowIsAuthoritative": true
+  }
+}
