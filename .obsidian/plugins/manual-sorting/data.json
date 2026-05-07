@@ -140,46 +140,6 @@
       "children": [],
       "sortOrder": "custom"
     },
-    "05_Literature/By_Method/GLM_AED": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "05_Literature/By_Method/Machine_Learning": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "05_Literature/By_Method/Trend_Analysis": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "05_Literature/By_Method/Uncertainty": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "05_Literature/By_Topic/Climate_Human_Impacts": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "05_Literature/By_Topic/Lake_Carbon": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "05_Literature/By_Topic/Lake_Water_Quality": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "05_Literature/By_Topic/Modeling": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "05_Literature/By_Topic/Remote_Sensing": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "06_Skills/AI_Tools/Obsidian": {
-      "children": [],
-      "sortOrder": "custom"
-    },
     "08_Data_Documentation": {
       "children": [
         "08_Data_Documentation/CMIP6.md",
@@ -230,20 +190,7 @@
       "sortOrder": "custom"
     },
     "11_Archive": {
-      "children": [
-        "11_Archive/Deprecated",
-        "11_Archive/Old_Notes"
-      ],
-      "sortOrder": "custom"
-    },
-    "11_Archive/Deprecated": {
       "children": [],
-      "sortOrder": "custom"
-    },
-    "11_Archive/Old_Notes": {
-      "children": [
-        "11_Archive/Old_Notes/20260504.亲密关系.md"
-      ],
       "sortOrder": "custom"
     },
     "99_Raw_Data": {
