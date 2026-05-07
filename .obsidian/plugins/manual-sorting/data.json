@@ -2,6 +2,7 @@
   "customOrder": {
     "/": {
       "children": [
+        "CLAUDE.zh-CN.all-date-naming.md",
         "03_Projects",
         "09_Writing",
         "CLAUDE.RAW.md",
