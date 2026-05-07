@@ -594,24 +594,7 @@ last_updated:
 5. 追加 `Log.md`。
 ---
 
-### 7. 归档
-
-当项目完成、页面过时或内容暂时不用时：
-
-1. 移动到 `11_Archive/Old_Notes/` 或 `11_Archive/Deprecated/`；项目如果已经完成，也可以移动到 `03_Projects/Finished/`。
-2. 保留原页面标题和关键链接。
-3. 在原项目页或 `Index.md` 中移除高频入口。
-4. 追加 `Log.md`。
-
-日志格式：
-
-```markdown
-## [YYYY-MM-DD] archive | 页面或项目名称 | 归档原因
-```
-
----
-
-### 8. 定期健检 Lint
+### 4. 定期健检 Lint
 
 定期检查：
 
@@ -662,17 +645,6 @@ Lake_DIC_Paper 需要强调降水/径流稀释和蒸发浓缩两个机制。
 04_Knowledge_Base/Lake_Carbon/Runoff_Dilution.md
 04_Knowledge_Base/Lake_Carbon/Evaporation_Concentration.md
 ```
-
-### Literature 不是摘抄库
-
-文献笔记不能只复制摘要。必须说明：
-
-- 这篇文章解决什么问题
-- 使用了什么数据和方法
-- 结论是什么
-- 对用户当前研究有什么价值
-- 可以支撑哪一部分写作
-
 ---
 
 ## 来源引用要求
