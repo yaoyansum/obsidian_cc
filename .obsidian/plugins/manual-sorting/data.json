@@ -1,0 +1,11 @@
+{
+  "customOrder": {
+    "/": {
+      "children": [],
+      "sortOrder": "custom"
+    }
+  },
+  "sortOrder": "alphabetical",
+  "debugMode": false,
+  "newItemPlacement": "top"
+}
