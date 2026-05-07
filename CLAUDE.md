@@ -557,54 +557,18 @@ last_updated:
 ```
 
 ---
-
-### 8. 日记页：`02_Diary/`
-
-日记用于个人状态、反思、计划和总结，不承担科研知识库功能。
-
-```yaml
----
-type: diary
-date:
-mood:
-tags: []
----
-```
-
-推荐包含：
-
-```markdown
-# YYYY-MM-DD
-
-## 今天做了什么
-
-## 状态与反思
-
-## 明天计划
-
-## 灵感
-```
-
----
-
 ## 操作流程
 
 ### 1. 新增一条普通知识
 
 当用户提供一个概念、机制、方法或解释时：
 
-1. 先判断它属于哪个目录：`Knowledge_Base`、`Skills`、`Code_and_Debug`、`Literature`、`Projects` 或 `Writing`。
+1. 先判断它属于哪个目录：`Knowledge_Base`、`Projects` 或 `Writing`。
 2. 检查是否已有相关页面。
 3. 如果已有页面，补充到原页面。
 4. 如果没有页面，新建页面。
 5. 更新 `00_Index/Index.md` 中的重要入口。
 6. 追加 `01_Log/Log.md`。
-
-日志格式：
-
-```markdown
-## [YYYY-MM-DD] knowledge | 页面标题 | 新增/更新内容摘要
-```
 
 ---
 
