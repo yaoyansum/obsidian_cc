@@ -195,8 +195,10 @@
     },
     "99_Raw_Data": {
       "children": [
-        "99_Raw_Data/A_Hybrid_Bayesian_Data_Fusion_Framework_to_Enhance.txt",
-        "99_Raw_Data/A_Hybrid_Bayesian_Data_Fusion_Framework_to_Enhance.pdf"
+        "99_Raw_Data/pgad432.pdf",
+        "99_Raw_Data/s41467-025-66275-w.pdf",
+        "99_Raw_Data/s43247-025-03034-1.pdf",
+        "99_Raw_Data/sciadv.aea0024.pdf"
       ],
       "sortOrder": "custom"
     }
