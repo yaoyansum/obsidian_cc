@@ -2,6 +2,7 @@
   "customOrder": {
     "/": {
       "children": [
+        "11_Archive",
         "CLAUDE.zh-CN.all-date-naming.md",
         "03_Projects",
         "09_Writing",
@@ -31,6 +32,8 @@
     },
     "02_Diary": {
       "children": [
+        "02_Diary/Monthly",
+        "02_Diary/Weekly",
         "02_Diary/Daily"
       ],
       "sortOrder": "custom"
@@ -43,6 +46,14 @@
       ],
       "sortOrder": "custom"
     },
+    "02_Diary/Monthly": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Weekly": {
+      "children": [],
+      "sortOrder": "custom"
+    },
     "03_Projects": {
       "children": [
         "03_Projects/Active",
@@ -53,6 +64,17 @@
       "sortOrder": "custom"
     },
     "03_Projects/Active": {
+      "children": [
+        "03_Projects/Active/Lake_DIC_Global_Change",
+        "03_Projects/Active/Lake_DOC_Global_Change"
+      ],
+      "sortOrder": "custom"
+    },
+    "03_Projects/Active/Lake_DIC_Global_Change": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "03_Projects/Active/Lake_DOC_Global_Change": {
       "children": [],
       "sortOrder": "custom"
     },
@@ -65,11 +87,20 @@
       "sortOrder": "custom"
     },
     "03_Projects/Paused": {
+      "children": [
+        "03_Projects/Paused/GLM_AED_Project"
+      ],
+      "sortOrder": "custom"
+    },
+    "03_Projects/Paused/GLM_AED_Project": {
       "children": [],
       "sortOrder": "custom"
     },
     "04_Knowledge_Base": {
       "children": [
+        "04_Knowledge_Base/Lake_Water_Quality",
+        "04_Knowledge_Base/Scientific_Writing",
+        "04_Knowledge_Base/Statistics",
         "04_Knowledge_Base/Lake_Carbon",
         "04_Knowledge_Base/Modeling",
         "04_Knowledge_Base/Remote_Sensing"
@@ -85,6 +116,10 @@
       ],
       "sortOrder": "custom"
     },
+    "04_Knowledge_Base/Lake_Water_Quality": {
+      "children": [],
+      "sortOrder": "custom"
+    },
     "04_Knowledge_Base/Modeling": {
       "children": [
         "04_Knowledge_Base/Modeling/01.20260507.Bayesian_Data_Fusion_HIOBF.md"
@@ -98,6 +133,14 @@
         "04_Knowledge_Base/Remote_Sensing/02_20260503_大气校正方法总述与工具.md",
         "04_Knowledge_Base/Remote_Sensing/03_20260503_6SV模型参数详解.md"
       ],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base/Scientific_Writing": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base/Statistics": {
+      "children": [],
       "sortOrder": "custom"
     },
     "08_Data_Documentation": {
@@ -147,6 +190,10 @@
         "10_Templates/Project_Template.md",
         "10_Templates/Web_Learning_Template.md"
       ],
+      "sortOrder": "custom"
+    },
+    "11_Archive": {
+      "children": [],
       "sortOrder": "custom"
     },
     "99_Raw_Data": {
