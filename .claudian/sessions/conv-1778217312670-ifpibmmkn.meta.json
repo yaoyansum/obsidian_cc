@@ -1,0 +1,24 @@
+{
+  "id": "conv-1778217312670-ifpibmmkn",
+  "providerId": "claude",
+  "title": "根据CLAUDE",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1778217312670,
+  "updatedAt": 1779088489337,
+  "lastResponseAt": 1778217673517,
+  "sessionId": "936825ff-b245-486b-93cc-233cb842f25a",
+  "providerState": {
+    "providerSessionId": "936825ff-b245-486b-93cc-233cb842f25a"
+  },
+  "currentNote": "CLAUDE.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 939,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 43333,
+    "contextWindow": 200000,
+    "contextTokens": 44272,
+    "percentage": 22,
+    "contextWindowIsAuthoritative": true
+  }
+}

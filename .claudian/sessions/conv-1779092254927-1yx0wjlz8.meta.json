@@ -1,0 +1,23 @@
+{
+  "id": "conv-1779092254927-1yx0wjlz8",
+  "providerId": "claude",
+  "title": "Read and summarize DOC mechanisms",
+  "titleGenerationStatus": "success",
+  "createdAt": 1779092254927,
+  "updatedAt": 1779191827654,
+  "lastResponseAt": 1779092400652,
+  "sessionId": "3fd07365-fb35-40fc-a09a-e62bff9e3bd1",
+  "providerState": {
+    "providerSessionId": "3fd07365-fb35-40fc-a09a-e62bff9e3bd1"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0,
+    "contextWindowIsAuthoritative": true
+  }
+}
