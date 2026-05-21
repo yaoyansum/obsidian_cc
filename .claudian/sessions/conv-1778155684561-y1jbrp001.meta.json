@@ -1,15 +1,16 @@
 {
   "id": "conv-1778155684561-y1jbrp001",
   "providerId": "claude",
-  "title": "读取\"D:\\obsidian_cc\\99_Raw_Data\\Liu 等 - 2024 - Subst...",
+  "title": "根据此文档和obsidian_cc下的文件目录和内容帮我重构Index文档",
   "titleGenerationStatus": "failed",
   "createdAt": 1778155684561,
-  "updatedAt": 1778156179720,
-  "lastResponseAt": 1778156179720,
+  "updatedAt": 1778217301478,
+  "lastResponseAt": 1778217290190,
   "sessionId": "2e18d3bc-fba5-40fa-8a7b-3586d9b499fc",
   "providerState": {
     "providerSessionId": "2e18d3bc-fba5-40fa-8a7b-3586d9b499fc"
   },
+  "currentNote": "CLAUDE.md",
   "usage": {
     "model": "haiku",
     "inputTokens": 1321,
