@@ -148,6 +148,12 @@
 
 ---
 
+## 06. 技能
+
+- [[07_Skills/Git/20260522_Git_Commands|Git 常用命令与技巧]]
+
+---
+
 ## 07. 原始材料
 
 - [[99_Raw_Data/Liu 等 - 2024 - Substantial increase of organic carbon storage in Chinese lakes.pdf]]

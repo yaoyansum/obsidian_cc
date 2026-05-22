@@ -262,6 +262,36 @@ git push
 
 ---
 
+## Obsidian 同步三步走
+
+当前 vault 已关联 GitHub 远程仓库，增删改文件后执行：
+
+```bash
+# 1. 暂存所有变更（新文件 + 修改 + 删除）
+git add .
+
+# 2. 提交并写明做了什么
+git commit -m "描述本次操作"
+
+# 3. 推送到 GitHub
+git push
+```
+
+### 快捷一行
+
+```bash
+git add . && git commit -m "描述" && git push
+```
+
+### 查看哪些文件变了
+
+```bash
+git status               # 完整列表
+git diff --stat          # 修改摘要
+```
+
+---
+
 ## 相关页面
 
 - [[00_Index/Index|Index]]

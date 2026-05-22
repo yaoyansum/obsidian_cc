@@ -2,10 +2,109 @@
   "customOrder": {
     "/": {
       "children": [
+        "00_Index",
+        "01_Log",
+        "02_Diary",
+        "04_Knowledge_Base",
+        "08_Data_Documentation",
+        "10_Templates",
+        "99_Raw_Data",
         "package.json",
         "package-lock.json",
         "CLAUDE.RAW.md",
         "CLAUDE.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "00_Index": {
+      "children": [
+        "00_Index/Index.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "01_Log": {
+      "children": [
+        "01_Log/Log.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "02_Diary": {
+      "children": [
+        "02_Diary/Daily"
+      ],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Daily": {
+      "children": [
+        "02_Diary/Daily/2026-03-23.md",
+        "02_Diary/Daily/2026-03-25.md",
+        "02_Diary/Daily/2026-05-03.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base": {
+      "children": [
+        "04_Knowledge_Base/Lake_Carbon",
+        "04_Knowledge_Base/Modeling",
+        "04_Knowledge_Base/Remote_Sensing"
+      ],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base/Lake_Carbon": {
+      "children": [
+        "04_Knowledge_Base/Lake_Carbon/01.20260504.湖泊DIC研究总结.md",
+        "04_Knowledge_Base/Lake_Carbon/02.20260429.湖泊溶解有机碳（DOC）研究综述.md",
+        "04_Knowledge_Base/Lake_Carbon/03.20260507.内陆水体活性管道模型——Cole2007与Tranvik2009综述.md",
+        "04_Knowledge_Base/Lake_Carbon/04.20260507.DOC变化趋势及其机理.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base/Modeling": {
+      "children": [
+        "04_Knowledge_Base/Modeling/01.20260507.Bayesian_Data_Fusion_HIOBF.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base/Remote_Sensing": {
+      "children": [
+        "04_Knowledge_Base/Remote_Sensing/01_20260503_大气校正原理.md",
+        "04_Knowledge_Base/Remote_Sensing/02_20260503_大气校正方法总述与工具.md",
+        "04_Knowledge_Base/Remote_Sensing/03_20260503_6SV模型参数详解.md",
+        "04_Knowledge_Base/Remote_Sensing/04.20260507.Spaceborne_Airborne_LiDAR_Ocean_Methods.md",
+        "04_Knowledge_Base/Remote_Sensing/05_20260520_QAA_Landsat.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "08_Data_Documentation": {
+      "children": [
+        "08_Data_Documentation/CMIP6.md",
+        "08_Data_Documentation/DIC_Dataset.md",
+        "08_Data_Documentation/DOC_Dataset.md",
+        "08_Data_Documentation/HydroLAKES.md",
+        "08_Data_Documentation/Remote_Sensing_Dataset.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "10_Templates": {
+      "children": [
+        "10_Templates/读书笔记模板.md",
+        "10_Templates/每日笔记模板.md",
+        "10_Templates/学习笔记模板系统.md",
+        "10_Templates/周报模板.md",
+        "10_Templates/Code_Debug_Template.md",
+        "10_Templates/Literature_Note_Template.md",
+        "10_Templates/Paper_Section_Template.md",
+        "10_Templates/Project_Template.md",
+        "10_Templates/Web_Learning_Template.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "99_Raw_Data": {
+      "children": [
+        "99_Raw_Data/Lee 等 - 2016 - A semi-analytical scheme to estimate Secchi-disk depth from Landsat-8 measurements.pdf",
+        "99_Raw_Data/QAA_Landsat_Lee_vs_Wei.pptx",
+        "99_Raw_Data/qaa_v6_202011-838283.pdf",
+        "99_Raw_Data/Wei 等 - 2019 - Semianalytical Derivation of Phytoplankton, CDOM, and Detritus Absorption Coefficients From the Land.pdf"
       ],
       "sortOrder": "custom"
     }
