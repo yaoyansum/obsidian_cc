@@ -22,6 +22,8 @@
 
 ---
 
+## [2026-05-25] data-doc | 新建 WaterQuality 数据仓库总览 | 探索 K:\WaterQuality 全目录结构并写入 08_Data_Documentation
+
 ## [2026-05-07]  knowledge | cole2007 vs Tran2009
 ## [2026-05-07] index | 创建 Index.md | 初始化总索引入口
 
@@ -86,3 +88,5 @@
 ---
 
 ## [2026-05-22] skill | 创建 07_Skills/Git | 记录 Git 常用命令与技巧，更新 Index.md
+
+## [2026-05-25] skill | 创建 07_Skills 技能索引 | 汇总 27 项 OpenCode 技能并更新 Index.md

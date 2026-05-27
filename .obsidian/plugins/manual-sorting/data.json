@@ -2,6 +2,7 @@
   "customOrder": {
     "/": {
       "children": [
+        "07_Skills",
         "00_Index",
         "01_Log",
         "02_Diary",
@@ -52,6 +53,7 @@
     },
     "04_Knowledge_Base/Lake_Carbon": {
       "children": [
+        "04_Knowledge_Base/Lake_Carbon/05.20260527.global_lake_doc_review.md",
         "04_Knowledge_Base/Lake_Carbon/01.20260504.湖泊DIC研究总结.md",
         "04_Knowledge_Base/Lake_Carbon/02.20260429.湖泊溶解有机碳（DOC）研究综述.md",
         "04_Knowledge_Base/Lake_Carbon/03.20260507.内陆水体活性管道模型——Cole2007与Tranvik2009综述.md",
@@ -75,8 +77,22 @@
       ],
       "sortOrder": "custom"
     },
+    "07_Skills": {
+      "children": [
+        "07_Skills/20260525_OpenCode_Skills.md",
+        "07_Skills/Git"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/Git": {
+      "children": [
+        "07_Skills/Git/20260522_Git_Commands.md"
+      ],
+      "sortOrder": "custom"
+    },
     "08_Data_Documentation": {
       "children": [
+        "08_Data_Documentation/20260525_WaterQuality_Dataset.md",
         "08_Data_Documentation/CMIP6.md",
         "08_Data_Documentation/DIC_Dataset.md",
         "08_Data_Documentation/DOC_Dataset.md",
