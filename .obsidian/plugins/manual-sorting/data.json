@@ -53,6 +53,8 @@
     },
     "04_Knowledge_Base/Lake_Carbon": {
       "children": [
+        "04_Knowledge_Base/Lake_Carbon/05.20260527.QAA_Landsat算法发展综述_中文版.md",
+        "04_Knowledge_Base/Lake_Carbon/05.20260527.research_report_lake_ocean_POC.md",
         "04_Knowledge_Base/Lake_Carbon/05.20260527.global_lake_doc_review.md",
         "04_Knowledge_Base/Lake_Carbon/01.20260504.湖泊DIC研究总结.md",
         "04_Knowledge_Base/Lake_Carbon/02.20260429.湖泊溶解有机碳（DOC）研究综述.md",
@@ -69,11 +71,27 @@
     },
     "04_Knowledge_Base/Remote_Sensing": {
       "children": [
+        "04_Knowledge_Base/Remote_Sensing/assets",
         "04_Knowledge_Base/Remote_Sensing/01_20260503_大气校正原理.md",
         "04_Knowledge_Base/Remote_Sensing/02_20260503_大气校正方法总述与工具.md",
         "04_Knowledge_Base/Remote_Sensing/03_20260503_6SV模型参数详解.md",
         "04_Knowledge_Base/Remote_Sensing/04.20260507.Spaceborne_Airborne_LiDAR_Ocean_Methods.md",
         "04_Knowledge_Base/Remote_Sensing/05_20260520_QAA_Landsat.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base/Remote_Sensing/assets": {
+      "children": [
+        "04_Knowledge_Base/Remote_Sensing/assets/05_20260520_QAA_Landsat"
+      ],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base/Remote_Sensing/assets/05_20260520_QAA_Landsat": {
+      "children": [
+        "04_Knowledge_Base/Remote_Sensing/assets/05_20260520_QAA_Landsat/file-20260527094056855.png",
+        "04_Knowledge_Base/Remote_Sensing/assets/05_20260520_QAA_Landsat/file-20260527094120491.png",
+        "04_Knowledge_Base/Remote_Sensing/assets/05_20260520_QAA_Landsat/file-20260527094140731.png",
+        "04_Knowledge_Base/Remote_Sensing/assets/05_20260520_QAA_Landsat/file-20260527094205852.png"
       ],
       "sortOrder": "custom"
     },
