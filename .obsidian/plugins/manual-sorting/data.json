@@ -97,14 +97,15 @@
     },
     "07_Skills": {
       "children": [
-        "07_Skills/20260525_OpenCode_Skills.md",
+        "07_Skills/02.20260527.OpenCode_sessions.md",
+        "07_Skills/01.20260525.OpenCode_Skills.md",
         "07_Skills/Git"
       ],
       "sortOrder": "custom"
     },
     "07_Skills/Git": {
       "children": [
-        "07_Skills/Git/20260522_Git_Commands.md"
+        "07_Skills/Git/01.20260522.Git_Commands.md"
       ],
       "sortOrder": "custom"
     },
