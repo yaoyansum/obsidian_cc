@@ -97,6 +97,10 @@
     },
     "07_Skills": {
       "children": [
+        "07_Skills/Opencode",
+        "07_Skills/SAN14",
+        "07_Skills/01.20260601_RTK14_Hero_Analysis.md",
+        "07_Skills/02.20260601_RTK14_LianXie_Team_Building.md",
         "07_Skills/02.20260527.OpenCode_sessions.md",
         "07_Skills/01.20260525.OpenCode_Skills.md",
         "07_Skills/Git"
@@ -141,6 +145,14 @@
         "99_Raw_Data/qaa_v6_202011-838283.pdf",
         "99_Raw_Data/Wei 等 - 2019 - Semianalytical Derivation of Phytoplankton, CDOM, and Detritus Absorption Coefficients From the Land.pdf"
       ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/SAN14": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "07_Skills/Opencode": {
+      "children": [],
       "sortOrder": "custom"
     }
   },

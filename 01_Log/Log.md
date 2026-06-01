@@ -90,3 +90,7 @@
 ## [2026-05-22] skill | 创建 07_Skills/Git | 记录 Git 常用命令与技巧，更新 Index.md
 
 ## [2026-05-25] skill | 创建 07_Skills 技能索引 | 汇总 27 项 OpenCode 技能并更新 Index.md
+
+## [2026-06-01] knowledge | 三国志14 连携关系 | 创建 07_Skills/20260601_RTK14_LianXie_Team_Building.md，覆盖蜀/魏/吴/他势力连携关系与组队推荐，更新 Index.md
+
+## [2026-06-01] knowledge | 三国志14 武将个人分析 | 创建 07_Skills/20260601_RTK14_Hero_Analysis.md，涵盖 S/A/B 级主力战将的五维、个性、战法、连携网及优势总结，更新 Index.md
