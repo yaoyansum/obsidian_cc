@@ -98,9 +98,29 @@
     },
     "07_Skills": {
       "children": [
+        "07_Skills/GEE",
+        "07_Skills/QGIS",
         "07_Skills/Opencode",
         "07_Skills/SAN14",
         "07_Skills/Git"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/GEE": {
+      "children": [
+        "07_Skills/GEE/_index.md",
+        "07_Skills/GEE/API_Classification.md",
+        "07_Skills/GEE/API_DataTypes.md",
+        "07_Skills/GEE/API_Features.md",
+        "07_Skills/GEE/API_Geometry.md",
+        "07_Skills/GEE/API_Images.md",
+        "07_Skills/GEE/API_Math.md",
+        "07_Skills/GEE/API_Other.md",
+        "07_Skills/GEE/Datasets_and_Integrations.md",
+        "07_Skills/GEE/Developer_Guides.md",
+        "07_Skills/GEE/Python_Notes.md",
+        "07_Skills/GEE/Source_Map.md",
+        "07_Skills/GEE/Tutorials.md"
       ],
       "sortOrder": "custom"
     },
@@ -114,6 +134,25 @@
       "children": [
         "07_Skills/Opencode/01.20260525.OpenCode_Skills.md",
         "07_Skills/Opencode/02.20260527.OpenCode_sessions.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/QGIS": {
+      "children": [
+        "07_Skills/QGIS/技巧.md",
+        "07_Skills/QGIS/assets"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/QGIS/assets": {
+      "children": [
+        "07_Skills/QGIS/assets/技巧"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/QGIS/assets/技巧": {
+      "children": [
+        "07_Skills/QGIS/assets/技巧/file-20260603112403191.png"
       ],
       "sortOrder": "custom"
     },
