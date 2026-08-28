@@ -98,11 +98,31 @@
     },
     "07_Skills": {
       "children": [
+        "07_Skills/围棋",
         "07_Skills/GEE",
         "07_Skills/QGIS",
         "07_Skills/Opencode",
         "07_Skills/SAN14",
         "07_Skills/Git"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/围棋": {
+      "children": [
+        "07_Skills/围棋/assets",
+        "07_Skills/围棋/围棋.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/围棋/assets": {
+      "children": [
+        "07_Skills/围棋/assets/围棋"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/围棋/assets/围棋": {
+      "children": [
+        "07_Skills/围棋/assets/围棋/file-20260624171421559.png"
       ],
       "sortOrder": "custom"
     },

@@ -158,6 +158,7 @@
 ### 用户常用技能笔记
 
 - [[01.20260522.Git_Commands|Git 常用命令与技巧]]
+- [[07_Skills/Git/20260828_GitHub_CLI_Gh_Usage|GitHub CLI (gh) 使用与 push 实践]] — gh v2.98.0 实测
 - [[02.20260601_RTK14_LianXie_Team_Building|三国志14 武将连携关系与组队攻略]]
 - [[01.20260601_RTK14_Hero_Analysis|三国志14 主要战力人物个人特点与连携一览]]
 

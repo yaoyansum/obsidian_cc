@@ -94,3 +94,5 @@
 ## [2026-06-01] knowledge | 三国志14 连携关系 | 创建 07_Skills/20260601_RTK14_LianXie_Team_Building.md，覆盖蜀/魏/吴/他势力连携关系与组队推荐，更新 Index.md
 
 ## [2026-06-01] knowledge | 三国志14 武将个人分析 | 创建 07_Skills/20260601_RTK14_Hero_Analysis.md，涵盖 S/A/B 级主力战将的五维、个性、战法、连携网及优势总结，更新 Index.md
+
+## [2026-08-28] skill | GitHub CLI (gh) 使用与 push 实践 | 新建 07_Skills/Git/20260828_GitHub_CLI_Gh_Usage.md，覆盖 gh v2.98.0 安装/认证/repo/issue/PR/clone/fork/search/release/workflow/api 全流程及与 git push 关系辨析，更新 Index.md 并推送至 origin/main
