@@ -98,3 +98,5 @@
 ## [2026-08-28] skill | GitHub CLI (gh) 使用与 push 实践 | 新建 07_Skills/Git/20260828_GitHub_CLI_Gh_Usage.md，覆盖 gh v2.98.0 安装/认证/repo/issue/PR/clone/fork/search/release/workflow/api 全流程及与 git push 关系辨析，更新 Index.md 并推送至 origin/main
 
 ## [2026-08-28] skill | uv 命令行与项目/环境管理技巧 | 新建 07_Skills/Python/20260828_Uv_CLI_Project_Env_Management.md，覆盖 uv 0.11.21 的 python/venv/pip/tool/init/add/sync/lock/run/build/workspace/cache 全流程、镜像/配置、科研实战与 Cheatsheet，更新 Index.md 并推送至 origin/main
+
+## [2026-05-08] knowledge | Markdown 与 Obsidian 使用规则 | 创建 20260508_Markdown_Obsidian_Rules.md，包含 Markdown 语法、Obsidian 专用语法、文件命名、文档结构、链接引用、日志更新等规范

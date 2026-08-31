@@ -125,6 +125,7 @@
 
 ## 05. 常用模板
 
+- [[07_Skills/MD/20260508_Markdown_Obsidian_Rules|Markdown 与 Obsidian 使用规则]]
 - [[10_Templates/Literature_Note_Template|Literature_Note_Template]]
 - [[10_Templates/Web_Learning_Template|Web_Learning_Template]]
 - [[10_Templates/Code_Debug_Template|Code_Debug_Template]]
