@@ -2,7 +2,6 @@
   "customOrder": {
     "/": {
       "children": [
-        "20260508_Markdown_Obsidian_Rules.md",
         "07_Skills",
         "00_Index",
         "01_Log",
@@ -42,6 +41,28 @@
         "02_Diary/Daily/2026-03-23.md",
         "02_Diary/Daily/2026-03-25.md",
         "02_Diary/Daily/2026-05-03.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Weekly": {
+      "children": [
+        "02_Diary/Weekly/assets",
+        "02_Diary/Weekly/2026-08-31-W36.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Weekly/assets": {
+      "children": [
+        "02_Diary/Weekly/assets/2026-08-31-W36"
+      ],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Weekly/assets/2026-08-31-W36": {
+      "children": [
+        "02_Diary/Weekly/assets/2026-08-31-W36/file-20260831145314925.png",
+        "02_Diary/Weekly/assets/2026-08-31-W36/file-20260831145327347.png",
+        "02_Diary/Weekly/assets/2026-08-31-W36/file-20260831145636338.png",
+        "02_Diary/Weekly/assets/2026-08-31-W36/file-20260831144313961.png"
       ],
       "sortOrder": "custom"
     },
@@ -155,6 +176,12 @@
       ],
       "sortOrder": "custom"
     },
+    "07_Skills/MD": {
+      "children": [
+        "07_Skills/MD/20260508_Markdown_Obsidian_Rules.md"
+      ],
+      "sortOrder": "custom"
+    },
     "07_Skills/Opencode": {
       "children": [
         "07_Skills/Opencode/01.20260525.OpenCode_Skills.md",
@@ -226,29 +253,6 @@
         "99_Raw_Data/qaa_v6_202011-838283.pdf",
         "99_Raw_Data/Wei 等 - 2019 - Semianalytical Derivation of Phytoplankton, CDOM, and Detritus Absorption Coefficients From the Land.pdf"
       ],
-      "sortOrder": "custom"
-    },
-    "02_Diary/Weekly": {
-      "children": [
-        "02_Diary/Weekly/assets",
-        "02_Diary/Weekly/2026-08-31-W36.md"
-      ],
-      "sortOrder": "custom"
-    },
-    "02_Diary/Weekly/assets": {
-      "children": [
-        "02_Diary/Weekly/assets/2026-08-31-W36"
-      ],
-      "sortOrder": "custom"
-    },
-    "02_Diary/Weekly/assets/2026-08-31-W36": {
-      "children": [
-        "02_Diary/Weekly/assets/2026-08-31-W36/file-20260831144313961.png"
-      ],
-      "sortOrder": "custom"
-    },
-    "07_Skills/MD": {
-      "children": [],
       "sortOrder": "custom"
     }
   },
