@@ -2,6 +2,7 @@
   "customOrder": {
     "/": {
       "children": [
+        "20260508_Markdown_Obsidian_Rules.md",
         "07_Skills",
         "00_Index",
         "01_Log",
@@ -31,6 +32,7 @@
     },
     "02_Diary": {
       "children": [
+        "02_Diary/Weekly",
         "02_Diary/Daily"
       ],
       "sortOrder": "custom"
@@ -98,6 +100,8 @@
     },
     "07_Skills": {
       "children": [
+        "07_Skills/MD",
+        "07_Skills/Python",
         "07_Skills/围棋",
         "07_Skills/GEE",
         "07_Skills/QGIS",
@@ -146,6 +150,7 @@
     },
     "07_Skills/Git": {
       "children": [
+        "07_Skills/Git/20260828_GitHub_CLI_Gh_Usage.md",
         "07_Skills/Git/01.20260522.Git_Commands.md"
       ],
       "sortOrder": "custom"
@@ -154,6 +159,12 @@
       "children": [
         "07_Skills/Opencode/01.20260525.OpenCode_Skills.md",
         "07_Skills/Opencode/02.20260527.OpenCode_sessions.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/Python": {
+      "children": [
+        "07_Skills/Python/20260828_Uv_CLI_Project_Env_Management.md"
       ],
       "sortOrder": "custom"
     },
@@ -215,6 +226,29 @@
         "99_Raw_Data/qaa_v6_202011-838283.pdf",
         "99_Raw_Data/Wei 等 - 2019 - Semianalytical Derivation of Phytoplankton, CDOM, and Detritus Absorption Coefficients From the Land.pdf"
       ],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Weekly": {
+      "children": [
+        "02_Diary/Weekly/assets",
+        "02_Diary/Weekly/2026-08-31-W36.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Weekly/assets": {
+      "children": [
+        "02_Diary/Weekly/assets/2026-08-31-W36"
+      ],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Weekly/assets/2026-08-31-W36": {
+      "children": [
+        "02_Diary/Weekly/assets/2026-08-31-W36/file-20260831144313961.png"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/MD": {
+      "children": [],
       "sortOrder": "custom"
     }
   },
