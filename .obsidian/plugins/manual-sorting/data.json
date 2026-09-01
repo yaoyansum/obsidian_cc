@@ -223,7 +223,7 @@
     },
     "08_Data_Documentation": {
       "children": [
-        "08_Data_Documentation/20260525_WaterQuality_Dataset.md",
+        "08_Data_Documentation/WaterQuality_Dataset.md",
         "08_Data_Documentation/CMIP6.md",
         "08_Data_Documentation/DIC_Dataset.md",
         "08_Data_Documentation/DOC_Dataset.md",

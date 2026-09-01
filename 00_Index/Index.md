@@ -107,7 +107,7 @@
 - [[08_Data_Documentation/DOC_Dataset|DOC_Dataset]]
 - [[08_Data_Documentation/DIC_Dataset|DIC_Dataset]]
 - [[08_Data_Documentation/Remote_Sensing_Dataset|Remote_Sensing_Dataset]]
-- [[08_Data_Documentation/20260525_WaterQuality_Dataset|WaterQuality 数据仓库总览]]
+- [[WaterQuality_Dataset|WaterQuality 数据仓库总览]]
 
 ---
 
