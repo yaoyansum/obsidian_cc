@@ -178,7 +178,25 @@
     },
     "07_Skills/MD": {
       "children": [
+        "07_Skills/MD/assets",
         "07_Skills/MD/20260508_Markdown_Obsidian_Rules.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/MD/assets": {
+      "children": [
+        "07_Skills/MD/assets/20260508_Markdown_Obsidian_Rules"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/MD/assets/20260508_Markdown_Obsidian_Rules": {
+      "children": [
+        "07_Skills/MD/assets/20260508_Markdown_Obsidian_Rules/file-20260901131226525.png",
+        "07_Skills/MD/assets/20260508_Markdown_Obsidian_Rules/file-20260901131247110.png",
+        "07_Skills/MD/assets/20260508_Markdown_Obsidian_Rules/file-20260901131614337.png",
+        "07_Skills/MD/assets/20260508_Markdown_Obsidian_Rules/file-20260901132200755.png",
+        "07_Skills/MD/assets/20260508_Markdown_Obsidian_Rules/file-20260901132339263.png",
+        "07_Skills/MD/assets/20260508_Markdown_Obsidian_Rules/file-20260901133106095.png"
       ],
       "sortOrder": "custom"
     },
