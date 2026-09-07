@@ -2,6 +2,7 @@
   "customOrder": {
     "/": {
       "children": [
+        "100_Code",
         "07_Skills",
         "00_Index",
         "01_Log",
@@ -46,6 +47,7 @@
     },
     "02_Diary/Weekly": {
       "children": [
+        "02_Diary/Weekly/2026-09-07-W37.md",
         "02_Diary/Weekly/assets",
         "02_Diary/Weekly/2026-08-31-W36.md"
       ],
@@ -53,6 +55,7 @@
     },
     "02_Diary/Weekly/assets": {
       "children": [
+        "02_Diary/Weekly/assets/2026-09-07-W37",
         "02_Diary/Weekly/assets/2026-08-31-W36"
       ],
       "sortOrder": "custom"
@@ -270,6 +273,24 @@
         "99_Raw_Data/QAA_Landsat_Lee_vs_Wei.pptx",
         "99_Raw_Data/qaa_v6_202011-838283.pdf",
         "99_Raw_Data/Wei 等 - 2019 - Semianalytical Derivation of Phytoplankton, CDOM, and Detritus Absorption Coefficients From the Land.pdf"
+      ],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Weekly/assets/2026-09-07-W37": {
+      "children": [
+        "02_Diary/Weekly/assets/2026-09-07-W37/Fig2.0.2.png"
+      ],
+      "sortOrder": "custom"
+    },
+    "100_Code": {
+      "children": [
+        "100_Code/PY"
+      ],
+      "sortOrder": "custom"
+    },
+    "100_Code/PY": {
+      "children": [
+        "100_Code/PY/等值线.md"
       ],
       "sortOrder": "custom"
     }
