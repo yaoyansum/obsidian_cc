@@ -47,6 +47,7 @@
     },
     "02_Diary/Weekly": {
       "children": [
+        "02_Diary/Weekly/服务器使用.md",
         "02_Diary/Weekly/2026-09-07-W37.md",
         "02_Diary/Weekly/assets",
         "02_Diary/Weekly/2026-08-31-W36.md"
@@ -66,6 +67,14 @@
         "02_Diary/Weekly/assets/2026-08-31-W36/file-20260831145327347.png",
         "02_Diary/Weekly/assets/2026-08-31-W36/file-20260831145636338.png",
         "02_Diary/Weekly/assets/2026-08-31-W36/file-20260831144313961.png"
+      ],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Weekly/assets/2026-09-07-W37": {
+      "children": [
+        "02_Diary/Weekly/assets/2026-09-07-W37/Fig5.png",
+        "02_Diary/Weekly/assets/2026-09-07-W37/Fig5 1.png",
+        "02_Diary/Weekly/assets/2026-09-07-W37/Fig2.0.2.png"
       ],
       "sortOrder": "custom"
     },
@@ -124,6 +133,7 @@
     },
     "07_Skills": {
       "children": [
+        "07_Skills/服务器",
         "07_Skills/MD",
         "07_Skills/Python",
         "07_Skills/围棋",
@@ -269,16 +279,11 @@
     },
     "99_Raw_Data": {
       "children": [
+        "99_Raw_Data/2024云平台使用说明.pdf",
         "99_Raw_Data/Lee 等 - 2016 - A semi-analytical scheme to estimate Secchi-disk depth from Landsat-8 measurements.pdf",
         "99_Raw_Data/QAA_Landsat_Lee_vs_Wei.pptx",
         "99_Raw_Data/qaa_v6_202011-838283.pdf",
         "99_Raw_Data/Wei 等 - 2019 - Semianalytical Derivation of Phytoplankton, CDOM, and Detritus Absorption Coefficients From the Land.pdf"
-      ],
-      "sortOrder": "custom"
-    },
-    "02_Diary/Weekly/assets/2026-09-07-W37": {
-      "children": [
-        "02_Diary/Weekly/assets/2026-09-07-W37/Fig2.0.2.png"
       ],
       "sortOrder": "custom"
     },
@@ -292,6 +297,16 @@
       "children": [
         "100_Code/PY/等值线.md"
       ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/服务器": {
+      "children": [
+        "07_Skills/服务器/99_Raw_Data"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/服务器/99_Raw_Data": {
+      "children": [],
       "sortOrder": "custom"
     }
   },
