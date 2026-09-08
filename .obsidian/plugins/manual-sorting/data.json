@@ -47,7 +47,6 @@
     },
     "02_Diary/Weekly": {
       "children": [
-        "02_Diary/Weekly/服务器使用.md",
         "02_Diary/Weekly/2026-09-07-W37.md",
         "02_Diary/Weekly/assets",
         "02_Diary/Weekly/2026-08-31-W36.md"
@@ -143,6 +142,17 @@
         "07_Skills/SAN14",
         "07_Skills/Git"
       ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/服务器": {
+      "children": [
+        "07_Skills/服务器/服务器使用.md",
+        "07_Skills/服务器/99_Raw_Data"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/服务器/99_Raw_Data": {
+      "children": [],
       "sortOrder": "custom"
     },
     "07_Skills/围棋": {
@@ -297,16 +307,6 @@
       "children": [
         "100_Code/PY/等值线.md"
       ],
-      "sortOrder": "custom"
-    },
-    "07_Skills/服务器": {
-      "children": [
-        "07_Skills/服务器/99_Raw_Data"
-      ],
-      "sortOrder": "custom"
-    },
-    "07_Skills/服务器/99_Raw_Data": {
-      "children": [],
       "sortOrder": "custom"
     }
   },
