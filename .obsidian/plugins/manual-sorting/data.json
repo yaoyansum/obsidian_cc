@@ -133,7 +133,6 @@
     "07_Skills": {
       "children": [
         "07_Skills/Linux",
-        "07_Skills/20260908_Linux_Command_Line.md",
         "07_Skills/服务器",
         "07_Skills/MD",
         "07_Skills/Python",
@@ -213,6 +212,32 @@
       "children": [
         "07_Skills/Git/20260828_GitHub_CLI_Gh_Usage.md",
         "07_Skills/Git/01.20260522.Git_Commands.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/Linux": {
+      "children": [
+        "07_Skills/Linux/assets",
+        "07_Skills/Linux/20260908_Linux_Command_Line.md",
+        "07_Skills/Linux/20260909笔记.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/Linux/assets": {
+      "children": [
+        "07_Skills/Linux/assets/20260909笔记"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/Linux/assets/20260909笔记": {
+      "children": [
+        "07_Skills/Linux/assets/20260909笔记/file-20260909094621064.png",
+        "07_Skills/Linux/assets/20260909笔记/file-20260909094624316.png",
+        "07_Skills/Linux/assets/20260909笔记/file-20260909100210290.png",
+        "07_Skills/Linux/assets/20260909笔记/file-20260909101949808.png",
+        "07_Skills/Linux/assets/20260909笔记/file-20260909101959760.png",
+        "07_Skills/Linux/assets/20260909笔记/file-20260909133556630.png",
+        "07_Skills/Linux/assets/20260909笔记/file-20260909133559719.png"
       ],
       "sortOrder": "custom"
     },
@@ -323,12 +348,6 @@
     "100_Code/PY": {
       "children": [
         "100_Code/PY/等值线.md"
-      ],
-      "sortOrder": "custom"
-    },
-    "07_Skills/Linux": {
-      "children": [
-        "07_Skills/Linux/20260909笔记.md"
       ],
       "sortOrder": "custom"
     }
