@@ -132,6 +132,8 @@
     },
     "07_Skills": {
       "children": [
+        "07_Skills/Linux",
+        "07_Skills/20260908_Linux_Command_Line.md",
         "07_Skills/服务器",
         "07_Skills/MD",
         "07_Skills/Python",
@@ -146,6 +148,7 @@
     },
     "07_Skills/服务器": {
       "children": [
+        "07_Skills/服务器/assets",
         "07_Skills/服务器/服务器使用.md",
         "07_Skills/服务器/99_Raw_Data"
       ],
@@ -153,6 +156,20 @@
     },
     "07_Skills/服务器/99_Raw_Data": {
       "children": [],
+      "sortOrder": "custom"
+    },
+    "07_Skills/服务器/assets": {
+      "children": [
+        "07_Skills/服务器/assets/服务器使用"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/服务器/assets/服务器使用": {
+      "children": [
+        "07_Skills/服务器/assets/服务器使用/file-20260908155312940.png",
+        "07_Skills/服务器/assets/服务器使用/file-20260908155346653.png",
+        "07_Skills/服务器/assets/服务器使用/file-20260908155411847.png"
+      ],
       "sortOrder": "custom"
     },
     "07_Skills/围棋": {
@@ -306,6 +323,12 @@
     "100_Code/PY": {
       "children": [
         "100_Code/PY/等值线.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/Linux": {
+      "children": [
+        "07_Skills/Linux/20260909笔记.md"
       ],
       "sortOrder": "custom"
     }

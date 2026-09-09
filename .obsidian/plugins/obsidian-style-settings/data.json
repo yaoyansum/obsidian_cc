@@ -37,5 +37,10 @@
   "anuppuccin-theme-settings@@anp-simple-rainbow-indentation-toggle": true,
   "anuppuccin-theme-settings@@anp-simple-rainbow-icon-toggle": true,
   "anuppuccin-theme-settings@@anp-rainbow-subfolder-color-toggle": true,
-  "anuppuccin-theme-settings@@anp-status-bar-select": "anp-fixed-status-bar"
+  "anuppuccin-theme-settings@@anp-status-bar-select": "anp-fixed-status-bar",
+  "floating-toc-styles@@floating-toc-font-size": 1.2,
+  "anuppuccin-theme-settings@@anuppuccin-theme-light": "ctp-latte",
+  "floating-toc-styles@@floating-toc-remove-heading-indicator": false,
+  "floating-toc-styles@@floating-toc-font-color@@light": "#15992B",
+  "floating-toc-styles@@heading-color-indicator@@light": "#C41010F2"
 }
