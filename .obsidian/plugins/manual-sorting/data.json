@@ -217,27 +217,16 @@
     },
     "07_Skills/Linux": {
       "children": [
+        "07_Skills/Linux/20260910连接jupyter内核.md",
         "07_Skills/Linux/assets",
         "07_Skills/Linux/20260908_Linux_Command_Line.md",
-        "07_Skills/Linux/20260909笔记.md"
+        "07_Skills/Linux/20260909Linux基本知识.md"
       ],
       "sortOrder": "custom"
     },
     "07_Skills/Linux/assets": {
       "children": [
-        "07_Skills/Linux/assets/20260909笔记"
-      ],
-      "sortOrder": "custom"
-    },
-    "07_Skills/Linux/assets/20260909笔记": {
-      "children": [
-        "07_Skills/Linux/assets/20260909笔记/file-20260909094621064.png",
-        "07_Skills/Linux/assets/20260909笔记/file-20260909094624316.png",
-        "07_Skills/Linux/assets/20260909笔记/file-20260909100210290.png",
-        "07_Skills/Linux/assets/20260909笔记/file-20260909101949808.png",
-        "07_Skills/Linux/assets/20260909笔记/file-20260909101959760.png",
-        "07_Skills/Linux/assets/20260909笔记/file-20260909133556630.png",
-        "07_Skills/Linux/assets/20260909笔记/file-20260909133559719.png"
+        "07_Skills/Linux/assets/20260909Linux基本知识"
       ],
       "sortOrder": "custom"
     },
@@ -349,6 +338,10 @@
       "children": [
         "100_Code/PY/等值线.md"
       ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/Linux/assets/20260909Linux基本知识": {
+      "children": [],
       "sortOrder": "custom"
     }
   },
