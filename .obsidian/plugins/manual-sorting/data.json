@@ -39,9 +39,27 @@
     },
     "02_Diary/Daily": {
       "children": [
+        "02_Diary/Daily/assets",
+        "02_Diary/Daily/2026-09-11.md",
+        "02_Diary/Daily/2026-09-10.md",
         "02_Diary/Daily/2026-03-23.md",
         "02_Diary/Daily/2026-03-25.md",
         "02_Diary/Daily/2026-05-03.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Daily/assets": {
+      "children": [
+        "02_Diary/Daily/assets/2026-09-11"
+      ],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Daily/assets/2026-09-11": {
+      "children": [
+        "02_Diary/Daily/assets/2026-09-11/file-20260911095625830.png",
+        "02_Diary/Daily/assets/2026-09-11/file-20260911095709204.png",
+        "02_Diary/Daily/assets/2026-09-11/file-20260911100254678.png",
+        "02_Diary/Daily/assets/2026-09-11/file-20260911100322692.png"
       ],
       "sortOrder": "custom"
     },

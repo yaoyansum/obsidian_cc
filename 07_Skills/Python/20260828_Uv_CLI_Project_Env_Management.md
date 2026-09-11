@@ -491,3 +491,4 @@ uv cache dir && uv pip check && uv tree --outdated
 ## 操作记录
 
 - 2026-08-28 创建本页，基于 `uv 0.11.21` 实测 `uv help` 全量命令，覆盖 `python/venv/pip/tool/init/add/sync/lock/run/build/publish/workspace/cache` 与科研实战技巧。
+![[file-20260911112931884.png]]
