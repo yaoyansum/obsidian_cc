@@ -492,3 +492,45 @@ uv cache dir && uv pip check && uv tree --outdated
 
 - 2026-08-28 创建本页，基于 `uv 0.11.21` 实测 `uv help` 全量命令，覆盖 `python/venv/pip/tool/init/add/sync/lock/run/build/publish/workspace/cache` 与科研实战技巧。
 ![[file-20260911112931884.png]]
+
+
+# 连接到Vscode
+在 VS Code 中按：
+
+```
+Ctrl + Shift + P
+```
+
+输入：
+
+```
+Preferences: Open User Settings (JSON)
+```
+
+打开用户级 `settings.json`。
+
+加入：
+
+```
+{
+    "python.venvPath": "D:\\venvs"
+}
+```
+
+修改完 `settings.json` 后，建议：
+
+```
+Ctrl + Shift + P
+```
+
+输入：
+
+```
+Developer: Reload Window
+```
+
+点击：
+
+```
+Developer: Reload Window
+```

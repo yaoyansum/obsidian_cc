@@ -293,7 +293,20 @@
     },
     "07_Skills/Python": {
       "children": [
+        "07_Skills/Python/assets",
         "07_Skills/Python/20260828_Uv_CLI_Project_Env_Management.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/Python/assets": {
+      "children": [
+        "07_Skills/Python/assets/20260828_Uv_CLI_Project_Env_Management"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/Python/assets/20260828_Uv_CLI_Project_Env_Management": {
+      "children": [
+        "07_Skills/Python/assets/20260828_Uv_CLI_Project_Env_Management/file-20260911112931884.png"
       ],
       "sortOrder": "custom"
     },
