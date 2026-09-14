@@ -39,6 +39,7 @@
     },
     "02_Diary/Daily": {
       "children": [
+        "02_Diary/Daily/2026-09-10.md",
         "02_Diary/Daily/2026-03-23.md",
         "02_Diary/Daily/2026-03-25.md",
         "02_Diary/Daily/2026-05-03.md"
@@ -148,13 +149,8 @@
     "07_Skills/服务器": {
       "children": [
         "07_Skills/服务器/assets",
-        "07_Skills/服务器/服务器使用.md",
-        "07_Skills/服务器/99_Raw_Data"
+        "07_Skills/服务器/服务器使用.md"
       ],
-      "sortOrder": "custom"
-    },
-    "07_Skills/服务器/99_Raw_Data": {
-      "children": [],
       "sortOrder": "custom"
     },
     "07_Skills/服务器/assets": {
