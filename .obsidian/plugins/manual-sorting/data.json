@@ -228,6 +228,7 @@
     },
     "07_Skills/Git": {
       "children": [
+        "07_Skills/Git/20260915git冲突解决.md",
         "07_Skills/Git/20260828_GitHub_CLI_Gh_Usage.md",
         "07_Skills/Git/01.20260522.Git_Commands.md"
       ],
