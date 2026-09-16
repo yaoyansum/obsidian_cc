@@ -228,9 +228,25 @@
     },
     "07_Skills/Git": {
       "children": [
+        "07_Skills/Git/assets",
         "07_Skills/Git/20260915git冲突解决.md",
         "07_Skills/Git/20260828_GitHub_CLI_Gh_Usage.md",
         "07_Skills/Git/01.20260522.Git_Commands.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/Git/assets": {
+      "children": [
+        "07_Skills/Git/assets/20260915git冲突解决"
+      ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/Git/assets/20260915git冲突解决": {
+      "children": [
+        "07_Skills/Git/assets/20260915git冲突解决/file-20260915091850048.png",
+        "07_Skills/Git/assets/20260915git冲突解决/file-20260915091918767.png",
+        "07_Skills/Git/assets/20260915git冲突解决/file-20260915092001394.png",
+        "07_Skills/Git/assets/20260915git冲突解决/file-20260915092318833.png"
       ],
       "sortOrder": "custom"
     },
