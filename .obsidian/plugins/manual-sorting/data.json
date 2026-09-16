@@ -51,6 +51,7 @@
     },
     "02_Diary/Daily/assets": {
       "children": [
+        "02_Diary/Daily/assets/2026-09-16",
         "02_Diary/Daily/assets/2026-09-11"
       ],
       "sortOrder": "custom"
@@ -61,6 +62,12 @@
         "02_Diary/Daily/assets/2026-09-11/file-20260911095709204.png",
         "02_Diary/Daily/assets/2026-09-11/file-20260911100254678.png",
         "02_Diary/Daily/assets/2026-09-11/file-20260911100322692.png"
+      ],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Daily/assets/2026-09-16": {
+      "children": [
+        "02_Diary/Daily/assets/2026-09-16/file-20260916121837586.png"
       ],
       "sortOrder": "custom"
     },
