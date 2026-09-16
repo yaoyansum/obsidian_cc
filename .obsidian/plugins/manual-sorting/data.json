@@ -39,6 +39,7 @@
     },
     "02_Diary/Daily": {
       "children": [
+        "02_Diary/Daily/2026-09-16.md",
         "02_Diary/Daily/assets",
         "02_Diary/Daily/2026-09-11.md",
         "02_Diary/Daily/2026-09-10.md",
