@@ -53,7 +53,7 @@
     },
     "02_Diary/Daily/assets": {
       "children": [
-        "02_Diary/Daily/assets/温室气体",
+        "02_Diary/Daily/assets/20260918温室气体计算表",
         "02_Diary/Daily/assets/2026-09-16",
         "02_Diary/Daily/assets/2026-09-11"
       ],
@@ -71,6 +71,15 @@
     "02_Diary/Daily/assets/2026-09-16": {
       "children": [
         "02_Diary/Daily/assets/2026-09-16/file-20260916121837586.png"
+      ],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Daily/assets/20260918温室气体计算表": {
+      "children": [
+        "02_Diary/Daily/assets/20260918温室气体计算表/file-20260918105501715.png",
+        "02_Diary/Daily/assets/20260918温室气体计算表/file-20260918110126367.png",
+        "02_Diary/Daily/assets/20260918温室气体计算表/file-20260918110800587.png",
+        "02_Diary/Daily/assets/20260918温室气体计算表/file-20260918120516028.png"
       ],
       "sortOrder": "custom"
     },
@@ -389,6 +398,10 @@
       ],
       "sortOrder": "custom"
     },
+    "11实验测量": {
+      "children": [],
+      "sortOrder": "custom"
+    },
     "99_Raw_Data": {
       "children": [
         "99_Raw_Data/2024云平台使用说明.pdf",
@@ -408,19 +421,6 @@
     "100_Code/PY": {
       "children": [
         "100_Code/PY/等值线.md"
-      ],
-      "sortOrder": "custom"
-    },
-    "11实验测量": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "02_Diary/Daily/assets/温室气体": {
-      "children": [
-        "02_Diary/Daily/assets/温室气体/file-20260918120516028.png",
-        "02_Diary/Daily/assets/温室气体/file-20260918110800587.png",
-        "02_Diary/Daily/assets/温室气体/file-20260918110126367.png",
-        "02_Diary/Daily/assets/温室气体/file-20260918105501715.png"
       ],
       "sortOrder": "custom"
     }
