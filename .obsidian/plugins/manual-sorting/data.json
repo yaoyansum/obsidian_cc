@@ -2,6 +2,7 @@
   "customOrder": {
     "/": {
       "children": [
+        "11实验测量",
         "100_Code",
         "07_Skills",
         "00_Index",
@@ -39,6 +40,7 @@
     },
     "02_Diary/Daily": {
       "children": [
+        "02_Diary/Daily/20260918温室气体计算表.md",
         "02_Diary/Daily/2026-09-16.md",
         "02_Diary/Daily/assets",
         "02_Diary/Daily/2026-09-11.md",
@@ -51,6 +53,7 @@
     },
     "02_Diary/Daily/assets": {
       "children": [
+        "02_Diary/Daily/assets/温室气体",
         "02_Diary/Daily/assets/2026-09-16",
         "02_Diary/Daily/assets/2026-09-11"
       ],
@@ -405,6 +408,19 @@
     "100_Code/PY": {
       "children": [
         "100_Code/PY/等值线.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "11实验测量": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Daily/assets/温室气体": {
+      "children": [
+        "02_Diary/Daily/assets/温室气体/file-20260918120516028.png",
+        "02_Diary/Daily/assets/温室气体/file-20260918110800587.png",
+        "02_Diary/Daily/assets/温室气体/file-20260918110126367.png",
+        "02_Diary/Daily/assets/温室气体/file-20260918105501715.png"
       ],
       "sortOrder": "custom"
     }
