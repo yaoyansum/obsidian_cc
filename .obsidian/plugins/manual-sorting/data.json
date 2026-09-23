@@ -2,6 +2,8 @@
   "customOrder": {
     "/": {
       "children": [
+        "11实验测量",
+        "conflict-files-obsidian-git.md",
         "100_Code",
         "07_Skills",
         "00_Index",
@@ -184,9 +186,14 @@
     },
     "07_Skills/服务器": {
       "children": [
+        "07_Skills/服务器/99_Raw_Data",
         "07_Skills/服务器/assets",
         "07_Skills/服务器/服务器使用.md"
       ],
+      "sortOrder": "custom"
+    },
+    "07_Skills/服务器/99_Raw_Data": {
+      "children": [],
       "sortOrder": "custom"
     },
     "07_Skills/服务器/assets": {
@@ -390,6 +397,10 @@
         "10_Templates/Project_Template.md",
         "10_Templates/Web_Learning_Template.md"
       ],
+      "sortOrder": "custom"
+    },
+    "11实验测量": {
+      "children": [],
       "sortOrder": "custom"
     },
     "99_Raw_Data": {
