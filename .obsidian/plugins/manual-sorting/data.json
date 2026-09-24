@@ -3,7 +3,6 @@
     "/": {
       "children": [
         "11实验测量",
-        "conflict-files-obsidian-git.md",
         "100_Code",
         "07_Skills",
         "00_Index",
@@ -41,6 +40,7 @@
     },
     "02_Diary/Daily": {
       "children": [
+        "02_Diary/Daily/2026-09-23.md",
         "02_Diary/Daily/20260918温室气体计算表.md",
         "02_Diary/Daily/2026-09-16.md",
         "02_Diary/Daily/assets",
@@ -54,6 +54,7 @@
     },
     "02_Diary/Daily/assets": {
       "children": [
+        "02_Diary/Daily/assets/2026-09-23",
         "02_Diary/Daily/assets/20260918温室气体计算表",
         "02_Diary/Daily/assets/2026-09-16",
         "02_Diary/Daily/assets/2026-09-11"
@@ -72,6 +73,15 @@
     "02_Diary/Daily/assets/2026-09-16": {
       "children": [
         "02_Diary/Daily/assets/2026-09-16/file-20260916121837586.png"
+      ],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Daily/assets/2026-09-23": {
+      "children": [
+        "02_Diary/Daily/assets/2026-09-23/file-20260923124816839.png",
+        "02_Diary/Daily/assets/2026-09-23/file-20260923125020376.png",
+        "02_Diary/Daily/assets/2026-09-23/file-20260923125110853.png",
+        "02_Diary/Daily/assets/2026-09-23/file-20260923125126269.png"
       ],
       "sortOrder": "custom"
     },
