@@ -2,6 +2,8 @@
   "customOrder": {
     "/": {
       "children": [
+        "meathod",
+        "未命名",
         "11实验测量",
         "100_Code",
         "07_Skills",
@@ -40,6 +42,7 @@
     },
     "02_Diary/Daily": {
       "children": [
+        "02_Diary/Daily/核函数：Reconstructing all-weather remotely sensed air temperature via a kernel-based temporal filling and bias correction (KTF-BC) framework.md",
         "02_Diary/Daily/2026-10-14.md",
         "02_Diary/Daily/2026-10-09.md",
         "02_Diary/Daily/2026-09-24.md",
@@ -57,6 +60,7 @@
     },
     "02_Diary/Daily/assets": {
       "children": [
+        "02_Diary/Daily/assets/2026-10-14",
         "02_Diary/Daily/assets/2026-10-09",
         "02_Diary/Daily/assets/2026-09-23",
         "02_Diary/Daily/assets/20260918温室气体计算表",
@@ -92,6 +96,13 @@
     "02_Diary/Daily/assets/2026-10-09": {
       "children": [
         "02_Diary/Daily/assets/2026-10-09/file-20261009155154019.png"
+      ],
+      "sortOrder": "custom"
+    },
+    "02_Diary/Daily/assets/2026-10-14": {
+      "children": [
+        "02_Diary/Daily/assets/2026-10-14/file-20261014094246649.png",
+        "02_Diary/Daily/assets/2026-10-14/file-20261014094258039.png"
       ],
       "sortOrder": "custom"
     },
@@ -443,6 +454,14 @@
       "children": [
         "100_Code/PY/等值线.md"
       ],
+      "sortOrder": "custom"
+    },
+    "未命名": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "meathod": {
+      "children": [],
       "sortOrder": "custom"
     }
   },
