@@ -2,7 +2,6 @@
   "customOrder": {
     "/": {
       "children": [
-        "meathod",
         "未命名",
         "11实验测量",
         "100_Code",
@@ -149,6 +148,7 @@
     },
     "04_Knowledge_Base": {
       "children": [
+        "04_Knowledge_Base/meathod",
         "04_Knowledge_Base/Lake_Carbon",
         "04_Knowledge_Base/Modeling",
         "04_Knowledge_Base/Remote_Sensing"
@@ -166,6 +166,10 @@
         "04_Knowledge_Base/Lake_Carbon/03.20260507.内陆水体活性管道模型——Cole2007与Tranvik2009综述.md",
         "04_Knowledge_Base/Lake_Carbon/04.20260507.DOC变化趋势及其机理.md"
       ],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base/meathod": {
+      "children": [],
       "sortOrder": "custom"
     },
     "04_Knowledge_Base/Modeling": {
@@ -457,10 +461,6 @@
       "sortOrder": "custom"
     },
     "未命名": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "meathod": {
       "children": [],
       "sortOrder": "custom"
     }
