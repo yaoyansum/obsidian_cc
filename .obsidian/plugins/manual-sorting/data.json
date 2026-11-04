@@ -41,7 +41,6 @@
     },
     "02_Diary/Daily": {
       "children": [
-        "02_Diary/Daily/核函数：Reconstructing all-weather remotely sensed air temperature via a kernel-based temporal filling and bias correction (KTF-BC) framework.md",
         "02_Diary/Daily/2026-10-14.md",
         "02_Diary/Daily/2026-10-09.md",
         "02_Diary/Daily/2026-09-24.md",
@@ -169,7 +168,9 @@
       "sortOrder": "custom"
     },
     "04_Knowledge_Base/meathod": {
-      "children": [],
+      "children": [
+        "04_Knowledge_Base/meathod/核函数：Reconstructing all-weather remotely sensed air temperature via a kernel-based temporal filling and bias correction (KTF-BC) framework.md"
+      ],
       "sortOrder": "custom"
     },
     "04_Knowledge_Base/Modeling": {
