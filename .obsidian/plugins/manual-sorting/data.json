@@ -41,11 +41,12 @@
     },
     "02_Diary/Daily": {
       "children": [
+        "02_Diary/Daily/把“获得了什么数据”，写成“这些数据解决了什么问题、改变了什么认识”.md",
+        "02_Diary/Daily/2026-11-04.md",
         "02_Diary/Daily/2026-10-14.md",
         "02_Diary/Daily/2026-10-09.md",
         "02_Diary/Daily/2026-09-24.md",
         "02_Diary/Daily/2026-09-23.md",
-        "02_Diary/Daily/20260918温室气体计算表.md",
         "02_Diary/Daily/2026-09-16.md",
         "02_Diary/Daily/assets",
         "02_Diary/Daily/2026-09-11.md",
@@ -61,7 +62,6 @@
         "02_Diary/Daily/assets/2026-10-14",
         "02_Diary/Daily/assets/2026-10-09",
         "02_Diary/Daily/assets/2026-09-23",
-        "02_Diary/Daily/assets/20260918温室气体计算表",
         "02_Diary/Daily/assets/2026-09-16",
         "02_Diary/Daily/assets/2026-09-11"
       ],
@@ -104,15 +104,6 @@
       ],
       "sortOrder": "custom"
     },
-    "02_Diary/Daily/assets/20260918温室气体计算表": {
-      "children": [
-        "02_Diary/Daily/assets/20260918温室气体计算表/file-20260918105501715.png",
-        "02_Diary/Daily/assets/20260918温室气体计算表/file-20260918110126367.png",
-        "02_Diary/Daily/assets/20260918温室气体计算表/file-20260918110800587.png",
-        "02_Diary/Daily/assets/20260918温室气体计算表/file-20260918120516028.png"
-      ],
-      "sortOrder": "custom"
-    },
     "02_Diary/Weekly": {
       "children": [
         "02_Diary/Weekly/2026-09-07-W37.md",
@@ -147,6 +138,7 @@
     },
     "04_Knowledge_Base": {
       "children": [
+        "04_Knowledge_Base/Writing",
         "04_Knowledge_Base/meathod",
         "04_Knowledge_Base/Lake_Carbon",
         "04_Knowledge_Base/Modeling",
@@ -156,6 +148,8 @@
     },
     "04_Knowledge_Base/Lake_Carbon": {
       "children": [
+        "04_Knowledge_Base/Lake_Carbon/assets",
+        "04_Knowledge_Base/Lake_Carbon/20260918温室气体计算表.md",
         "04_Knowledge_Base/Lake_Carbon/06.20260602.湖泊POC遥感反演方法_基于分类视角的文献综述.md",
         "04_Knowledge_Base/Lake_Carbon/05.20260527.QAA_Landsat算法发展综述_中文版.md",
         "04_Knowledge_Base/Lake_Carbon/05.20260527.research_report_lake_ocean_POC.md",
@@ -164,6 +158,21 @@
         "04_Knowledge_Base/Lake_Carbon/02.20260429.湖泊溶解有机碳（DOC）研究综述.md",
         "04_Knowledge_Base/Lake_Carbon/03.20260507.内陆水体活性管道模型——Cole2007与Tranvik2009综述.md",
         "04_Knowledge_Base/Lake_Carbon/04.20260507.DOC变化趋势及其机理.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base/Lake_Carbon/assets": {
+      "children": [
+        "04_Knowledge_Base/Lake_Carbon/assets/20260918温室气体计算表"
+      ],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base/Lake_Carbon/assets/20260918温室气体计算表": {
+      "children": [
+        "04_Knowledge_Base/Lake_Carbon/assets/20260918温室气体计算表/file-20260918105501715.png",
+        "04_Knowledge_Base/Lake_Carbon/assets/20260918温室气体计算表/file-20260918110126367.png",
+        "04_Knowledge_Base/Lake_Carbon/assets/20260918温室气体计算表/file-20260918110800587.png",
+        "04_Knowledge_Base/Lake_Carbon/assets/20260918温室气体计算表/file-20260918120516028.png"
       ],
       "sortOrder": "custom"
     },
@@ -462,6 +471,10 @@
       "sortOrder": "custom"
     },
     "未命名": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base/Writing": {
       "children": [],
       "sortOrder": "custom"
     }
