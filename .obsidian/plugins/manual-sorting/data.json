@@ -41,7 +41,6 @@
     },
     "02_Diary/Daily": {
       "children": [
-        "02_Diary/Daily/把“获得了什么数据”，写成“这些数据解决了什么问题、改变了什么认识”.md",
         "02_Diary/Daily/2026-11-04.md",
         "02_Diary/Daily/2026-10-14.md",
         "02_Diary/Daily/2026-10-09.md",
@@ -211,6 +210,13 @@
         "04_Knowledge_Base/Remote_Sensing/assets/05_20260520_QAA_Landsat/file-20260527094120491.png",
         "04_Knowledge_Base/Remote_Sensing/assets/05_20260520_QAA_Landsat/file-20260527094140731.png",
         "04_Knowledge_Base/Remote_Sensing/assets/05_20260520_QAA_Landsat/file-20260527094205852.png"
+      ],
+      "sortOrder": "custom"
+    },
+    "04_Knowledge_Base/Writing": {
+      "children": [
+        "04_Knowledge_Base/Writing/20261106-驱动解释大多依赖观测关联.md",
+        "04_Knowledge_Base/Writing/20261105-把“获得了什么数据”，写成“这些数据解决了什么问题、改变了什么认识”.md"
       ],
       "sortOrder": "custom"
     },
@@ -471,10 +477,6 @@
       "sortOrder": "custom"
     },
     "未命名": {
-      "children": [],
-      "sortOrder": "custom"
-    },
-    "04_Knowledge_Base/Writing": {
       "children": [],
       "sortOrder": "custom"
     }
