@@ -534,3 +534,7 @@ Developer: Reload Window
 ```
 Developer: Reload Window
 ```
+
+
+
+uv pip install ipykernel 
